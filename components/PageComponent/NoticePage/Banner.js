@@ -3,11 +3,18 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className=" text-center bg-main">
-        <div className='bg-[url("https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581__480.jpg")] h-96   bg-cover bg-center p-20 opacity-70  '>
-          <h1 className="text-5xl font-bold text-white ">Notice </h1>
-          <br />
-          <p className="text-4xl text-white ">Lorem ipsum dolor sit..</p>
+      <div className=" bg-main Poppins">
+        <div
+          className='bg-[url("https://images.unsplash.com/photo-1474932430478-367dbb6832c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=313&ixid=MnwxfDB8MXxyYW5kb218MHx8bGlicmFyeXx8fHx8fDE2NjE0OTIzNDQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1440")]
+         h-[313px]   bg-cover bg-center p-20 opacity-70  '
+        >
+          <div className="flex justify-center items-center flex-col ">
+            <h1 className="text-4xl font-bold text-white h-1 ">Notice </h1>
+            <br />
+            <p className="text-sm font-medium text-white ">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
         </div>
       </div>
     </>

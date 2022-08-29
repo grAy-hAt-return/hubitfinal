@@ -1,9 +1,9 @@
 import React from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { GoLocation } from "react-icons/go";
-import { FiMail } from "react-icons/fi";
-import { BiTime } from "react-icons/bi";
+
+import SideIconBox from "./SideIconBox";
+import Form from "./Form";
 const Body = () => {
+<<<<<<< HEAD
   const contact = [
     {
       title: "Call us",
@@ -93,6 +93,15 @@ const Body = () => {
               Send Message{" "}
             </button>
           </div>
+=======
+  
+  return (
+    <>
+      <section className="bg-[#F8F8F8]  ">
+        <div className=" px-5 py-24 mx-auto flex xs:flex-col sm:flex-col md:flex-col  gap-36 md:gap-24 items-center">
+          <SideIconBox />
+          <Form />
+>>>>>>> 20075d0 (Some Pages Added)
         </div>
       </section>
     </>

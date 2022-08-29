@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import image from "../../components/Resources/images/Rectangle 27.jpg";
 import Layout from "../../HOC/Layout/Layout";
+import Head from "next/head"
 // import images1 from "../../components/Resources/images/python.avif";
 import axios from "axios";
 import FeaturedCourses from "../../components/PageComponent/Courses/FeaturedCourses/FeaturedCourses";
@@ -82,6 +83,7 @@ function Course() {
   //   },
   // ];
   const [card, setCard] = useState([]);
+
   const getData = () => {
     try {
       axios
@@ -102,6 +104,7 @@ function Course() {
   }, []);
   return (
     <Layout>
+    <Head><title>Courses</title></Head>
       <div>
         <div className="relative">
           <div className=" w-full h-80  bg-main ">

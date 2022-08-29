@@ -6,8 +6,10 @@ const index = () => {
   return (
     <>
       <Layout>
-        <Banner />
-        <MidSection />
+        <div className="bg-bgCol Poppins">
+          <Banner />
+          <MidSection />
+        </div>
       </Layout>
     </>
   );

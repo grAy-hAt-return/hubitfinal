@@ -20,11 +20,15 @@ export const NavData = [
     title: "Library",
   },
   {
-    path: "/coperateTraning",
-    title: "Co-operate training",
+    path: "/corporateTraining",
+    title: "Corporate training",
   },
   {
     path: "/notice",
     title: "Notice",
+  },
+  {
+    path: "/vacancy",
+    title: "Vacancy",
   },
 ];

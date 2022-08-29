@@ -11,6 +11,8 @@ const nextConfig = {
       "firebasestorage.googleapis.com",
       "www.derby-college.ac.uk",
       "encrypted-tbn0.gstatic.com",
+      "t2.uc.ltmcdn.com",
+      "wallpaperaccess.com",
     ],
   },
 };

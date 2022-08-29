@@ -6,7 +6,7 @@ const Partners = () => {
     <>
     
       <div className="px-4 sm:pb-0 md:pb-3 lg:pb-12 xl:m-20 md:px-8 lg:px-20 xl:px-24 xxl:px-32 mt-20 flex flex-col items-center justify-center">
-        <div className="w-max text-main text-lg xl:text-xl xxl:text-2xl capitalize Poppins font-bold">
+        <div className=" text-main text-xl xl:text-xl xxl:text-2xl capitalize Poppins font-bold">
           Our Placement Partners
         </div>
         <div className="w-full flex flex-row flex-wrap gap-10 justify-center my-6 pb-20">

@@ -9,6 +9,7 @@ const index = () => {
     <>
     <Head><title>Contact Us</title></Head>
       <Layout>
+      <div className="Poppins bg-bgCol"></div>
         <Banner />
         <Body />
         <Map />
