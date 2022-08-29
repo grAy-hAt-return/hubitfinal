@@ -27,7 +27,10 @@ const Body = () => {
         <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-5 gap-5">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((item, i) => {
             return (
-              <div className="rounded-md overflow-hidden shadow-lg bg-white" key={i}>
+              <div
+                className="rounded-md overflow-hidden shadow-lg bg-white"
+                key={i}
+              >
                 <div className="relative">
                   <img
                     className="h-[217px] w-full  "
@@ -58,17 +61,13 @@ const Body = () => {
                         <p>Kisan </p>
                         <p>Mahat</p>
                       </div>
-<<<<<<< HEAD
+
                       <div className="text-gray-600 text-xs">
-                        <p>20</p>
-
-=======
-
-                      <div className="text-gray-600 text-xs flex gap-1">
-                        {" "}
-                        <IoMdCopy className="mt-[2px]" />
-                        <p className="text-[#454545]">20</p>
->>>>>>> 20075d0 (Some Pages Added)
+                        <div className="text-gray-600 text-xs flex gap-1">
+                          {" "}
+                          <IoMdCopy className="mt-[2px]" />
+                          <p className="text-[#454545]">20</p>
+                        </div>
                       </div>
                     </div>
                   </div>

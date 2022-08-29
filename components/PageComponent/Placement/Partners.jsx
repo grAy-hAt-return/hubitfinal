@@ -4,12 +4,11 @@ import { SiMicrosoft } from "react-icons/si";
 const Partners = () => {
   return (
     <>
-    
-      <div className="px-4 sm:pb-0 md:pb-3 lg:pb-12 xl:m-20 md:px-8 lg:px-20 xl:px-24 xxl:px-32 mt-20 flex flex-col items-center justify-center">
-        <div className=" text-main text-xl xl:text-xl xxl:text-2xl capitalize Poppins font-bold">
+      <div className="flex justify-center items-center pt-10 px-20 w-full xl:w-[60vw] xxl:w-full sm:w-full xs:w-full md:w-full lg:w-full xl:mx-2  xxl:mx-3  flex-col xl:ml-60 gap-4">
+        <div className=" text-main text-xl xl:text-xl xxl:text-2xl capitalize  font-bold">
           Our Placement Partners
         </div>
-        <div className="w-full flex flex-row flex-wrap gap-10 justify-center my-6 pb-20">
+        <div className="w-full flex flex-row flex-wrap gap-10  items-center justify-center  pb-20">
           {[1, 2, 3, 4, 5, 6].map((item) => {
             return (
               <div
