@@ -3,8 +3,10 @@ import React from "react";
 const Banner = () => {
   return (
     <>
+    <div>
+    </div>
       <div
-        className=" flex items-center justify-center h-80 Poppins"
+        className=" flex items-center justify-center h-80 Poppins "
         style={{
           backgroundImage:
             "url(" +
