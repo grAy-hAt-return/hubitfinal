@@ -10,7 +10,7 @@ function TopBar1() {
     { id: 4, title: "Download Brochure", href: "/" },
     { id: 5, title: "Hackathons", href: "/" },
     { id: 6, title: "Hire Talents", href: "/" },
-    { id: 7, title: "Testimonials", href: "/" },
+    { id: 7, title: "Testimonials", href: "/testimonials" },
   ];
   //   const [showUnderline, setShowUnderline] = useState(false);
   //   const [ID, setId] = useState("");
