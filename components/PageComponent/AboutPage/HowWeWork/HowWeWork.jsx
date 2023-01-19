@@ -10,25 +10,25 @@ function HowWeWork() {
       icon: <BsPeopleFill />,
       title: "create a team",
       description:
-        " ipsum dolor sit amet consectetur adipisicing elit. Omnis aut dolores tempora eum deleniti sunt veniam. Tempore quae vero at nesciunt delectus",
+        "Our team at the HIGPL has a comprehensive list of highly skilled and experienced professionals, dedicated to providing students with the latest and most up-to-date training and support they need to succeed in the field of technology.",
     },
     {
       icon: <IoMail />,
       title: "add inbox",
       description:
-        " ipsum dolor sit amet consectetur adipisicing elit. Omnis aut dolores tempora eum deleniti sunt veniam. Tempore quae vero at nesciunt delectus",
+        "We at HIGPL also have an inbox system for our students and staff to communicate, to ensure better coordination, quick responses to any queries or concerns and to provide a more efficient support system because we are available any time you need us.",
     },
     {
       icon: <ImPriceTags />,
       title: "create tags",
       description:
-        " ipsum dolor sit amet consectetur adipisicing elit. Omnis aut dolores tempora eum deleniti sunt veniam. Tempore quae vero at nesciunt delectus",
+        "Creating tags is an organizational method at HIGPL for grouping similar topics, courses and resources together for easy navigation and searchability. Boost the overall productivity of us and our connected individuals.",
     },
     {
       icon: <BsShareFill />,
       title: "share the work load",
       description:
-        " ipsum dolor sit amet consectetur adipisicing elit. Omnis aut dolores tempora eum deleniti sunt veniam. Tempore quae vero at nesciunt delectus",
+        "At the HIGPL, we believe in fair sharing of workload among team members to ensure efficient use of resources, and to provide a better learning experience for students. We believe in  “efficient that team is builds efficient company”.",
     },
   ];
   return (
