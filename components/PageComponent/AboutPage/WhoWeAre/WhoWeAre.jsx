@@ -25,12 +25,17 @@ function WhoWeAre() {
       <div className="grid grid-cols-1 gap-12 mt-1 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2 ">
         <div className="row-start-2 lg:row-start-1  xl:row-start-1 text-justify xxl:row-start-1">
           <div className="text-xs xl:text-sm xxl:text-base text-gray-700 text-justify">
-            <p>
-            Welcome to our HUB IT Group Pvt.Ltd. We have 
-            started our service journey from 2017 for then 
-            till now it has been a wonderful journey.
-            We are thrilled to have you visiting
-            our website and learning more about our institution
+            <p> 
+              Welcome to our HUB IT Group Pvt.Ltd. We have 
+              started our service journey from 2017 for then 
+              till now it has been a wonderful journey.
+              We are thrilled to have you visiting
+              our website and learning more about our institution
+              <br />
+              <br />
+              HUB IT stands with you and your passion to make your dream go to reality,
+              Our Vision is to provide Nepal’s best IT Training Program and shape your 
+              dreams. So, it’s about adventurous journey to “Tech and its Universe”
               <br />
               <br />
               At our cooperation, we believe that information technology
@@ -41,22 +46,6 @@ function WhoWeAre() {
                and our goal is to stay ahead of the curve by providing our clients 
                with the skills and knowledge they need to succeed in today's digital age
               <br />
-              <br />
-              Our all tech teams are among the best in the industry, and they 
-              are committed to provide best and market demanding skills to 
-              students with a well-rounded education that combines both 
-              theoretical and practical knowledge. Also we provide best tech 
-              support and services to the clients if they need us and our services. 
-              Which is why we provide our students with the opportunity to work on 
-              real-world projects and case studies that gives them an edge in market 
-              and personal growth.
-              <br />
-              <br />
-              We are proud of the many accomplishments of our 
-              alumni and the impact they have made in the field of IT. 
-              We are dedicated to helping our students reach their full 
-              potential and achieve their career goals and create impact towards 
-              changing life and lifestyle
             </p>
           </div>
         </div>
