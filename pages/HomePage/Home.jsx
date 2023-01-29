@@ -30,8 +30,8 @@ function Home() {
               );
             })}
           </div>
-          <div className="font-bold xl:text-xl xxl:text-2xl text-[#A0047D] mb-1">
-            <h1>IT Training Institute in Nepal</h1>
+          <div className="w-full flex flex-col font-bold xl:text-xl xxl:text-2xl text-[#A0047D] ">
+            <h2>IT Training Institute in Nepal</h2>
           </div>
           <div className="text-xs xl:text-sm xxl:text-base text-gray-700 pr-6 text-justify">
             <p>
@@ -51,12 +51,12 @@ function Home() {
               Explore More...
             </button>
             <div className="">
-              <div className="flex gap-2 items-center border border-main rounded-full py-1 hover:bg-main hover:scale-105 transition-all ease-in-out duration-300 delay-100">
+              <div className="flex gap-1 items-center border-[1.5px] border-main rounded-full py-1 hover:bg-main group">
                 <div>
-                  <AiFillPlayCircle className="text-3xl text-main ml-1 hover:text-white" />
+                  <AiFillPlayCircle className="text-3xl text-main ml-1 group-hover:scale-105 transition-all ease-in-out duration-300 delay-100 group-hover:text-white" />
                 </div>
-                <button className="text-main text-2xl mr-1 font-normal hover:text-white">
-                  Watch now
+                <button className="text-main text-sm xl:text-base xxl:text-lg mr-1 group-hover:scale-105 transition-all ease-in-out duration-300 delay-100 group-hover:text-white">
+                  watch now
                 </button>
               </div>
             </div>

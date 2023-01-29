@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-import HomePageWelcomeSection from "./HomePageWelcomeSectiom";
+//import HomePageWelcomeSection from "./HomePageWelcomeSectiom";
 // import ReactPlayer from "react-player";
 
 function WhoWeAre() {
@@ -36,6 +36,7 @@ function WhoWeAre() {
               HUB IT stands with you and your passion to make your dream go to reality,
               Our Vision is to provide Nepal’s best IT Training Program and shape your 
               dreams. So, it’s about adventurous journey to “Tech and its Universe”
+
               <br />
               <br />
               At our cooperation, we believe that information technology
@@ -59,24 +60,6 @@ function WhoWeAre() {
               height="320px"
             />
           )}
-          {/* {show ? (
-            <video
-              ref={nextVideo}
-              autoPlay={show ? true : false}
-              onPause={() => setshow(false)}
-              loop
-              controls
-              style={{
-                zIndex: -1,
-                height: "80%",
-                width: "100%",
-              }}
-            >
-              <source src={"aboutus.mp4"} type="video/mp4" />
-            </video>
-          ) : (
-            <HomePageWelcomeSection play={(e) => play(e)} />
-          )} */}
         </div>
       </div>
     </div>

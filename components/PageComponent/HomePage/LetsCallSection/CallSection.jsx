@@ -1,64 +1,132 @@
 import React from "react";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
+import { IoPerson } from "react-icons/io5";
+import { IoIosCall } from "react-icons/io";
+import { toast, ToastContainer, toastify } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
+const schema = yup.object().shape({
+  name: yup.string().required("Required!!!"),
+  phone: yup
+    .string()
+    .min(10, "too short!!")
+    .max(10, "too long!!")
+    .required("Required!!"),
+});
 function CallSection() {
-  const CallSectionSchema = yup.object().shape({
-    // name: yup.string().required(" Required !!!"),
-  });
-  return (
-    <div>
-      <div className="bg-[#EEEAEA] flex flex-col justify-center mt-7 lg:mt-14 xl:mt-14 xxl:mt-14 py-8  lg:py-24 xl:py-24 xxl:py-24 ">
-        <div className="text-xl xl:text-2xl xxl:text-3xl font-bold Poppins text-center">
-          Let us Give you a <span className="text-main"> Call</span> !
-        </div>
-        <div className="text-xs xl:text-sm xxl:text-base text-center text-gray-600 mt-1">
-          Leave us your number and our representatives will connect with you
-          soon!!
-        </div>
-        <Formik
-          initialValues={{
-            name: "",
-          }}
-          validationSchema={CallSectionSchema}
-          onSubmit={(values) => {
-            console.log(values);
-          }}
-        >
-          {({ errors, touched }) => (
-            <Form>
-              <div className="my-4 tablet:flex m  w-11/12 tablet:w-7/12 laptop:w-7/12 desktopL:w-6/12 mx-auto">
-                <div className="  w-full ">
-                  <Field
-                    name="name"
-                    className="px-2 h-8 laptop:h-10 desktop:h-12 capitalize text-sm tablet:text-base desktop:text-lg w-full font-normal border"
-                  />
-                  {errors.name && touched.name ? (
-                    <div className="text-red-500 mt-1 text-xs xl:text-sm xxl:text-base">
-                      {errors.name}
-                    </div>
-                  ) : null}
-                </div>
+//   const FormFields=[{
+//     name: "name",
+//     type: "Text",
+//     icon: <IoPerson/>,
+//     placeholder: "fullname",
+//   },
+// {
+//   name: "phone",
+//   type: "Text",
+//   icon: <BsTelephoneFill />,
+//   placeholder: "phone no.",
+// },]
+  const postData = (val, resetForm) => {
+    resetForm();
+    toast.success("submitted successfully");
+    try {
+      axios.post("https://himal-hubitbackend.adaptable.app/quickcall", val);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-                <div
-                  className="
-                border-none outline-none
-                   "
-                >
-                  <button
-                    className="h-8 xl:h-10 xxl:h-12 my-3 sm:my-0 lg:my-0 xl:my-0 md:my-0 xxl:my-0  w-full sm:w-40 md:w-44 lg:w-44 xl:w-44 xxl:w-44   font-semibold    border-none outline-none
-                hover:bg-orange-600    transition-all  duration-300 ease-in-out  mx-auto  text-base xl:text-lg xxl:text-xl text-white bg-main capitalize"
-                    type="submit"
-                  >
-                    Connect with us
-                  </button>
+  return (
+    <>
+      <div className="w-full bg-[#EEEAEA] mt-7 lg:mt-14 xl:mt-14 xxl:mt-14 py-8 px-20  lg:py-24 xl:py-24 xxl:py-24 ">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2">
+          <div className="text-center items-center capitalize    ">
+            <h2 className="h-fit  text-xl  xl:text-2xl xxl:text-2xl font-bold Poppins">
+              {" "}
+              let us give you a <span className="text-main">quick call</span>!
+            </h2>
+            <p className=" h-fit text-sm xl:text-sm xxl:text-base text-center font-normal text-gray-600">
+              leave us your contact number so our administratives can contact
+              you as soon as possible.
+            </p>
+          </div>
+          <Formik
+            initialValues={{
+              name: "",
+              phone: "",
+            }}
+            validationSchema={schema}
+            onSubmit={(val, { resetForm }) => {
+              console.log(val);
+              postData(val, resetForm);
+              //toast.success("submitted successfully!!");
+            }}
+          >
+            {({ handlesubmit }) => (
+              <Form>
+                <div className="w-full  flex flex-col items-center ">
+                  <div className=" grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 xxl:grid-cols-2 mx-10 ">
+                    <div className="flex flex-col  relative ">
+                      <IoPerson className="text-xl absolute top-3 left-4 text-gray-400" />
+                      <Field
+                        type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        className="w-full border-none py-2 px-5 rounded-2xl text-center"
+                      />
+                      <ErrorMessage
+                        name="name"
+                        component={"div"}
+                        className="text-xs text-red-500"
+                      />
+                    </div>
+                    <div className=" flex flex-col relative">
+                      <IoIosCall className="text-xl absolute top-3 left-4 text-gray-400" />
+                      <Field
+                        type="text"
+                        name="phone"
+                        placeholder="Phone Number"
+                        className="w-full border-none py-2 px-5 rounded-2xl text-center"
+                      />
+                      <ErrorMessage
+                        name="phone"
+                        component={"div"}
+                        className="text-xs text-red-500"
+                      />
+                    </div>
+                  </div>
+                  <div className=" md:mx-[14rem] lg:mx-[14rem] xl:mx-[14rem] xxl:mx-[14rem]    ">
+                    <ToastContainer />
+                    <button type="submit" className="bg-main text-white font-bold text-base rounded-3xl px-10 py-2  mt-5 w-fit ">
+                      Submit
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </Form>
-          )}
-        </Formik>
+              </Form>
+            )}
+            {/* {({handlesubmit})=>{
+              <Form>
+                {FormFields.map((val,i)=>{
+                  return (
+                    <div key={i}>
+                      <Field 
+                      name={val.name}
+                      type={val.type}
+                      icon={val.icon}
+                      placeholder={val.placeholder}
+                      />
+                    </div>
+                  )
+                })};
+               
+              </Form>
+            }}; */}
+          </Formik>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -14,7 +14,7 @@ function PopularCourses({ card, value }) {
   const getCourse = () => {
     try {
       axios
-        .get("http://192.168.0.22:4000/course")
+        .get("https://hubitbackend-production.up.railway.app/course")
         .then((res) => {
           console.log(res);
           setCourse(res.data.data);
@@ -51,12 +51,12 @@ function PopularCourses({ card, value }) {
       course_name: "choose any course name",
       apikey: "course_names",
     },
-    ...courseName,
     {
       id: "1",
       course_category: "choose course category",
       apikey: "course_categories",
     },
+    ...courseName,
   ];
 
   const color = (category) => {
@@ -188,11 +188,12 @@ function PopularCourses({ card, value }) {
               </div>
             </div>
           </div>
+          
         ) : (
           ""
         )}
         {value === "onlyTag" ? (
-          <div className="flex px-5  justify-end gap-2 ">
+          <div className="flex px-5 justify-center  gap-2  ">
             <div>
               <FaChevronLeft
                 onClick={() => {
