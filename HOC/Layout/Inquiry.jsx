@@ -19,7 +19,7 @@ const schema = yup.object().shape({
   phone: yup
     .string()
     .required("contact number is required")
-    .max(10, "worng number"),
+    .max(10, "invalid number"),
   description: yup.string().required("type your description"),
 });
 
@@ -116,7 +116,7 @@ function Inquiry() {
         <div>
           <button
             onClick={() => setShow(true)}
-            className="capitalize bg-main text-white fixed top-32 bottom-50 right-0 border-none rounded-lg p-2"
+            className="capitalize bg-main text-white fixed top-32 bottom-50 right-8 border-none rounded-full py-2 px-4"
           >
             send us inquiry
           </button>
