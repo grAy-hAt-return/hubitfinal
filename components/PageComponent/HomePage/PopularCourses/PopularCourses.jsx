@@ -187,8 +187,14 @@ function PopularCourses({ card, value }) {
   });
 
   return (
-    <div>
-      <div className={`flex flex-col justify-between ${value==='onlyTag'?'px-4 md:px-8 lg:px-12 xl:px-14 xxl:px-16':'p-0'} `}>
+    <div className="overflow-hidden">
+      <div
+        className={`flex flex-col justify-between ${
+          value === "onlyTag"
+            ? "px-4 md:px-8 lg:px-12 xl:px-14 xxl:px-16"
+            : "p-0"
+        } `}
+      >
         {value === "onlyTag" ? (
           <div className=" flex flex-col justify-between items-center">
             {" "}
@@ -362,9 +368,11 @@ function PopularCourses({ card, value }) {
                          h-max line-clamp-2 text-xs xl:text-sm
                           xxl:text-base "
                         >
-                          <h1 className="p-0 pt-1 m-0 font-semibold w-full
+                          <h1
+                            className="p-0 pt-1 m-0 font-semibold w-full
                          h-max line-clamp-1 text-xs xl:text-sm
-                          xxl:text-base " >
+                          xxl:text-base "
+                          >
                             {" "}
                             {val.course_name}
                           </h1>
