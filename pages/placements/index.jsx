@@ -1,11 +1,12 @@
-import Image from "next/image";
-import React from "react";
+import Head from "next/head";
+
+import Layout from "../../HOC/Layout/Layout";
 import MidSection from "../../components/PageComponent/Placement/MidSection";
 import HeroSection from "../../components/PageComponent/Placement/HeroSection";
-import Partners from "../../components/PageComponent/Placement/Partners";
-import Layout from "../../HOC/Layout/Layout";
-import Head from "next/head";
-const placement = () => {
+import ContentSection from "../../components/PageComponent/Placement/contentSection";
+import PlacementPartners from "../../components/PageComponent/HomePage/PlacementPartners/placementPartners";
+
+const Placement = () => {
   return (
     <>
       <Head>
@@ -13,11 +14,12 @@ const placement = () => {
       </Head>
       <Layout>
         <HeroSection />
+        <ContentSection />
+        <PlacementPartners />
         <MidSection />
-        <Partners />
       </Layout>
     </>
   );
 };
 
-export default placement;
+export default Placement;

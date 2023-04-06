@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 import Layout from "../../HOC/Layout/Layout";
 import RecommendedCourse from "../../components/PageComponent/Courses/RecommendedCourse/RecommendedCourse";
 import axios from "../../components/UI/Axios/Axios";
 import FeaturedCourses from "../../components/PageComponent/Courses/FeaturedCourses/FeaturedCourses";
-import PopularCourses from "../../components/PageComponent/HomePage/PopularCourses/PopularCourses";
+// import PopularCourses from "../../components/PageComponent/HomePage/PopularCourses/PopularCourses";
 import CourseDesign from "../../components/PageComponent/Courses/CoursesDesign/CourseDesign";
 // import axios from "axios";
 function Course() {
@@ -83,7 +84,7 @@ function Course() {
   //     duration_type: "3 months",
   //   },
   // ];
-  const [card, setCard] = useState([]);
+  // const [card, setCard] = useState([]);
   const getData = () => {
     try {
       axios
