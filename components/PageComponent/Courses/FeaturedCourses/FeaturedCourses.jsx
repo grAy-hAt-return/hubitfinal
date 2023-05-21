@@ -15,10 +15,7 @@ function FeaturedCourses() {
         </div>
         <div className="text-gray-400">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            voluptates eveniet at perspiciatis ea ut, aliquam perferendis
-            possimus illum unde vel esse, alias quos consequuntur incidunt
-            voluptatem pariatur est modi.
+          "Attention all recently graduated +2 students! If you're interested in IT, computer classes, and computer hardware, our training program in Butwal is perfect for you. With hands-on training and experienced trainers, you'll learn practical skills and gain real-world experience that will set you apart from the competition. Whether you're looking to start a career in IT or computer hardware, our program will give you the skills and knowledge you need to succeed. Don't wait - sign up now and take the first step towards a successful career in IT and computer hardware!"
           </p>
         </div>
         <div>
