@@ -15,7 +15,7 @@ function FeaturedCourses() {
         </div>
         <div className="text-gray-400">
           <p>
-          {"Attention all recent +2 graduates! Are you looking to kickstart your career in IT and hardware? Look no further! Our comprehensive training program in Butwal offers hands-on experience and top-notch training to help you become a tech expert in no time. Our expert trainers will guide you through the latest technologies and equip you with the skills you need to succeed in the tech industry. Don't miss out on this opportunity to jumpstart your career. Enroll now and become a part of our growing community of tech professionals!"}
+          {`"Attention all recent +2 graduates! Are you looking to kickstart your career in IT and hardware? Look no further! Our comprehensive training program in Butwal offers hands-on experience and top-notch training to help you become a tech expert in no time. Our expert trainers will guide you through the latest technologies and equip you with the skills you need to succeed in the tech industry. Don't miss out on this opportunity to jumpstart your career. Enroll now and become a part of our growing community of tech professionals!"`}
           </p>
         </div>
         <div>
@@ -60,8 +60,8 @@ function FeaturedCourses() {
               <BiCalendarWeek />
             </div>
             <div className="Poppins ">
-              <div>Discoutn</div>
-              <div>20%</div>
+              <div>Discount</div>
+              <div>{`20%`}</div>
             </div>
           </div>
         </div>
