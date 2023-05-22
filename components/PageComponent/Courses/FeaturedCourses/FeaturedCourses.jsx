@@ -11,11 +11,11 @@ function FeaturedCourses() {
       <div className=" px-3">
         <div className="capitalize Poppins text-main  ">featured course</div>{" "}
         <div className="font-semibold leading-10 Poppins  my-4 text-3xl  capitalize">
-          become full stack developer with mern stack
+          Admission open for SEE & +2 Appeared students
         </div>
         <div className="text-gray-400">
           <p>
-          "Attention all recently graduated +2 students! If you're interested in IT, computer classes, and computer hardware, our training program in Butwal is perfect for you. With hands-on training and experienced trainers, you'll learn practical skills and gain real-world experience that will set you apart from the competition. Whether you're looking to start a career in IT or computer hardware, our program will give you the skills and knowledge you need to succeed. Don't wait - sign up now and take the first step towards a successful career in IT and computer hardware!"
+          "Attention all recent +2 graduates! Are you looking to kickstart your career in IT and hardware? Look no further! Our comprehensive training program in Butwal offers hands-on experience and top-notch training to help you become a tech expert in no time. Our expert trainers will guide you through the latest technologies and equip you with the skills you need to succeed in the tech industry. Don't miss out on this opportunity to jumpstart your career. Enroll now and become a part of our growing community of tech professionals!"
           </p>
         </div>
         <div>
