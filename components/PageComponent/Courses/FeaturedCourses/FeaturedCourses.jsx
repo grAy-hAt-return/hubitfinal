@@ -49,7 +49,7 @@ function FeaturedCourses() {
             </div>
             <div className="Poppins ">
               <div>Starts Now</div>
-//               <div>20feb,2022</div>
+
             </div>
           </div>
           <div
