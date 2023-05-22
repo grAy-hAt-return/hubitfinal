@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BiCalendarWeek } from "react-icons/bi";
-// import Japan from "../../../Resources/japan.jpg";
+import Japan from "../../../Resources/001.jpg";
 function FeaturedCourses() {
   return (
     <div
@@ -25,19 +25,20 @@ function FeaturedCourses() {
         </div>
       </div>
       <div className="md:flex     lg:flex xl:flex xxl:flex gap-4 ">
-        <div className=" w-86 lg:w-96 xl:w-96 xxl:w-98  mt-5 mx-auto md:mx-0 md:mt-10">
-          <Image
-            src={"/images/japan.jpg"}
-            height={65}
-            width={100}
-            layout="responsive"
-            objectFit="cover"
-            // objectPosition="center"
-            placeholder="blur"
-            blurDataURL={"/japan.jpg"}
-            alt="Loading ..."
-          />
+        <div
+        
+        className="h-90 w-90 bg-red-500"
+         >
+          <img src={Japan.src} alt="featured" className="h-full w-full" />
+
+
         </div>
+        {/* <div style={{
+          backgroundImage:`url(../../../Resources/001.jpg)`
+        }} 
+        className=" w-86 h-86 bg-red-500 lg:w-96 xl:w-96 xxl:w-98  mt-5 mx-auto md:mx-0 md:mt-10">
+         
+        </div> */}
         <div>
           <div
             className="flex mt-4 gap-1 lg:w-40 xl:w-40 xxl:w-40   px-4 md:px-0
@@ -48,8 +49,7 @@ function FeaturedCourses() {
               <BiCalendarWeek />
             </div>
             <div className="Poppins ">
-              <div>Starts in</div>
-              <div>20feb,2022</div>
+              <div>Class Running</div>
             </div>
           </div>
           <div
@@ -60,8 +60,8 @@ function FeaturedCourses() {
               <BiCalendarWeek />
             </div>
             <div className="Poppins ">
-              <div>Course price</div>
-              <div>Rs. 20000</div>
+              <div>Discoutn</div>
+              <div>20%</div>
             </div>
           </div>
         </div>
