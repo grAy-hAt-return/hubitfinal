@@ -45,6 +45,7 @@ function TrainingTabs() {
                     : ""
                 } capitalize font-medium my-2 md:my-0  xl:my-0 xxl:my-0  outline-none`}
               >
+                {/* {val.title} */}
                 {val.title}
               </button>
             </div>
