@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../Resources/japan.jpg";
+import image from "../../Resources/designnoBg.png";
 const MidSection = () => {
   const dataa = [
     { images: image, title: "velapaltem accustyions imperials" },
@@ -33,10 +33,12 @@ const MidSection = () => {
                   <Image
                     src={val.images}
                     layout="responsive"
+                    height={200}
+                    width={300}
                     // objectfit="cover"
                     // objectPosition={"center"}
                     alt="Loading ..."
-                    // className="   object-cover object-center"
+                    className="   object-cover object-center"
                   />{" "}
                 </div>
                 <div

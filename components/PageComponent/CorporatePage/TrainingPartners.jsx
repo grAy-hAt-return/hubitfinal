@@ -1,13 +1,16 @@
 import React from "react";
-import image from "../../Resources/japan.jpg";
+import image1 from "../../Resources/netTv.jpeg";
+import image2 from "../../Resources/khaltii.jpeg";
+import image3 from "../../Resources/vianet.jpeg";
+import image4 from "../../Resources/subisu.jpeg";
 import Image from "next/image";
 
 function TrainingPartners() {
   const dataa = [
-    { images: image },
-    { images: image },
-    { images: image },
-    { images: image },
+    { images: image1 },
+    { images: image2 },
+    { images: image3 },
+    { images: image4 },
   ];
   return (
     <div className=" my-20 md:my-44 lg:my-44 xl:my-44 xxl:my-44">
@@ -20,7 +23,7 @@ function TrainingPartners() {
           {dataa.map((val, i) => {
             return (
               <div
-                className=" w-[300px] md:w-56  lg:w-56  xl:w-56  xxl:w-56 my-4 md:my-0 xl:my-0 xxl:my-0 "
+                className=" w-[150px] md:w-44  lg:w-44  xl:w-44  xxl:w-44 my-10 md:my-0 xl:my-0 xxl:my-0 "
                 key={i}
               >
                 <Image
@@ -28,6 +31,7 @@ function TrainingPartners() {
                   layout="responsive"
                   // objectfit="cover"
                   // objectPosition={"center"}
+                  quality={100}
                   alt="Loading ..."
                   className="   object-cover object-center"
                 />{" "}

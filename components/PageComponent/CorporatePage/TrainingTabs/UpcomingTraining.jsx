@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../Resources/japan.jpg";
+import image from "../../../Resources/designnoBg.png";
 import Image from "next/image";
 function UpcomingTraining() {
   const dataa = [
@@ -24,7 +24,8 @@ function UpcomingTraining() {
                 <Image
                   src={val.images}
                   layout="responsive"
-                  // height={600}
+                  height={150}
+                  width={200}
                   // objectfit="cover"
                   // objectPosition={"center"}
                   alt="Loading ..."

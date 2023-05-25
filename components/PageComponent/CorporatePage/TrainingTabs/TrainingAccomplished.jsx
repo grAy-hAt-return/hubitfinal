@@ -24,6 +24,8 @@ function TrainingAccomplished() {
                 <Image
                   src={val.images}
                   layout="responsive"
+                  height={150}
+                  width={200}
                   // objectfit="cover"
                   // objectPosition={"center"}
                   alt="Loading ..."
