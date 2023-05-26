@@ -1,15 +1,27 @@
+import Image from "next/image";
 import React from "react";
-
+import image from "../../Resources/working_photo.png";
 const Banner = () => {
   return (
     <>
-      <div className=" text-center bg-main">
-        <div className='bg-[url("https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581__480.jpg")] h-96   bg-cover bg-center p-20 opacity-70  '>
-          <h1 className="text-5xl font-bold text-white">Library </h1>
-          <br />
-          <p className="text-4xl text-white">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
+      <div className="relative z-10">
+        <div className=" w-full h-80  bg-main ">
+          <Image
+            src={image}
+            layout="fill"
+            // objectfit="cover"
+            // objectPosition={"center"}
+            alt="Loading ..."
+            className=" opacity-75  object-cover object-center"
+          />
+        </div>
+        <div className="absolute top-32 sm:top-28   md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 text-white capitalize">
+          <div className="font-bold text-xl md:text-3xl xl:text-3xl  xxl:text-3xl">
+            our library
+          </div>
+          <div className="Poppins text-xs md:text-sm xl:text-sm  xxl:text-sm mt-2">
+            home/our library
+          </div>
         </div>
       </div>
     </>
