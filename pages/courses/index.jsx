@@ -118,7 +118,7 @@ function Course() {
           </div>
           <div className="absolute top-32 sm:top-28   md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 text-white capitalize">
             <div className="font-bold  text-3xl">our courses</div>
-            <div className="Poppins text-sm mt-2">home/courses</div>
+            <div className="Poppins text-sm mt-2">home / courses</div>
           </div>
         </div>
         <FeaturedCourses />
