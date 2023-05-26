@@ -130,7 +130,7 @@ const MidSection = () => {
         <div className="flex ">
           {numbers.map((val, i) => {
             return (
-              <div className="bg-main mx-3 px-5 py-3 text-white font-medium rounded-[4px] cursor-pointer ">
+              <div key={i} className="bg-main mx-3 px-5 py-3 text-white font-medium rounded-[4px] cursor-pointer ">
                 {" "}
                 {val}
               </div>
