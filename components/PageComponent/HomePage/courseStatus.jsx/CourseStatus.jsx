@@ -2,12 +2,34 @@ import React, { useState } from "react";
 import { GiOpenBook } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
 function CourseStatus() {
+  const [status,setStatus]=useState(0);
+   const getData = () => {
+    try {
+      axios
+        .get("/course")
+        .then((res) => {
+          console.log("jjjjjjjjj", res.data.data);
+          setCard(res.data.data);
+        let lengtsh=res.data.data.length;
+        setStatus(lengtsh)
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   const CourseStatus = [
     {
       color: "#A0047D",
       icon: <GiOpenBook />,
-      counting: "50",
+      counting: status,
       status: "Running Course",
+      id:'running'
     },
     {
       color: "#1FA67A",
@@ -49,7 +71,7 @@ function CourseStatus() {
                 <h1>{item.icon}</h1>
               </div>
               <div className=" ">
-                <h1>{item.counting}</h1>
+                <h1>{item.id==='running'?status:item.counting}</h1>
               </div>
               <div className=" flex items-center gap-2">
                 <p>{item.status}</p>
