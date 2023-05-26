@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiOpenBook } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
+import axios from "../../../UI/Axios/Axios";
 function CourseStatus() {
   const [status,setStatus]=useState(0);
    const getData = () => {
