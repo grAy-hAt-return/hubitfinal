@@ -3,17 +3,15 @@ import { GiOpenBook } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
 import axios from "../../../UI/Axios/Axios";
 function CourseStatus() {
-  const [status,setStatus]=useState(0);
+  const [status,setStatus]=useState([]);
    const getData = () => {
     try {
       axios
         .get("/course")
         .then((res) => {
           console.log("jjjjjjjjj", res.data.data);
-          setCard(res.data.data);
-        let lengtsh=res.data.data.length;
-        setStatus(lengtsh)
-        })
+          setStatus(res.data.data);
+               })
         .catch((err) => {
           console.log(err);
         });
@@ -72,7 +70,7 @@ function CourseStatus() {
                 <h1>{item.icon}</h1>
               </div>
               <div className=" ">
-                <h1>{item.id==='running'?status:item.counting}</h1>
+                <h1>{item.id==='running'?status.length:item.counting}</h1>
               </div>
               <div className=" flex items-center gap-2">
                 <p>{item.status}</p>
