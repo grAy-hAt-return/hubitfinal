@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { GiOpenBook } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
 import axios from "../../../UI/Axios/Axios";
