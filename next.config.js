@@ -13,7 +13,7 @@ const nextConfig = {
   images: {
     domains: [
       // "https://storage.googleapis.com/",
-      "storage.googleapis.com",
+      "storage.googleapis.com","i.gifer.com",
       "images.unsplash.com","encrypted-tbn0.gstatic.com"
     ],
   },
