@@ -168,7 +168,7 @@ function Otaku() {
               values.VoteTo = Vote;
               try {
                 axios
-                  .post("http://localhost:4003/otakuvoters", values)
+                  .post("https://hubitbackendstudentltd.onrender.com/otakuvoters", values)
                   .then((res) => {
                     console.log(res);
                   })
