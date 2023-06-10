@@ -289,7 +289,7 @@ function Otaku() {
 
 
                     </div> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-6 py-5">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-6 py-5">
               {Cosplay.map((val, i) => {
                 return (
                   <div
@@ -334,7 +334,7 @@ function Otaku() {
                 );
               })}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-6 py-5">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-6 py-5">
               {data.map((val, i) => {
                 return (
                   <div
