@@ -171,6 +171,7 @@ function Otaku() {
                   .post("https://hubitbackendstudentltd.onrender.com/otakuvoters", values)
                   .then((res) => {
                     console.log(res);
+                  toast.info('congratulations your vote has been counted');
                   })
                   .catch((err) => {
                     console.log(err.response);
