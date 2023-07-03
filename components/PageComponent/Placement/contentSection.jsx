@@ -16,15 +16,8 @@ const ContentSection = () => {
         <div className="max-w-2xl">
           <h2 className="text-main">What we do for your placement?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae
-            ab minus. Dicta, alias quam. Porro, corporis perspiciatis distinctio
-            praesentium impedit, neque consequatur aliquam veniam nemo non
-            architecto. Voluptatibus deleniti vel laudantium pariatur delectus,
-            rerum molestias maiores placeat veritatis, obcaecati quibusdam
-            architecto assumenda vero eveniet, amet sint voluptas incidunt esse.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae,
-            earum adipisci dolore iste et ab ut voluptas magni culpa eaque
-            soluta corrupti in quam fuga odio, aliquam, rerum eveniet.
+          To improve student placements at our IT institute, we focus on the following key areas. First, we ensure that our curriculum is up-to-date and aligned with industry trends. Second,we offer practical training opportunities such as projects and internships. Third, we establish partnerships with local IT companies and organizations to provide exposure and potential job opportunities. Fourth, we provide career counseling and assistance with resumes, interviews, and job searches. Fifth, we build and maintain an active alumni network for mentorship and networking. Sixth, we create a dedicated placement cell to coordinate and facilitate placements. Seventh, we emphasize the development of soft skills alongside technical skills. Eighth, we maintain an online presence to showcase your institute and engage with stakeholders. Ninth, we encourage students to pursue industry certifications. Finally, gather feedback from employers to continually improve your programs. Implementing these strategies will enhance our students' employability and placement opportunities.
+
           </p>
         </div>
         <div>

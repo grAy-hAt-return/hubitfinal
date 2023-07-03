@@ -12,13 +12,13 @@ function CourseStatus() {
     {
       color: "#1FA67A",
       icon: <GiOpenBook />,
-      counting: "50",
+      counting: "35",
       status: "Upcomming Course",
     },
     {
       color: "#5A5ECA",
       icon: <GiOpenBook />,
-      counting: "124",
+      counting: "85",
       status: "Total Course",
     },
   ];
@@ -33,8 +33,7 @@ function CourseStatus() {
       </div>
       <div className="capitalize text-xs font-regular text-gray-600 px-0  md:px-60 text-center leading-6">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vitae
-          minima enim inventore cum aut? Sequi deleniti illo neque maxime.
+          We have alot of IT Courses running in our HUB IT. Offer limited-time discounts or bonuses to create a sense of urgency.
         </p>
       </div>
       <div className="grid grid-cols-3 gap-2 md:gap-16 mt-10  ">

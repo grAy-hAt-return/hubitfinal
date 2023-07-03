@@ -22,7 +22,7 @@ const FindUsOn = () => {
                 </Link>
               </div>
               <div className="text-base xl:text-lg xxl:text-xl Poppins">
-                500
+                {item.followers}
               </div>
               <div className="text-xs xl:text-sm xxl:text-base text-gray-500 capitalize">
                 followers
