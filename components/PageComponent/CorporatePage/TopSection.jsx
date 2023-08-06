@@ -27,7 +27,7 @@ const TopSection = () => {
         </div>
         <div className="px-4 md:px-10  lg:px-10  xl:px-10 xxl:px-10">
           <div className="md:grid  xl:grid xxl:grid grid-cols-12  h-full ">
-            <div className="md:flex flex-col  col-span-8 xs:w-full sm:w-full md:w-full lg:w-[60vh] xl:w-[60vh] xxl:w-[60vh] xxxl:w-[60vh]">
+            <div className="md:flex flex-col  col-span-8 xs:w-full sm:w-full md:w-full lg:w-[60vh] xl:w-[60vh] xxl:w-9/12 xxxl:w-9/12">
               <h1 className="text-main font-bold text-lg md:text-3xl xl:text-3xl xxl:text-3xl">
                 What is Corporate Training?
               </h1>
