@@ -2,7 +2,7 @@ import React from "react";
 
 function CertificateMid() {
   return (
-    <div className="  px-5 md:p-20 xl:px-20 xxl:px-20 xxxl:px-20   py-10">
+    <div className="  px-5 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20   py-10">
       {" "}
       <div
       // className={`${
