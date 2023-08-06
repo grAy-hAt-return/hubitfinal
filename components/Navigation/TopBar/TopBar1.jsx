@@ -5,7 +5,7 @@ import Link from "next/link";
 function TopBar1() {
   const data = [
     { id: 1, title: "Become Partner", href: "/" },
-    { id: 2, title: "Check Certificate", href: "/" },
+    { id: 2, title: "Check Certificate", href: "/certificate" },
     { id: 3, title: "Career", href: "/Career" },
     { id: 4, title: "Contact Us", href: "/contact" },
     { id: 5, title: "Download Brochure", href: "/" },
