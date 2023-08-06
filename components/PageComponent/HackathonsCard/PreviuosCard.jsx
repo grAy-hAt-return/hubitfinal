@@ -42,7 +42,7 @@ function PreviuosCard() {
   ]);
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-4  xxxl:grid-cols-4  my-8  px-5 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20  ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-4  xxxl:grid-cols-4  my-8  px-5 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20  ">
         {Data.map((val, i) => {
           return (
             <div
