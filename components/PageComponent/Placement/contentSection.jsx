@@ -28,7 +28,7 @@ const ContentSection = () => {
           </p>
         </div>
         <div>
-          <div className="absolute right-0 top-[-100px] h-[450px] w-96 box-shadow">
+          <div className="absolute right-0 top-[-50px] h-[450px] w-96 box-shadow">
             <Image
               src="/images/portal.jpg"
               alt="image of something"

@@ -10,81 +10,6 @@ import FeaturedCourses from "../../components/PageComponent/Courses/FeaturedCour
 import CourseDesign from "../../components/PageComponent/Courses/CoursesDesign/CourseDesign";
 // import axios from "axios";
 function Course() {
-  // const card = [
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "programming",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "account & finance",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Basic Computer",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Graphic Designing",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "programming",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "account & finance",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Basic Computer",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Graphic Designing",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "programming",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "account & finance",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Basic Computer",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  //   {
-  //     ../../public/images/Rectangle 27.jpg: ../../public/images/Rectangle 27.jpgs1,
-  //     category_name: "Graphic Designing",
-  //     course_name: "python with artificial intelligence (AI)",
-  //     duration_type: "3 months",
-  //   },
-  // ];
-  // const [card, setCard] = useState([]);
   const getData = () => {
     try {
       axios
@@ -106,7 +31,7 @@ function Course() {
   return (
     <Layout>
       <div>
-        <div className="relative">
+        {/* <div className="relative">
           <div className=" w-full h-80  bg-main ">
             <Image
               src={"/images/Rectangle 27.jpg"}
@@ -120,8 +45,8 @@ function Course() {
             <div className="font-bold  text-3xl">our courses</div>
             <div className="Poppins text-sm mt-2">home / courses</div>
           </div>
-        </div>
-        <FeaturedCourses />
+        </div> */}
+        {/* <FeaturedCourses /> */}
         <div className="pb-10 w-11/12 mx-auto ">
           <CourseDesign />
           {/* <PopularCourses card={card} value="courses" /> */}

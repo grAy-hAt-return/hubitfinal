@@ -268,8 +268,8 @@ function AdmissionForm() {
   };
   return (
     <Layout>
-      <div className="relative">
-        <div className=" w-full h-80  bg-main ">
+      <div className="relative bg-main px-6 py-12">
+        {/* <div className=" w-full h-44  bg-main ">
           <Image
             src={bg}
             layout="fill"
@@ -277,8 +277,8 @@ function AdmissionForm() {
             alt="Loading ..."
             className=" opacity-75 "
           />
-        </div>
-        <div className="absolute top-20 /0 left-8 sm:left-20 text-white capitalize">
+        </div> */}
+        <div className=" text-white capitalize">
           <h1 className="font-bold  text-3xl"> Student Admission Form</h1>
           <p className="Poppins text-xs w-2/3 font-light mt-2 ">
             Enter your admission information below to enroll to your interested
@@ -389,7 +389,6 @@ function AdmissionForm() {
                                 type={val.type}
                                 accept={val.accept}
                                 onChange={(e) => {
-                                  alert("gotr");
                                   let file = e.target.files[0];
                                   console.log(file, AllImage);
                                   setFieldValue(AllImage, e.target.files[0]);
@@ -412,7 +411,7 @@ function AdmissionForm() {
                       })}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-16 col-start-3  px-40 mt-16 ">
+                    <div className="grid grid-cols-2 gap-6 col-start-3  px-40 mt-5 ">
                       {admissionForm.map((val, i) => {
                         if (val.as === "select") {
                           return (
@@ -431,14 +430,14 @@ function AdmissionForm() {
                                         as={val.as}
                                         value={val.value}
                                         name={val.apikey}
-                                        className=" w-full bg-[#EEEAEA] rounded-lg   px-4 py-1.5  "
+                                        className=" w-full bg-[#EEEAEA] rounded-lg     px-4 py-3  "
                                       >
                                         {genderOptions?.map((val, i) => {
                                           return (
                                             <option
                                               key={i}
                                               value={val.value}
-                                              className="w-full p-2 text-center bg-slate-200 text-slate-600"
+                                              className="w-full p-2  bg-slate-200 text-slate-600"
                                             >
                                               {val?.value}
                                             </option>
@@ -482,7 +481,7 @@ function AdmissionForm() {
                                               type={val.type}
                                               value={val.value}
                                               name={val.apikey}
-                                              className=" w-full  checked:bg-main   px-4 py-1.5  "
+                                              className=" w-full  checked:bg-main   px-4 py-3  "
                                             />
                                           </div>
                                           <div className="w-fit ml-2 ">
@@ -525,7 +524,7 @@ function AdmissionForm() {
                                         type={val.type}
                                         placeholder={val.placeholder}
                                         name={val.apikey}
-                                        className=" w-full bg-[#EEEAEA] rounded-lg   px-4 py-1.5  "
+                                        className=" w-full bg-[#EEEAEA] rounded-lg   px-4 py-3  "
                                       />
                                     </div>
                                   </div>
@@ -558,7 +557,7 @@ function AdmissionForm() {
                                         type={val.type}
                                         placeholder={val.placeholder}
                                         name={val.apikey}
-                                        className=" w-full bg-[#EEEAEA] rounded-lg  px-4 py-1.5  "
+                                        className=" w-full bg-[#EEEAEA] rounded-lg  px-4 py-3  "
                                       />
                                     </div>
                                   </div>
@@ -583,9 +582,9 @@ function AdmissionForm() {
                       {/* for images or document */}
                     </div>
                     <div className="">
-                      <div className=" mt-10 mb-16 px-40">
+                      <div className=" mt-10 mb-7 px-40">
                         <div className="  ">
-                          <div className="flex justify-between  ">
+                          <div className="grid grid-cols-2 gap-6 justify-between  ">
                             {SelectData.map((val, i) => {
                               if (val.Shift) {
                                 return (
@@ -606,7 +605,7 @@ function AdmissionForm() {
                                                 type={val.type}
                                                 value={val.value}
                                                 name={val.apikey}
-                                                className="w-4"
+                                                className="w-4 bg-red-700"
                                               />
                                             </div>
                                           );
@@ -631,11 +630,11 @@ function AdmissionForm() {
                                 );
                               } else {
                                 return (
-                                  <div className=" ">
+                                  <div className="">
                                     <Field
                                       as={"select"}
                                       name={val.apikey}
-                                      className=" w-full bg-[#EEEAEA] Poppins text-sm h-9 capitalize px-32 py-1
+                                      className=" w-full bg-[#EEEAEA] Poppins text-sm  capitalize px-4 py-3
                                                      rounded-md outline-none border-none"
                                     >
                                       {val?.options?.map((val, i) => {
