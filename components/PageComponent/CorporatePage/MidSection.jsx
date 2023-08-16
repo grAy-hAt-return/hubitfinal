@@ -21,9 +21,7 @@ const MidSection = () => {
           what we do
         </h1>
         <div className="mx-auto  text-xs md:text-base xl:text-base  xxl:text-base text-center md:w-7/12 xl:w-7/12 xxl:w-7/12  text-gray-600">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
-          dolore nam? Asperiores nemo veniam explicabo officia, pariatur beatae
-          quidem optio animi do.
+         We design a course for your employee or students according to organization need or as per their syllablus of universities
         </div>
         <div className="md:grid xl:grid xxl:grid  grid-cols-4 gap-10 place-items-center my-9 md:my-16 px-4 md:px-10">
           {dataa.map((val, i) => {
