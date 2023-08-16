@@ -13,10 +13,12 @@ const Placement = () => {
         <title>Placement-Hub IT</title>
       </Head>
       <Layout>
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <div className='mt-24'>
         <ContentSection />
         <PlacementPartners />
         <MidSection />
+        </div>
       </Layout>
     </>
   );

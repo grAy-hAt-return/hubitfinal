@@ -116,7 +116,7 @@ function Inquiry() {
         <div>
           <button
             onClick={() => setShow(true)}
-            className="capitalize bg-main text-white fixed top-32 bottom-50 right-8 border-none rounded-full py-2 px-4"
+            className="capitalize bg-main shadow-md shadow-gray-400 text-white fixed top-32 bottom-50 right-8 border-none rounded-full py-2 px-4"
           >
             send us inquiry
           </button>
