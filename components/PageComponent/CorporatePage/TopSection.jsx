@@ -32,14 +32,9 @@ const TopSection = () => {
                 What is Corporate Training?
               </h1>
               <p className="text-xs md:text-base xl:text-base  xxl:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit, at amet aspernatur autem enim reiciendis ipsam
-                fuga odit quidem, doloremque iure cumque, vitae iste?
-                Perferendis, fugiat molestias! Sunt culpa delectus ad ipsa vitae
-                quasi fugiat soluta saepe earum, magni tempore labore eius dicta
-                praesentium autem libero iure molestias perspiciatis qui natus!
-                Tempore aliquid illum consequuntur accusantium impedit
-                doloremque? Quis saepe nostrum
+              Corporate training is exclusively for your organization. 
+              Training can be delivered onsite (at your company site), or virtually for your organization. 
+              Dates, times, and agenda can be tailored to your organization’s needs.
               </p>
             </div>
             <div className="xs:hidden sm:hidden  col-span-4  w-[300px] relative z-20 -mt-20">
