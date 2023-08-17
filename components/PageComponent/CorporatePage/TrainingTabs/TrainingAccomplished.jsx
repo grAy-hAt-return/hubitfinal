@@ -1,13 +1,13 @@
 import React from "react";
-import image from "../../../Resources/japan.jpg";
+import image from "../../../Resources/working_photo.png";
 import Image from "next/image";
 function TrainingAccomplished() {
   const dataa = [
-    { images: image, name: "nischal karki" },
-    { images: image, name: "nischal karki" },
-    { images: image, name: "nischal karki" },
-    { images: image, name: "nischal karki" },
-    { images: image, name: "nischal karki" },
+    { images: image, name: "Butwal Multiple Campus" },
+    { images: image, name: "Butwal Kalika Campus" },
+    { images: image, name: "Province 5 Pradesh Sabha" },
+    { images: image, name: "Lumbini city College" },
+    { images: image, name: "Lumbini Engineering College" },
   ];
   return (
     <div>
@@ -32,7 +32,7 @@ function TrainingAccomplished() {
                   className="   object-cover object-center"
                 />{" "}
               </div>
-              <div className="px-4  mt-4 capitalize text-sm">training name</div>
+              <div className="px-4  mt-4 capitalize text-sm">UI/UX designing</div>
               <div className="w-11/12 h-[1px] bg-gray-300 my-4 mx-auto"></div>
               <div className="flex justify-between items-center px-4 pb-3">
                 <div className="w-10 h-10 bg-gray-300  rounded-full">

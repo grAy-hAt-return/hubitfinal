@@ -52,8 +52,7 @@ const TopSection = () => {
         my-10 md:my-20 lg:my-20 xl:my-20 xxl:my-20"
         >
           <div className="text-white  text-xs md:text-sm xl:text-sm  xxl:text-sm">
-            we can help you with your sales and training & sales effectiveness
-            initiatives.
+           We can help you to train your employee and students to get your dream result
           </div>
           <div className="bg-yellow-400  w-fit mt-7 md:mt-0 lg:mt-0 xl:mt-0 xxl:mt-0 cursor-pointer px-5 py-2 rounded-3xl text-base capitalize font-medium ">
             contact us
