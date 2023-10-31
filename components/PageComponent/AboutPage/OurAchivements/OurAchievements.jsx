@@ -35,16 +35,16 @@ function OurAchivements() {
     },
   ];
   return (
-    <div className="flex flex-col px-20 pt-24 w-full ">
+    <div className="flex flex-col lg:px-20 px-8 bg-lime-300 pt-24 w-full ">
       <div className="md:flex lg:flex xl:flex xxl:flex  items-center  w-full  justify-center ">
-        <div className="text-2xl  text-main Poppins font-bold capitalize">
-          our achivement
+        <div className="  text-main  Poppins font-bold capitalize">
+          <h1 className="text-2xl">our achivements</h1>
         </div>
       </div>
       <div
-        className="grid grid-cols-1 place-content-center place-items-center gap-y-8 my-0 mx-auto gap-8 md:grid-cols-2 md:gap-y-8
+        className="grid grid-cols-1 bg-violet-400 place-content-center place-items-center gap-y-8 my-0 mx-auto gap-8 md:grid-cols-2 md:gap-y-8
        lg:gap-y-8 xl:gap-y-0 xxl:gap-y-0 lg:grid-cols-3 xl:grid-cols-4
-       xxl:grid-cols-4 pt-11"
+       xxl:grid-cols-4 pt-10"
       >
         {OurAchivementsCard.map((val, i) => {
           return (

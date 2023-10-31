@@ -13,7 +13,7 @@ function Home() {
           w-full justify-center items-center pb-20 pt-10
         md:px-8 lg:px-20 xl:px-24 xxl:px-32 px-4 bg-[#fafafa]"
       >
-        <div className="h-max md:w-3/6 lg:w-3/6 xl:w-3/6 xxl:w-3/ 6 w-full ">
+        <div className="h-max md:w-5/6 lg:w-3/6 xl:w-3/6 xxl:w-3/ 6 w-full ">
           <div className="flex mb-3">
             {Icons.map((icon, index) => {
               return (
@@ -77,10 +77,12 @@ function Home() {
               <div className="h-full w-full  relative">
                 <div className=" h-full w-full flex flex-col justify-center px-4 ml-3">
                   <div className="text-[12px] font-bold text-[#a0047d] Poppins">
-                    Featured Course
+                    <h4 className="my-0">Featured Course</h4>
                   </div>
                   <div className="text-[10px] font-semibold text-black Poppins">
+                    <p>
                     Become a Full Stack Developer with MERN Stack
+                    </p>
                   </div>
                 </div>
               </div>

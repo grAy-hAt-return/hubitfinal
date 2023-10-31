@@ -247,7 +247,7 @@ function PopularCourses({ card, value }) {
               }
             }}
             ref={currentPageRef}
-            className={` grid grid-cols-1 mt-8 md:mb-8   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+            className={` pb-5 grid grid-cols-1 mt-8 md:mb-8   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
          xl:grid-cols-4 xxl:grid-cols-4 gap-5 w-full`}
           >
             {card?.slice(StartValue, EndValue)?.map((val, i) => {
@@ -263,11 +263,11 @@ function PopularCourses({ card, value }) {
                   }}
                 >
                   <div
-                    className="shadow-lg h-fit  pb-4 w-full  
+                    className="shadow-lg h-[400px]  pb-4 w-full  
               overflow-hidden rounded-md shadow-gray-400 flex flex-col justify-centre  cursor-pointer"
                   >
-                    <div
-                      className="h-60  bg-white relative"
+                    <div 
+                      className="h-60 relative"
                       // style={{
                       //   backgroundImage: `url(${val.image})`,
                       //   backgroundSize: "cover",
@@ -281,7 +281,7 @@ function PopularCourses({ card, value }) {
                         className=""
                       />
                     </div>
-                    <div className="flex h-2/6 items-center pt-2">
+                    <div className="flex flex-col h-2/6 pt-2">
                       <div className="px-2 Poppins capitalize h-max">
                         <div
                           className={`py-1 xs:py-2 ${color(
@@ -289,7 +289,7 @@ function PopularCourses({ card, value }) {
                           )} text-sm bg-main text-white w-fit px-4  rounded-sm 
                            xxl:text-sm  font-light`}
                         >
-                          {val.course_category}
+                          <p>{val.course_category}</p>
                         </div>
                         <div
                           className="font-semibold w-full
@@ -301,7 +301,12 @@ function PopularCourses({ card, value }) {
                             {val.course_name}
                           </h1>
                         </div>
-                        <div className="py-1 xs:py-2">
+                        {/* <div className="line-clamp-2 pt-3  ">
+                      {val.description}
+                    </div> */}
+                      </div>
+                    </div>
+                    <div className="ml-2 py-1 xs:py-2">
                           <span
                             className="text-gray-500 text-[12px]
                            xl:text-[11px] xxl:text-sm"
@@ -315,11 +320,6 @@ function PopularCourses({ card, value }) {
                             {val.duration} months
                           </span>
                         </div>
-                        {/* <div className="line-clamp-2 pt-3  ">
-                      {val.description}
-                    </div> */}
-                      </div>
-                    </div>
                   </div>
                 </Link>
               );

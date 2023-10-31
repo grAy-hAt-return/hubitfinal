@@ -17,6 +17,7 @@ import WhatClientsSays from "../../components/PageComponent/AboutPage/What Clien
 import OurAchievements from "../../components/PageComponent/AboutPage/OurAchivements/OurAchievements";
 import SuccessStories from "../../components/PageComponent/HomePage/SuccessStories/SuccessStories";
 import FindUsOn from "../../components/PageComponent/HomePage/FindUsOn/finUsOn";
+import BookmarkIndex from "../../components/PageComponent/HomePage/Bookmark/BookmarkIndex";
 
 function Index() {
   const [card, setCard] = useState([]);
@@ -40,7 +41,6 @@ function Index() {
     },
   ]);
   const images = [{ image: image1 }, { image: image2 }];
-
   const getData = () => {
     try {
       axios
@@ -56,40 +56,45 @@ function Index() {
       console.log(error);
     }
   };
-  // const getReview = () => {
-  //   let placeId = "ChIJU6XiOYiGljkRv4xyNSswlBE";
-  //   let apiKey = "AIzaSyAKQo1DhCmxNhzHWqelTUs_T3jS_pGiBG4";
-  //   try {
-  //     axios
-  //       .get(
-  //         `https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&key=${apiKey}`
-  //       )
-  //       .then((res) => {
-  //         console.log(res);
-  //         setCard(res.data.data);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  const getReview = () => {
+    let placeId = "ChIJU6XiOYiGljkRv4xyNSswlBE";
+    let apiKey = "AIzaSyAKQo1DhCmxNhzHWqelTUs_T3jS_pGiBG4";
+    // try {
+    //   axios
+    //     .get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJU6XiOYiGljkRv4xyNSswlBE&fields=reviews&key=AIzaSyDolCi-hDX-dc9363M0UqD4P30ylP4EtDQ`)
+    //     .then((res) => {
+    //       console.log(res,"fdfdfdfd");
+    //       setCard(res.data.data);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //     });
+    // } catch (error) {
+    //   console.log(error);
+    // }
+    fetch('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJU6XiOYiGljkRv4xyNSswlBE&fields=reviews&key=AIzaSyDolCi-hDX-dc9363M0UqD4P30ylP4EtDQ',{
+        method: "GET",
+
+      
+    })
+  .then(response => response.json())
+  .then(data => console.log(data,"dsds"))
+  .catch(error => console.error(error));
+  };
   useEffect(() => {
     getData();
-    // getReview();
+    getReview();
   }, []);
   return (
     <div className="">
       <Home image={image} />
-
+      <div className="" >
+        <BookmarkIndex/>
+      </div>
+      <WelcomePortal images={images} />
       <div className=" pt-8 pb-20">
         <PopularCourses card={card} value="onlyTag" />
-      </div>
-
-      <CourseStatus />
-
-      <WelcomePortal images={images} />
+      </div>      
       <WhyHub />
       <WhatClientsSays />
       <OurAchievements />

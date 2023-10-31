@@ -59,7 +59,7 @@ const WhyHub = () => {
           </div>
           
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-2 xs:grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 xxl:grid-cols-3 gap-x-20 gap-y-12 w-full lg:w-4/6 xl:w-5/6 xxl:w-5/6">
+        <div className="grid grid-cols-2 md:grid-cols-2 xs:grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 xxl:grid-cols-3 gap-x-20 gap-y-12 w-full lg:w-[100%] xl:w-5/6 xxl:w-5/6">
           {data.map((item,i) => {
             return (
               <div key={i}>

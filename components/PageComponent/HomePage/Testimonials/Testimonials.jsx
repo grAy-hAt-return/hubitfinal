@@ -5,8 +5,9 @@ import TestimonialsCard from "./TestimonialsCard";
 
 import "slick-carousel/slick/slick.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-
+import axios from "axios";
 import "slick-carousel/slick/slick-theme.css";
+import { useLayoutEffect } from "react";
 function Testimonials() {
   const Data = [
     {
@@ -40,6 +41,19 @@ function Testimonials() {
       post: "manager",
     },
   ];
+
+
+  const getGoogleTestonomil=()=>{
+    axios.get('https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJU6XiOYiGljkRv4xyNSswlBE&fields=reviews&key=AIzaSyDolCi-hDX-dc9363M0UqD4P30ylP4EtDQ').then(res=>{
+      console.log(res,"here")
+    }).catch(err=>{
+      console.log(err)
+    })
+  }
+  useEffect(() => {
+    getGoogleTestonomil()
+  }, [])
+  
   const sliderRef = useRef(null);
   useEffect(() => {
     console.log(sliderRef);
@@ -59,7 +73,7 @@ function Testimonials() {
           <div className="flex items-center space-x-4 xl:space-x-">
             <p className="text-primary-200 font-bold cursor-pointer">Regular</p>
             <p className="transition hover:text-primary-100 cursor-pointer">
-              Facebook
+              Facebooks
             </p>
             <p className="transition hover:text-primary-100 cursor-pointer">
               Google
