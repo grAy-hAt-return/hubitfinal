@@ -6,13 +6,13 @@ import { BsPlayCircleFill } from "react-icons/bs";
 function WelcomePortal({ images }) {
   return (
     <div>
-      <div className="bg-[#f4f4f4] py-14 sm:py-10 xl:py-28 xxl:pt-28 xxl:pb-16 ">
+      <div className="bg-[#f4f4f4] py-14 sm:py-10 xl:py-20 xxl:pt-28 xxl:pb-16 ">
         <div
           className="Poppins text-left xl:text-left xxl:text-left capitalize 
          py-0 xl:py-3 xxl:py-3 text-gray-800 text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-2xl
          xxl:text-3xl w-11/12  mx-auto"
         >
-          <h1 className="text-2xl font-bold">Welcome to our portal</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl  font-bold">Welcome to our portal</h1>
         </div>
         <div
           className=" grid   lg:grid-cols-2 xl:grid-cols-2
@@ -22,21 +22,11 @@ function WelcomePortal({ images }) {
             className="row-start-2 xl:col-span-1 xxl:col-span-2 lg:row-start-1 xl:row-start-1
            xxl:row-start-1 "
           >
-            <div
-              className="text-sm xl:text-base xxl:text-base text-slate-600 lg:py-4
+            <p className="text-sm xl:text-base xxl:text-base text-slate-600 lg:py-4
              xl:py-5 xxl:py-5  sm:w-full sm:py-5 lg:w-full  xl:w-11/12 xxl:w-10/12 mx-auto
-              xxl:mx-0 xl:mx-0 text-justify"
-            >
-              <p>
-              We are glad that you have chosen to visit us and hope that you will find what you are looking for. 
-              Our portal is a place where you can access a wide range of information  on a variety of topics through our YouTube channel. 
-              Whether you are looking for our news, events, way we teach, or something else.
-              We encourage you to explore our portal and discover all that we have to offer. 
-              If you have any questions or need help finding something specific, please dont hesitate to reach out to us. 
-              We are always here to assist you and make your experience on our portal as enjoyable as possible. 
-              Thank you for visiting
-              </p>
-            </div>
+              xxl:mx-0 xl:mx-0 text-justify">
+              Welcome to HUB IT's digital haven, a dynamic portal offering cutting-edge solutions and a wealth of knowledge in the realm of IT. Seamless navigation through user-friendly interfaces provides an immersive experience, allowing exploration of innovative training modules and comprehensive IT solutions. This platform goes beyond addressing immediate needs; it cultivates a culture of continuous learning and collaboration, ensuring adaptability within the ever-evolving IT landscape. Step into a community-driven hub where expertise converges with the forefront of technology, shaping a future-ready, proficient professional. Immerse yourself in a curated space that aligns resources with industry demands, propelling your journey into the vanguard of technological advancements. Join us in shaping the future of IT through collaboration, innovation, and a commitment to excellence.
+            </p>
             <div className="w-full  pt-2 sm:pt-0">
               <button
                 className="hover:scale-105 transition-all

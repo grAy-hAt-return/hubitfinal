@@ -191,7 +191,7 @@ function WhatClientsSays() {
         </div>
         <div className="Poppins  font-light my-3 text-sm  text-gray-700  ">
           <p className="text-xs">
-            Here some testimonials about the experience of our students in
+            Here are some testimonials about the experience of our students in
             <span className="text-main font-medium">HUB IT TRAINING</span>
           </p>
         </div>

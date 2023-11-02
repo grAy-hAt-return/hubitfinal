@@ -3,11 +3,11 @@ import Data from "../../../Navigation/Navitem/findusicon";
 
 const FindUsOn = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-20 xl:px-24 xxl:px-32 mt-16 flex flex-col items-center ">
+    <div className="w-10/12 mx-auto mt-16 flex flex-col items-center ">
       <div className="w-max text-[#a0047d] xl:text-xl xxl:text-2xl capitalize Poppins font-bold my-10">
         <h2>Find Us On</h2>
       </div>
-      <div className="  grid  grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 xxl:grid-cols-6  gap-10 flex-wrap justify-around my-6 w-full">
+      <div className="  grid  grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 xxl:grid-cols-6  gap-10 my-6 w-full">
         {Data.map((item, index) => {
           return (
             <div

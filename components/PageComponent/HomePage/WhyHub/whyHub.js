@@ -1,49 +1,51 @@
 import { BsCheckLg , BsPersonCircle } from "react-icons/bs";
-import { MdOutlineSupport, MdLibraryBooks, MdOutlineContentPaste } from "react-icons/md";
+import { MdModelTraining, MdLibraryBooks, MdOutlineContentPaste } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
+import {BsPersonBoundingBox} from "react-icons/bs"
 const WhyHub = () => {
   let data = [
     { 
       
-      icon: <BsCheckLg />,
-      title: "Well-Equipped Lab",
+      icon: <BsCheckLg/>,
+      title: "Comprehensive Resources:",
       color:"#5A5ECA",
       description:
-        "Labs are equipped with world class equipments and facilities based on the latest technology.",
+        "HUB IT offers an extensive library covering the entire spectrum of IT training and solutions, ensuring a comprehensive learning experience.",
     },
     {
-      icon: <GiTeacher />,
-      title: "Highly experience instructor",
-      color:"#1FA67A",
-      description:
-        "Instructors are highly qualified active professional",
-    },
-    {
-      icon: <MdOutlineContentPaste />,
+      icon: <MdModelTraining/>,
       color:"#F2C351",
-      title: "Updated Syllablus",
-      description:
-        "Designed syllablus focusing the sector as need of industries demand in which our students can compete.",
-    },
-    {
-      icon: <BsPersonCircle/>,
-      color:"#F2C351",
-      title: "Personality Development training",
-      description: "We not only provide skill,we create P.D of students by HR professionals",
-    },
-    {
-      icon: <MdOutlineSupport />,
-      color:"#1FA67A",
       title: "Support after training",
       description:
         "As I.T is upgraded every second our student needs support for new upgrade,we provide support after training also",
     },
     {
+      icon: <BsPersonBoundingBox/>,
+      color:"#1FA67A",
+      title: "Personality Development training",
+      description: "We not only provide skill,we create P.D of students by HR professionals",
+    },
+    {
+      icon: <MdOutlineContentPaste />,
+      color:"#1FA67A",
+      title: "Updated Syllablus",
+      description:
+        "Designed syllablus focusing the sector as need of industries demand in which our students can compete.",
+    },
+
+    {
+      icon: <GiTeacher />,
+      title: "Highly experience instructor",
+      color:"#F2C351",
+      description:
+        "Instructors are highly qualified active professional",
+    },
+    {
       icon: <MdLibraryBooks />,
       color:"#5A5ECA",
-      title: "Access library",
+      title: "Expertise at the Core:",
       description:
-        "Our online library provide students a vast refrence book which they may use in future also",
+        "Benefit from HUB IT's core of expertise, where seasoned professionals contribute to shaping the next generation of IT enthusiasts through guidance and excellence. ",
     },
   ];
 

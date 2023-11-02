@@ -88,9 +88,7 @@ function Index() {
   return (
     <div className="">
       <Home image={image} />
-      <div className="" >
-        <BookmarkIndex/>
-      </div>
+      <BookmarkIndex/>
       <WelcomePortal images={images} />
       <div className=" pt-8 pb-20">
         <PopularCourses card={card} value="onlyTag" />

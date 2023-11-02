@@ -8,6 +8,8 @@ import axios from "../../components/UI/Axios/Axios";
 import FeaturedCourses from "../../components/PageComponent/Courses/FeaturedCourses/FeaturedCourses";
 // import PopularCourses from "../../components/PageComponent/HomePage/PopularCourses/PopularCourses";
 import CourseDesign from "../../components/PageComponent/Courses/CoursesDesign/CourseDesign";
+import FeaturedCourse from "../../components/PageComponent/Courses/OurCourses/FeaturedCourse";
+import OurTopImag from "../../components/PageComponent/Courses/OurCourses/OurTopImg";
 // import axios from "axios";
 function Course() {
   const getData = () => {
@@ -47,11 +49,13 @@ function Course() {
           </div>
         </div> */}
         {/* <FeaturedCourses /> */}
-        <div className="pb-10 w-11/12 mx-auto ">
-          <CourseDesign />
+        {/* <div className="pb-10 w-11/12 mx-auto "> */}
+          {/* <CourseDesign /> */}
           {/* <PopularCourses card={card} value="courses" /> */}
-        </div>
-        <RecommendedCourse />
+        {/* </div> */}
+        {/* <RecommendedCourse /> */}
+        <OurTopImag/>
+        <FeaturedCourse/>
       </div>
     </Layout>
   );

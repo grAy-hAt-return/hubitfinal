@@ -53,7 +53,7 @@ function CourseDesign() {
     
   return (
     <div>
-      <div className='w-fit mx-auto pb-1 text-3xl font-Poppins text-main font-semibold'>Our Courses</div>
+      <div className='w-fit  mx-auto pb-1 text-3xl font-Poppins text-main font-semibold'>Our Courses</div>
       <div className=' mx-auto text-base font-serif text-gray-400 font-medium w-4/12 pb-6 italic text-center '>
         {`"The beautiful thing about learning is that nobody can take it away from you."`}
         </div>
