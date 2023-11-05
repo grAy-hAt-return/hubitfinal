@@ -728,7 +728,7 @@ function AdmissionForm() {
               Payment Option
             </p>
           </div>
-          <Paymentmethods/>
+          {/* <Paymentmethods/> */}
           <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48  mt-10">
             <h1 className="text-purple text-sm md:text-base lg:text-lg xl:text-lg font-medium">
               Form Detail
