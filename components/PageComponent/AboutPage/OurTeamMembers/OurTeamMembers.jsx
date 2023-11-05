@@ -39,12 +39,9 @@ function OurTeamMembers() {
           Our Teams Members
         </div>
 
-        <div className="Poppins text-xs leading-6   w-5/6  text-center mx-auto   text-gray-400">
-        Our team members at the HIGPL are a diverse group of highly skilled and experienced professionals
-        with great knowledge in the technology field. They are experts in their own fields and are devoted
-        to providing you the latest and most up-to-date services. They are passionate about teaching and
-        are committed to helping the clients to achieve their goals.
-        </div>
+        <p className="Poppins text-xs leading-6   w-5/6  text-center mx-auto   text-gray-400">
+        Our team at HUB IT comprises dedicated and skilled professionals, pooling their expertise to drive excellence in the IT landscape. Together, we form a dynamic force committed to providing top-notch solutions and training for a tech-savvy future.
+        </p>
       </div>
       <div
         className="w-full  place-content-center place-items-center grid grid-cols-1 gap-y-8  md:grid-cols-2 md:gap-y-8

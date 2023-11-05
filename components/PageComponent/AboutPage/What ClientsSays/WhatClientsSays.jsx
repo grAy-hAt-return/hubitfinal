@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import /japan.jpg from "";
 import Regular from "./TabComponents/Regular";
+import axios from "axios";
 function WhatClientsSays() {
   const [Active, setActive] = useState("regular");
   const tabs = [
@@ -169,6 +170,19 @@ function WhatClientsSays() {
         break;
     }
   };
+
+
+  
+  // const getGoogleTestonomil=()=>{
+  //   axios.get('http://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJU6XiOYiGljkRv4xyNSswlBE&fields=reviews&key=AIzaSyDolCi-hDX-dc9363M0UqD4P30ylP4EtDQ').then(res=>{
+  //     console.log(res,"here")
+  //   }).catch(err=>{
+  //     console.log(err)
+  //   })
+  // }
+  // useEffect(() => {
+  //   getGoogleTestonomil()
+  // }, [])
   return (
     <div className=" py-8">
       <div className=" text-center">
@@ -177,7 +191,7 @@ function WhatClientsSays() {
         </div>
         <div className="Poppins  font-light my-3 text-sm  text-gray-700  ">
           <p className="text-xs">
-            Here some testimonials about the experience of our students in
+            Here are some testimonials about the experience of our students in
             <span className="text-main font-medium">HUB IT TRAINING</span>
           </p>
         </div>

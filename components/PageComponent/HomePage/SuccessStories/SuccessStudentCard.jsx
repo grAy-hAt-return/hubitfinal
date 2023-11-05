@@ -10,8 +10,8 @@ function SuccessStudentCard({ image, placement, as, name, position }) {
       <div className="w-56">
         <Image
           src={image}
-          height={85}
-          width={100}
+          height={185}
+          width={250}
           alt="Loading ..."
           // layout="responsive"
           // objectFit="cover"

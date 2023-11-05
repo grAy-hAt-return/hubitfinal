@@ -39,14 +39,14 @@ const ContentSection = () => {
         </div>
       </div>
       <div className="mt-4">
-        <h2 className="text-main">Sake and Benefits</h2>
+        <h2 className="text-main pb-5">Sake and Benefits</h2>
         <div className="flex flex-wrap justify-between ml-12">
           {benefits.map((benefit) => {
             return (
               <>
                 <div className="flex gap-2 justify-center align-center mb-6 text-black text-lg font-medium">
                   <BsCheckCircle key={benefit} className="text-2xl font-bold" />
-                  <p>
+                  <p className="text-sm md:text-base xl:text-base lg:text-base ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>

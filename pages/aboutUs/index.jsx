@@ -11,6 +11,7 @@ import FindUsOn from "../../components/PageComponent/HomePage/FindUsOn/finUsOn";
 import Layout from "../../HOC/Layout/Layout";
 import GroupStatus from "../../components/PageComponent/AboutPage/GroupStatus/GroupStatus";
 import TouchButton from "../../components/PageComponent/AboutPage/GetIntouchButton/TouchButton";
+import TopImg from "../../components/PageComponent/AboutPage/AboutTopimg/TopImg";
 
 function AboutUs() {
   return (
@@ -25,15 +26,16 @@ function AboutUs() {
             <meta name="description" content="" />
             <meta name="keywords" content=""/>
           </Head>
+          <TopImg />
           <WhoWeAre />
           <GroupStatus/>
           <MIssionVision />
           <TouchButton/>
           <WhatWeProvide />
+          <OurAchievements />
           <WhatClientsSays />
           <OurTeamMembers />
           <HowWeWork />
-          <OurAchievements />
           <FindUsOn />
           {/* </div> */}
         </div>

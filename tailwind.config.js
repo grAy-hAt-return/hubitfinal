@@ -17,6 +17,12 @@ module.exports = {
       colors: {
         main: "rgba(160, 4, 125, 1)",
         hoverMain: "#c2259f",
+        purple:"#A0047D",
+        textGray:"#9CA3AF",
+        boxyellwo:"#FACC15",
+        professional:"rgba(0, 87, 255, 0.97);",
+        crown:"#E9A115",
+        level:"#FF005C",
       },
       height: {
         84: "21rem",
