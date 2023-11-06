@@ -352,11 +352,11 @@ function AdmissionForm() {
               <button>Review Details</button>
             </div>
           </div>
-          <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48 mt-10">
+          {/* <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48 mt-10">
             <p className="text-purple text-sm md:text-base lg:text-lg xl:text-lg font-medium">
               Personel Information
             </p>
-          </div>
+          </div> */}
           <Formik
             initialValues={{
               name: "",
@@ -400,7 +400,7 @@ function AdmissionForm() {
                                 {val.label}
                               </label>
                             </div>
-                            <div className="w-44 md:w-48 lg:w-52 xl:w-56 ">
+                            {/* <div className="w-44 md:w-48 lg:w-52 xl:w-56 ">
                               <label
                                 htmlFor={val.apikey}
                                 className={`cursor-pointer`}
@@ -421,8 +421,8 @@ function AdmissionForm() {
                                   //onChange={handleChange}
                                 />
                               </label>
-                            </div>
-                            <div className="flex justify-center">
+                            </div> */}
+                            {/* <div className="flex justify-center">
                               {" "}
                               <label
                                 htmlFor={val.apikey}
@@ -430,7 +430,7 @@ function AdmissionForm() {
                               >
                                 choose your profile
                               </label>
-                            </div>
+                            </div> */}
                             <div className="hidden">
                               <input
                                 name={val.apikey}
@@ -517,9 +517,9 @@ function AdmissionForm() {
                           return (
                             <div>
                               <div className="flex col-span-5 flex-col  h-14  gap-3  ">
-                                <div className="  px-2  capitalize Poppins text-sm  w-fit flex  items-center">
+                                {/* <div className="  px-2  capitalize Poppins text-sm  w-fit flex  items-center">
                                   {val.label}
-                                </div>
+                                </div> */}
                                 <div className="flex  gap-5   ">
                                   {val.Gender.map((val, i) => {
                                     return (
