@@ -14,7 +14,8 @@ const Placement = () => {
       </Head>
       <Layout>
         {/* <HeroSection /> */}
-        <div className='mt-24'>
+        <div className=''>
+        <HeroSection />
         <ContentSection />
         <PlacementPartners />
         <MidSection />
