@@ -37,8 +37,7 @@ const PlacementPartners = () => {
         {imgLink.map((item, i) => {
           return (
             <div
-                className="mx-auto w-[60%] h-24 sm:w-2/4 sm:h-24 md:w-[65%] md:h-32 lg:w-[80%] lg:h-36 xl:w-full xl:h-48  "
-
+                className="mx-auto w-[60%] h-24 sm:w-2/4 sm:h-24 md:w-[65%] md:h-32 lg:w-[80%] lg:h-36 xl:w-full xl:h-48 "
                 key={i}
               >
                 <Image

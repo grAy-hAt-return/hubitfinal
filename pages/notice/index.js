@@ -7,7 +7,7 @@ const index = () => {
     <>
       <Layout>
         <Banner />
-        <MidSection />
+        {/* <MidSection /> */}
       </Layout>
     </>
   );
