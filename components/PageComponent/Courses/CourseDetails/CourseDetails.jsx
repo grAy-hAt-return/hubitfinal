@@ -25,14 +25,14 @@ const CourseDetails = ({ detail }) => {
     }
   }, [router.isReady, router.query]);
   const tabs = [
-    { title: "overview" },
+    { title: "Course  overview" },
     { title: "curiculum" },
     { title: "instructor" },
     { title: "review" },
   ];
   const Tabs = () => {
     switch (active) {
-      case "overview":
+      case "Course overview":
         return <OverView detail={detail} id={ID} description={description} />;
         break;
       case "curiculum":
