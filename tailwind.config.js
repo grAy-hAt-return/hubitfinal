@@ -23,6 +23,7 @@ module.exports = {
         professional:"rgba(0, 87, 255, 0.97);",
         crown:"#E9A115",
         level:"#FF005C",
+        mapbox:"#EEEAEA"
       },
       height: {
         84: "21rem",
