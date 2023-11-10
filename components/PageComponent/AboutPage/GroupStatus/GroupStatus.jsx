@@ -27,7 +27,7 @@ function GroupStatus() {
   ]
 
   return (
-    <div className=' w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-2 place-content-center place-items-center px-0 py-5  '>
+    <div className=' w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 xxl:grid-cols-5 gap-2 place-content-center place-items-center px-0 py-5  '>
       {
         status.map((val,i)=>{
           return(

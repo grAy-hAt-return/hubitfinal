@@ -4,7 +4,7 @@ import image from "../../Resources/careerpic.jpg";
 const TopSectionHackathon = () => {
   return (
     <>
-      <div className="w-full h-full">
+      {/* <div className="w-full h-full">
         <div className="relative z-10">
           <div className=" w-full h-80  bg-main ">
             <Image
@@ -25,7 +25,19 @@ const TopSectionHackathon = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div className='bg-[#FACC15] w-full relative h-36 sm:h-52 md:h-56 lg:h-60 xl:h-60 overflow-hidden'>
+            <div className='w-10/12 mx-auto mt-6 sm:mt-10 md:mt-14 lg:mt-14 xl:mt-[3%]'>
+                <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-4xl capitalize my-0'>
+                  Hackathons
+                </h1>
+                <p>
+                  Home/Hackathons
+                </p>
+            </div>
+            <div className='bg-white absolute -left-3 -bottom-20 w-[120%] h-28 sm:h-28 md:h-28 lg:h-32 xl:h-32 rotate-[5deg]'>
+            </div>
+        </div>
     </>
   );
 };
