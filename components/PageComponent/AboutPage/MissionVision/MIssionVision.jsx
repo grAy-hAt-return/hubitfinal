@@ -30,12 +30,12 @@ function MIssionVision() {
     },
   ];
   return (
-    <div className="px-12 lg:px-20 xl:px-36 xxl:px-24">
+    <div className="px-12 lg:px-20 xl:px-36 xxl:px-40">
       <div className="flex flex-col gap-12">
         <div className="">
           {data.map((val, i) => {
             return (
-              <div key={i} className={`${i===1 ? "ml-0 md:ml-0 lg:ml-72 xl:ml-80": "mr-0 md:mr-0 lg:mr-72 xl:mr-80 "} flex capitalize my-20`}>
+              <div key={i} className={`${i===1 ? "ml-0 md:ml-0 lg:ml-72 xl:ml-80 xxl:ml-96": "mr-0 md:mr-0 lg:mr-72 xl:mr-80 xxl:mr-96 "} flex capitalize my-20`}>
                 <div className={`text-4xl h-fit p-5 mt-5 rotate-45 rounded-xl text-white`} style={{background:val.color,}}>
                   <div className="-rotate-45" >
                   {val.icon}
@@ -45,7 +45,7 @@ function MIssionVision() {
                   <h1 className="my-1 Poppins text-main text-xl">
                     {val.title}
                   </h1>
-                  <div className="Poppins font-regular my-1 w-full  pl-5 text-xs text-gray-600 ">
+                  <div className="Poppins font-regular my-1 w-full  pl-5 text-xs xxl:text-sm text-gray-600 ">
                     <p className="">{val.description}</p>
                   </div>
                 </div>

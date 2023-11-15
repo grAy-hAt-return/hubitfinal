@@ -38,18 +38,18 @@ function LiveCard() {
     },
   ]);
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-4  xxxl:grid-cols-4  my-8  px-5 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20  ">
+    <div className="w-11/12 mx-auto">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-4  xxxl:grid-cols-4 my-8 gap-5 ">
         {Data.map((val, i) => {
           return (
             <div
               key={i}
               // onClick={() => RedirectToNextPage()}
               className=" 
-    transition-all cursor-pointer duration-300 ease-linear  w-fit   
-      pb-5 rounded-lg border"
+    transition-all cursor-pointer duration-300 ease-linear  w-fit mx-auto
+      pb-3 rounded-lg border"
             >
-              <div className="w-full  overflow-hidden bg-black  hover:bg-gradient-to-t from-[#ad079c] to-[#c7ce76] borderRadiusTop">
+              <div className="w-full overflow-hidden bg-black  hover:bg-gradient-to-t from-[#ad079c] to-[#c7ce76] borderRadiusTop">
                 <Image
                   //   src={`https://cmsback.e-aribt.com/public/${image}`}
                   src={val.image}
@@ -63,33 +63,32 @@ function LiveCard() {
                   className="borderRadiusTop  opacity-80  h-60 object-cover  "
                 />
               </div>
-              <div className=" px-3 flex flex-col items-centr justify-center my-6  ">
-                <div className="Poppins capitalize font-bold  text-main  text-[18px]">
+              <div className=" px-3 flex flex-col items-centr justify-center my-3">
+                  <h1 className="text-[18px] text-center my-0 Poppins capitalize font-bold  text-main">
                   {val.name}
-                </div>
-                <div className=" capitalize text-center text-gray-600  w-[275px] line-clamp-2 h-11 font-semibold text-[14px]">
+                  </h1>
+                <p className=" capitalize text-center text-gray-600  w-[275px] line-clamp-2 font-semibold text-[14px]">
                   Ends in: {val.endTime}
-                </div>
-                <div className=" capitalize  flex gap-5 items-center justify-center text-gray-600    ">
+                </p>
+                <div className=" capitalize mt-3 flex gap-5 items-center justify-center text-gray-600    ">
                   <div className="   text-gray-600  text-center ">
-                    <div className="text-gray-400 text-[15px]  ">days</div>
-                    <div className="text-[17px]"> {val.day}</div>{" "}
+                    <h4 className="text-gray-400 font-normal text-[17px] my-0">days</h4>
+                    <h4 className="text-[15px] my-0 font-normal"> {val.day}</h4>{" "}
                   </div>
-                  <div className="   text-gray-600   text-center ">
+                  <div className=" text-gray-600 text-center ">
                     {" "}
-                    <div className="text-gray-400 text-[17px]  ">hours</div>
-                    <div className="text-[15px]"> {val.hour}</div>{" "}
+                    <h4 className="text-gray-400 text-[17px] my-0 font-normal">hours</h4>
+                    <h4 className="text-[15px] my-0 font-normal"> {val.hour}</h4>{" "}
                   </div>
                   <div className="   text-gray-600 text-center   ">
                     {" "}
-                    <div className="text-gray-400 text-[17px]  ">minutes</div>
-                    <div className="text-[15px]"> {val.min}</div>{" "}
+                    <h4 className="text-gray-400 text-[17px] my-0 font-normal">minutes</h4>
+                    <h4 className="text-[15px] my-0 font-normal"> {val.min}</h4>{" "}
                   </div>
                 </div>
-                <div className="text-gray-500  flex justify-center  font-medium  text-[12px]">
+                <div className="text-gray-500 flex justify-center font-medium  text-[12px]">
                   <button
-                    className="bg-main rounded-md capitalize hover:opacity-70 mt-10
-                  hover:scale-[1.05] transition-all ease-in-out delay-75 duration-300 text-white px-8 py-2"
+                    className="bg-main rounded-md capitalize hover:opacity-70 xl:mt-8 hover:scale-[1.05] transition-all ease-in-out delay-75 duration-300 text-white px-8 py-2"
                   >
                     start now
                   </button>
