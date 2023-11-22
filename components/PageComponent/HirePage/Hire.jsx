@@ -144,7 +144,7 @@ function Hire() {
             <div className='grid grid-cols-2'>
                 <div className='px-10'>
                     <h4 className='text-purple'>
-                        Skill Generated
+                        Courses
                     </h4>
                     <Formik
                     initialValues={{
@@ -232,30 +232,40 @@ function Hire() {
                     </div>
                 </div>
             </div> 
-            <div className='w-2/4 px-3 mt-12 mx-auto'>
-                <Formik 
-                initialValues={{
-                    fullName:"",
-                    companyName:"",
-                    email:"",
-                    contactNumber:"",
-                }}
-                >
-                    {({handleSubmit})=>{
-                        return <Form>
-                            {formdata.map((val,i)=>{
-                                return <div key={i} className='my-5'>
-                                    <Field 
-                                    type={val.type}
-                                    name={val.identity}
-                                    placeholder={val.placeholder}
-                                    className="w-full px-3 py-2 rounded-md border-2 border-purple"/>
-                                </div>
-                            })}
-                        </Form>
+            <div className='flex my-10'>
+                <div className='w-2/4  border-r-8 pl-5 pr-2 relative border-boxyellwo'>
+                        <div className='w-full h-full  bg-[url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1vbml0b3J8ZW58MHx8MHx8fDA%3D")] bg-no-repeat bg-center bg-cover blur-[2px]'
+                        >
+                        </div>
+                        <div className='w-full h-full flex items-center absolute top-0 right-3'>
+                            <h1 className='text-[36px] w-full text-right my-0 px-3 text-shadow text-shadow-lg text-white capitalize '>Secure top-tier <br/> talent swiftly! <br/> Complete the form <br/> for a rapid response!</h1>
+                        </div>
+                </div>
+                <div className='w-2/4 h-fit px-10 mx-auto'>
+                    <Formik 
+                    initialValues={{
+                        fullName:"",
+                        companyName:"",
+                        email:"",
+                        contactNumber:"",
                     }}
-                </Formik>
-            </div>         
+                    >
+                        {({handleSubmit})=>{
+                            return <Form>
+                                {formdata.map((val,i)=>{
+                                    return <div key={i} className='my-5'>
+                                        <Field 
+                                        type={val.type}
+                                        name={val.identity}
+                                        placeholder={val.placeholder}
+                                        className="w-full px-3 py-2 rounded-md border-2 border-purple"/>
+                                    </div>
+                                })}
+                            </Form>
+                        }}
+                    </Formik>
+                </div>         
+            </div>
         </div>
     </div>
   )

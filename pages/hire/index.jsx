@@ -11,7 +11,7 @@ function index() {
         <Layout>
             <HireBanner />
             <Hire />
-            <BottomBanner/>
+            {/* <BottomBanner/> */}
         </Layout>
     </>
   )
