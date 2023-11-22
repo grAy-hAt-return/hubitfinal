@@ -77,7 +77,7 @@ function Syllabus() {
     const [isVisible,setIsVisible] = useState (false);
   return (
     <div>
-        <h4 className='text-purple'>Course - Syllabus</h4>
+        {/* <h3 className='text-purple'>Course - Syllabus</h3> */}
         <div className='w-full h-fit'>
             {headings.map((val,i)=>{
                 return <div key={i} className='h-fit  w-full border-b-4 '>

@@ -9,10 +9,10 @@ function index() {
   return (
     <>
         <Layout>
-            {/* <PratnerTop/> */}
-            {/* <Partners/> */}
+            <PratnerTop/>
+            <Partners/>
             {/* <PartnerLog/> */}
-            <PartnerSingin/>
+            {/* <PartnerSingin/> */}
         </Layout>
     </>
   )

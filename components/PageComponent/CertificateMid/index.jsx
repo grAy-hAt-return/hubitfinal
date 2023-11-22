@@ -2,7 +2,7 @@ import React from "react";
 
 function CertificateMid() {
   return (
-    <div className="  px-5 md:px-20 lg:px-20 xl:px-20 xxl:px-20 xxxl:px-20   pb-10">
+    <div className="  px-5 md:px-20 lg:px-20 xl:px-20 xxl:px-28 xxxl:px-20  pb-10">
       {" "}
       <div
       // className={`${
@@ -12,7 +12,6 @@ function CertificateMid() {
         <div className="text-xl lg:text-2xl xl:text-3xl xxl:text-3xl capitalize font-medium text-mainColor ">
           check your certificate
         </div>
-
         <div className="font-normal text-[15px]  md:text-base lg:text-base xl:text-lg xxl:text-xl my-5 text-gray-500 xs:w-full sm:w-full md:w-full lg:w-[90vh] xl:w-[80vh] xxl:w-9/12 xxxl:w-10/12">
           {`HUB IT is recognized as one of Nepal's best global skill development
           and IT training centers. The journey of HUB IT started in 2017 with a
@@ -20,7 +19,7 @@ function CertificateMid() {
           affordable cost. The main purpose of HUB IT is to facilitate, with the
           best IT-related skills.`}
         </div>
-        <div className="md:w-6/12 lg:w-6/12 xl:w-6/12 xxl:w-6/12 xxxl:w-6/12">
+        <div className="md:w-6/12 lg:w-6/12 xl:w-6/12 xxl:w-[40%] xxxl:w-[40]">
           <input
             type="text"
             name="check"

@@ -7,6 +7,8 @@ import {GrChat} from 'react-icons/gr'
 import OverviewCourse from './OverviewCourse'
 import Syllabus from './Syllabus'
 import { useState } from 'react'
+import MidSection from "../../Placement/MidSection";
+import Reviews from './Reviews'
 
 function CourseContent() {
     const related=[
@@ -55,8 +57,9 @@ function CourseContent() {
     const tabs= [
         {title:"Course Overview"},
         {title:"Course Syllabus"},
+        {title:"Course Reviews"},
     ]
-    const [active,setActive]= useState ("overview");
+    const [active,setActive]= useState ("OverviewCourse");
     const Tabs = () =>{
         switch (active) {
             case "Course Overview":
@@ -65,17 +68,20 @@ function CourseContent() {
             case "Course Syllabus":
                 return <Syllabus />;
                 break;
+            case "Course Reviews":
+                return <Reviews/>;
+                break;
         }
     }
   return (
     <div>
         <div className='w-11/12 mx-auto pt-20 flex justify-between '>
-            <div className='w-[60%] pr-20'>
-                <div className='w-full px-6 py-3 rounded-full overflow-hidden grid grid-cols-3 bg-gray-200'>
+            <div className='w-[65%] pr-10'>
+                <div className='w-full rounded-full overflow-hidden grid grid-cols-3 bg-gray-200'>
                     {tabs.map((val,i)=>{
                         return (
                             <div key={i}
-                            className={` ${active === val.title ? "text-purple border-b-2 border-purple":""} my-0 mr-2 `}
+                            className={` ${active === val.title ? "text-white bg-purple border-b-2 border-purple":""} my-0 py-3 text-center cursor-pointer`}
                             onClick={()=> setActive(val.title)}
                             >
                                 {val.title}
@@ -86,7 +92,7 @@ function CourseContent() {
                 <div>
                     {Tabs()}
                 </div>
-                <div className='my-10'>
+                {/* <div className='my-10'>
                     <h4 className='text-purple'>Accomplishment</h4>
                     <div className='grid grid-cols-2 gap-8 px-8'>
                     {accomplishment.map((val,i)=>{
@@ -106,10 +112,14 @@ function CourseContent() {
                             </div>
                         })}
                     </div>
+                </div> */}
+                <div>
+                    <h3 className='text-purple my-8'>Placement</h3>
+                    <MidSection/>
                 </div>
             </div>
-            <div className='w-[40%] px-10'>
-                <Formik
+            <div className='w-[35%] px-10'>
+                {/* <Formik
                 initialValues={{
                     fullname:"",
                     email:"",
@@ -178,12 +188,12 @@ function CourseContent() {
                             </div>
                         </Form>
                     }}
-                </Formik>
-                <div className='my-20'>
-                    <h3 className='w-fit  text-purple'>
+                </Formik> */}
+                <div className='mb-20'>
+                    <h3 className='w-full text-center text-purple'>
                     Related Course
                     </h3>
-                    <div className='grid grid-cols-1 gap-6 w-2/4 ml-6 mt-8'>
+                    <div className='grid grid-cols-1 gap-6 w-3/4 mx-auto mt-8'>
                         {related.map((val,i)=>{
                             return <div key={i}>
                                 <div className='w-full h-60' style={{

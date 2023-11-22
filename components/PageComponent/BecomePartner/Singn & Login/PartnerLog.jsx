@@ -1,5 +1,6 @@
 import React from 'react'
-import image from "../../../Resources/japan.jpg"
+// import image from "../../../Resources/japan.jpg"
+import hub from "../../../Resources/Hub.png"
 import { Formik,Form, Field,ErrorMessage } from 'formik'
 function PartnerLog() {
     const formdata=[
@@ -18,7 +19,7 @@ function PartnerLog() {
             <h1 className='w-fit border-b-4 pb-2 border-purple text-xl md:text-2xl lg:text-2xl xl:text-3xl xxl:text-3xl mt-2 my-0'>
                 Log in
             </h1>
-            <div className='w-full  h-fit flex flex-col items-center justify-center mb-5'>
+            <div className='w-full h-fit flex flex-col items-center justify-center mb-5'>
                 <div className='w-[100px] sm:w-[120px] md:w-[150px] lg:w-[220px] xxl:w-[300px] h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] xxl:h-[160px] '
                 style={{
                     backgroundImage: `url("https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/274578238_3124516784501038_7802018382545889587_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3vr_M7oUStMAX8aM0rK&_nc_ht=scontent.fktm3-1.fna&oh=00_AfCW1G_xRW5bRvsDC2U82bWF8gcLtZrWBgjDAQ6sk-o2aQ&oe=6554AA99")`,
