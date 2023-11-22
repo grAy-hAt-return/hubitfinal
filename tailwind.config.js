@@ -23,7 +23,14 @@ module.exports = {
         professional:"rgba(0, 87, 255, 0.97);",
         crown:"#E9A115",
         level:"#FF005C",
-        mapbox:"#EEEAEA"
+        mapbox:"#EEEAEA",
+        python: "#387EB8",
+        node:"#83CD29",
+        js:"#FF7A00",
+        mobile:"#090503",
+        graphic:'#31A8FF',
+        android:"#0DD90D",
+        web:"#20D8E3",
       },
       height: {
         84: "21rem",

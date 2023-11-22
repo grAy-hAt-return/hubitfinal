@@ -10,6 +10,8 @@ import FeaturedCourses from "../../components/PageComponent/Courses/FeaturedCour
 import CourseDesign from "../../components/PageComponent/Courses/CoursesDesign/CourseDesign";
 import FeaturedCourse from "../../components/PageComponent/Courses/OurCourses/FeaturedCourse";
 import OurTopImag from "../../components/PageComponent/Courses/OurCourses/OurTopImg";
+import CourseDetails from "../../components/PageComponent/Courses/CourseDetails/CourseDetails";
+import CourseContent from "../../components/PageComponent/Courses/CourseDetails/CourseContent";
 // import axios from "axios";
 function Course() {
   const getData = () => {
@@ -55,7 +57,9 @@ function Course() {
         {/* </div> */}
         {/* <RecommendedCourse /> */}
         <OurTopImag/>
-        <FeaturedCourse/>
+        {/* <FeaturedCourse/> */}
+        {/* <CourseDetails/> */}
+        <CourseContent/>
       </div>
     </Layout>
   );
