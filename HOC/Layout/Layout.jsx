@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Footer from "../footer/footer";
 import TopBar from "../../components/Navigation/TopBar/TopBar";
 import SideBar from "../../components/Navigation/Sidebar/SideBar";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
 import Inquiry from "./Inquiry";
 
 function Layout({ children }) {
@@ -38,10 +38,10 @@ function Layout({ children }) {
         ""
       )}
 
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="1872050236414372"
         appId="966538807569641"
-      />
+      /> */}
 
       <div className="">{children}</div>
       <div>
