@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import Collapse from "@kunukn/react-collapse";
+// import Collapse from "@kunukn/react-collapse";
 import axios from "../../../UI/Axios/Axios";
 import { useRouter } from "next/router";
 function CourseCuriculum() {
@@ -66,9 +66,8 @@ function CourseCuriculum() {
                   )}
                 </div>
               </div>
-              <Collapse
+              {/* <Collapse
                 isOpen={secID === val.section_id}
-                // state ko value yeha change huni raicha like true or false
                 className={
                   "app__collapse app__collapse--gradient " +
                   (secID === val.section_id
@@ -96,7 +95,7 @@ function CourseCuriculum() {
                     </div>
                   </React.Fragment>
                 )}
-              />
+              /> */}
             </div>
           );
         })}

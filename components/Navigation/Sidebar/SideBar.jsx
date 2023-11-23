@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { fadeInLeft } from "react-animations";
-import Radium, { StyleRoot } from "radium";
+// import Radium, { StyleRoot } from "radium";
 import { NavData } from "../NavData";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -9,22 +9,22 @@ function SideBar({ iconClick, setIconClick }) {
   const router = useRouter();
   console.log(router);
 
-  const styles = {
-    fadeInLeft: {
-      animation: "x 1s",
-      animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),
-    },
-  };
+  // const styles = {
+  //   fadeInLeft: {
+  //     animation: "x 1s",
+  //     animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),
+  //   },
+  // };
   return (
     <div className="lg:hidden xl:hidden xxl:hidden bg-black bg-opacity-50 grid grid-cols-12  z-50 fixed top-0 bottom-0 left-0 right-0 w-full  h-full">
       {/* for mobile devices */}
 
       <div className="py-3 px-3 col-span-4">
-        <StyleRoot>
+        {/* <StyleRoot> */}
           {iconClick ? (
             <div
               className="capitalize flex flex-col  h-full w-64  absolute top-0 bottom-0 z-50 left-0 gap-4 py-10  bg-gray-700 "
-              style={styles.fadeInLeft}
+              // style={styles.fadeInLeft}
             >
               {NavData.map((val, i) => {
                 return (
@@ -53,7 +53,7 @@ function SideBar({ iconClick, setIconClick }) {
           ) : (
             ""
           )}
-        </StyleRoot>
+        {/* </StyleRoot> */}
       </div>
       <div className="col-span-8 " onClick={() => setIconClick(false)}>
         <div className=" md:mt-3 md:ml-2 flex justify-end md:justify-start w-full p-2">

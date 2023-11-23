@@ -11,12 +11,26 @@ module.exports = {
       md: { min: "768px", max: "991.98px" },
       lg: { min: "992px", max: "1199.98px" },
       xl: { min: "1200px", max: "1399.98px" },
-      xxl: { min: "1400px" },
+      xxl:{ min: "1400px" },
     },
     extend: {
       colors: {
-        main: "rgba(160, 4, 125, 1)",
+        main: "rgba(160, 4, 125)",
         hoverMain: "#c2259f",
+        purple:"#A0047D",
+        textGray:"#9CA3AF",
+        boxyellwo:"#FACC15",
+        professional:"rgba(0, 87, 255, 0.97);",
+        crown:"#E9A115",
+        level:"#FF005C",
+        mapbox:"#EEEAEA",
+        python: "#387EB8",
+        node:"#83CD29",
+        js:"#FF7A00",
+        mobile:"#090503",
+        graphic:'#31A8FF',
+        android:"#0DD90D",
+        web:"#20D8E3",
       },
       height: {
         84: "21rem",
@@ -43,3 +57,4 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };
+

@@ -4,10 +4,18 @@ import Layout from "../../HOC/Layout/Layout";
 import Image from "next/image";
 import bg from "../../public/images/Rectangle 35.png";
 import * as Yup from "yup";
+
+import {FaCrown, FaUserTie} from "react-icons/fa"
+import {GiNetworkBars} from "react-icons/gi"
+import {GrFormNextLink,GrFormPreviousLink} from "react-icons/gr"
+
+
+
 // import { BiVial } from "react-icons/bi";
 // import RulesAndRegulations from "../../components/PageComponent/RulesAndRegulations/RulesAndRegulations";
 //import NameOfCourseToEnroll from "../../components/PageComponent/NameOfCourseToEnroll/NameOfCourseToEnroll";
 import axios from "../../components/UI/Axios/Axios";
+import Paymentmethods from "./paymentmethods";
 function AdmissionForm() {
   const [first, setFirst] = useState("");
   const [course, setCourse] = useState([]);
@@ -266,28 +274,64 @@ function AdmissionForm() {
         });
     } catch (error) {}
   };
+  const visibleInfo=[
+    {h1:"Full Name"},
+    {h1:"Email"},
+    {h1:"Phone Number"},
+    {h1:"Academic Level"},
+    {h1:"Selected Option"},
+    {h1:"Payment Option"},
+    {h1:"Amount"},
+    {h1:"Remarks"},
+  ]
+  const headings=[
+    {h1:"become a professional",
+     icon:<FaUserTie/> ,
+     color:"text-professional" 
+    },
+    {h1:"master your skills",
+     icon:<FaCrown/>  ,
+     color:"text-crown" 
+    },
+    {h1:"Learn from developers",
+     icon:<GiNetworkBars/> ,
+     color:"text-level"  
+    },
+  ]
   return (
     <Layout>
-      <div className="relative bg-main px-6 py-12">
-        {/* <div className=" w-full h-44  bg-main ">
-          <Image
-            src={bg}
-            layout="fill"
-            objectfit="cover"
-            alt="Loading ..."
-            className=" opacity-75 "
-          />
-        </div> */}
-        <div className=" text-white capitalize">
-          <h1 className="font-bold  text-3xl"> Student Admission Form</h1>
-          <p className="Poppins text-xs w-2/3 font-light mt-2 ">
-            Enter your admission information below to enroll to your interested
-            IT Course at your comfort, we have made available the Online
-            Admission Form below!
-          </p>
-          <div className="Poppins text-sm mt-2">home/courses</div>
-          {/* <button className="px-6 py-2 bg-[#FACC15] Poppins text-black font-medium text-xs mt-2 rounded-lg">View Form</button> */}
-        </div>
+      <div className='w-full h-52 md:h-56 lg:h-60 xl:h-64' 
+        style={{
+            backgroundImage:`url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top',
+            backgroundSize:'cover'
+        }} >
+          <div className='relative w-full h-full flex flex-col items-center bg-purple bg-opacity-20 '>
+            <div className='w-11/12 mx-auto'>
+                <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-xl font-bold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Student Admission form 
+                </h1>
+                <p className='w-[75ch] font-light text-zinc-50 md:text-sm text-xs lg:text-base xl:text-base'>
+                  Enter your admission information below to admit for their interested IT Course at their comfort, we have made available the Online Admission Form below!                 
+                </p>
+                <p className="font-light text-zinc-50 md:text-sm text-xs lg:text-base xl:text-base mt-3">Home/Admission Form</p>
+                <button className="my-3 px-[3%] py-[0.8%] rounded-3xl bg-boxyellwo text-neutral-800 text-sm font-medium"> 
+                  View Form
+                </button>
+            </div>
+            <div className="absolute bottom-2 right-2 flex h-fit w-fit">
+              {headings.map((val,i)=>{
+                return <div key={i} className="flex items-end mx-2">
+                  <div className={`${val.color} h-fit mx-1 text-lg md:text-xl lg:text-xl xl:text-2xl mb-0 pb-0`}>
+                    {val.icon}
+                  </div>
+                  <h1 className="md:text-sm text-xs capitalize my-0 font-light text-white">
+                    {val.h1}
+                  </h1>
+                </div>
+              })}
+            </div>
+          </div>
       </div>
       <div className="px-2">
         <div className="  rounded-t-2xl">
@@ -308,6 +352,11 @@ function AdmissionForm() {
               <button>Review Details</button>
             </div>
           </div>
+          {/* <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48 mt-10">
+            <p className="text-purple text-sm md:text-base lg:text-lg xl:text-lg font-medium">
+              Personel Information
+            </p>
+          </div> */}
           <Formik
             initialValues={{
               name: "",
@@ -351,7 +400,7 @@ function AdmissionForm() {
                                 {val.label}
                               </label>
                             </div>
-                            <div className="   ">
+                            {/* <div className="w-44 md:w-48 lg:w-52 xl:w-56 ">
                               <label
                                 htmlFor={val.apikey}
                                 className={`cursor-pointer`}
@@ -366,22 +415,22 @@ function AdmissionForm() {
                                   }
                                   alt="Loading ..."
                                   layout="responsive"
-                                  height={100}
-                                  width={100}
+                                  height={150}
+                                  width={150}
                                   className="m-auto h-60 laptop:h-80 rounded-lg "
                                   //onChange={handleChange}
                                 />
                               </label>
-                            </div>
-                            <div className="">
+                            </div> */}
+                            {/* <div className="flex justify-center">
                               {" "}
                               <label
                                 htmlFor={val.apikey}
-                                className="px-4   capitalize cursor-pointer  border-none outline-none   text-black font-medium "
+                                className="text-sm md:text-base lg:text-base xl:text-base capitalize cursor-pointer border-none outline-none text-black font-medium "
                               >
                                 choose your profile
                               </label>
-                            </div>
+                            </div> */}
                             <div className="hidden">
                               <input
                                 name={val.apikey}
@@ -411,7 +460,7 @@ function AdmissionForm() {
                       })}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6 col-start-3  px-40 mt-5 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 col-start-3 md:px-10 xl:px-40 mt-5">
                       {admissionForm.map((val, i) => {
                         if (val.as === "select") {
                           return (
@@ -468,9 +517,9 @@ function AdmissionForm() {
                           return (
                             <div>
                               <div className="flex col-span-5 flex-col  h-14  gap-3  ">
-                                <div className="  px-2  capitalize Poppins text-sm  w-fit flex  items-center">
+                                {/* <div className="  px-2  capitalize Poppins text-sm  w-fit flex  items-center">
                                   {val.label}
-                                </div>
+                                </div> */}
                                 <div className="flex  gap-5   ">
                                   {val.Gender.map((val, i) => {
                                     return (
@@ -668,49 +717,64 @@ function AdmissionForm() {
                           </div>
                         </div>
                       </div>
-                      <div className="flex justify-between ">
-                        <div className=" items-center Poppins mb-5 px-44   text-gray-600 mt-5">
-                          <div className="flex gap-3 items-center">
-                            <input
-                              type="checkbox"
-                              className="w-4 h-4 "
-                              onClick={() =>
-                                setClickedCheckBox(!clickedCheckBox)
-                              }
-                            />
-                            <div className="text-xs Poppins font-regular capitalize">
-                              I agree to the
-                              <button className="text-main capitalize mx-1">
-                                {" "}
-                                terms and conditions
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="mr-7 px-7">
-                          <button
-                            type="submit"
-                            className={`px-5 py-2 capitalize bg-main text-white w-fit 
-                        
-                      ${
-                        clickedCheckBox
-                          ? "opacity-100 cursor-pointer transition-all hover:scale-105 ease-in-out duration-300 "
-                          : " opacity-50 cursor-not-allowed"
-                      } rounded-md
-                     `}
-                            disabled={clickedCheckBox ? "" : "disabled "}
-                          >
-                            Next
-                          </button>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </Form>
               </div>
             )}
           </Formik>
+          <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48  mt-10">
+            <p className="text-purple text-sm md:text-base lg:text-lg xl:text-lg font-medium">
+              Payment Option
+            </p>
+          </div>
+          {/* <Paymentmethods/> */}
+          <div className="ml-8 md:ml-24 lg:ml-20 xl:ml-48  mt-10">
+            <h1 className="text-purple text-sm md:text-base lg:text-lg xl:text-lg font-medium">
+              Form Detail
+            </h1>
+          </div>
+          <div className="ml-8 md:ml-24 lg:ml-20 xl:mx-52 my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3">
+              {visibleInfo.map((val,i)=>{
+                return <div key={i} className="">
+                  <h1 className="text-base md:text-lg lg:text-lg xl:text-lg mb-1 font-normal text-black">
+                    {val.h1}
+                  </h1>
+                  <p className="pr-2 text-sm md:text-base lg:text-base xl:text-base text-[#706D6D]">safal</p>
+                </div>
+              })}
+          </div>
+          <div className="flex justify-between ">
+            <div className=" items-center Poppins mb-5 px-44   text-gray-600 mt-5">
+              <div className="flex gap-3 items-center">
+                <input
+                  type="checkbox"
+                  className="w-4 h-4 "
+                  onClick={() =>
+                    setClickedCheckBox(!clickedCheckBox)
+                  }
+                />
+                <div className="text-xs Poppins font-regular capitalize">
+                  I agree to the
+                  <button className="text-main capitalize mx-1">
+                    {" "}
+                    terms and conditions
+                  </button>
+                  of this company
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-between w-[320px] h-10 mx-auto my-10">
+            <button className=" w-36 bg-purple rounded-3xl flex justify-center items-center">
+              <GrFormPreviousLink className="mr-2"/>
+              <p>Previous</p>
+            </button>
+            <button className="w-36 bg-boxyellwo rounded-3xl flex justify-center items-center">
+              <p>Next</p>
+              <GrFormNextLink className="ml-2"/>
+            </button>
+          </div>
         </div>
       </div>
     </Layout>

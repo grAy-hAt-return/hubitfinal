@@ -1,3 +1,4 @@
+
 import React from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import Icons from "../../components/Navigation/Navitem/iconitem";
@@ -6,14 +7,37 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
+  const heading=[
+    {h1:"graphic designing"},
+    {h1:"Web designing"},
+    {h1:"Computer Hardware"},
+    {h1:"Mobile reapairing"},
+    {h1:"Python"},
+    {h1:"Java"},
+    {h1:"Office packkage"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+    {h1:"Cyber security"},
+  ]
   return (
     <>
+      <div className="w-full h-fit py-20 flex items-center justify-center bg-[#fafafa]">
       <div
         className="flex flex-col lg:flex-row xl:flex-row xxl:flex-row
-          w-full justify-center items-center pb-20 pt-10
-        md:px-8 lg:px-20 xl:px-24 xxl:px-32 px-4 bg-[#fafafa]"
+          w-fit h-fit justify-center md:px-8 lg:px-20 xl:px-24 xxl:px-32 px-4 bg-[#fafafa]"
       >
-        <div className="h-max md:w-3/6 lg:w-3/6 xl:w-3/6 xxl:w-3/ 6 w-full ">
+        <div className="h-max md:w-5/6 mt-8 lg:w-3/6 xl:w-3/6 xxl:w-3/5 w-full ">
           <div className="flex mb-3">
             {Icons.map((icon, index) => {
               return (
@@ -42,7 +66,7 @@ function Home() {
               facilitate, with the best IT-related skills.
             </p>
           </div>
-          <div className="flex py-8">
+          {/* <div className="flex py-8">
             <button
               className={
                 "border-[1.5px] border-[#A0047D] rounded-full mr-6 px-2 text-sm xl:text-base xxl:text-lg text-main hover:scale-105 transition-all ease-in-out duration-300 delay-100 hover:bg-main hover:text-white"
@@ -60,9 +84,17 @@ function Home() {
                 </button>
               </div>
             </div>
+          </div> */}
+          <div className="w-ful my-5 flex flex-wrap">
+              {heading.map((val,i)=>{
+                return <div key={i} className="mr-2 w-fit mb-2 rounded-3xl border-main border">
+                  <p className="text-xs font-light px-2 py-2 capitalize w-fit  ">{val.h1}</p>
+                </div>
+              })}
           </div>
         </div>
-        <div className="h-full w-full mt-8  md:mt-4 lg:mt-0 xl:mt-0 mx-auto lg:w-3/6 xl:w-3/6 xxl:w-3/6">
+
+        <div className="h-full w-full mt-8  md:mt-4 lg:mt-0 xl:mt-0 mx-auto lg:w-3/6 xl:w-3/6 xxl:w-2/5">
           <div className="relative">
             <div className="ml-[3vw]">
               <Image
@@ -77,16 +109,19 @@ function Home() {
               <div className="h-full w-full  relative">
                 <div className=" h-full w-full flex flex-col justify-center px-4 ml-3">
                   <div className="text-[12px] font-bold text-[#a0047d] Poppins">
-                    Featured Course
+                    <h4 className="my-0">Featured Course</h4>
                   </div>
                   <div className="text-[10px] font-semibold text-black Poppins">
+                    <p>
                     Become a Full Stack Developer with MERN Stack
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
