@@ -3,6 +3,11 @@ import {FaCrown, FaUserTie} from "react-icons/fa"
 import {GiNetworkBars} from "react-icons/gi"
 import {GrFormNextLink,GrFormPreviousLink} from "react-icons/gr"
 import PersonalInfo from '../../components/PageComponent/Admission/PersonalInfo'
+import Layout from "../../HOC/Layout/Layout";
+import FormReveiw from '../../components/PageComponent/Admission/FormReveiw'
+
+
+
 
 function id() {
   const headings=[
@@ -19,27 +24,29 @@ function id() {
      color:"text-level"  
     },
   ]
+  
   const tabs= [
-    {title:"Personel Information"},
-    {title:"Payment Option"},
-    {title:"Form Reviews"},
+    {title:"Personal Information"},
+    {title:"Payment"},
+    {title:"Form Review"},
 ]
-const [active,setActive]= useState ("PersonelInfo");
+const [active,setActive]= useState ("Personal Information");
 const Tabs = () =>{
     switch (active) {
-        case "Course Overview":
-            return <PersonalInfo/>;
+        case "Personal Information":
+            return  <PersonalInfo/>;
             break;
-        case "Course Syllabus":
+        case "Payment":
             return 
             break;
-        case "Course Reviews":
-            return 
+        case "Form Review":
+            return <FormReveiw/> ;
             break;
     }
 }
   return (
     <div>
+      <Layout>
       <div className='w-full h-52 md:h-56 lg:h-60 xl:h-64 xxl:h-64 relative' 
         style={{
             backgroundImage:`url("https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHM1fGVufDB8fDB8fHww")`,
@@ -77,9 +84,6 @@ const Tabs = () =>{
         <h1 className='w-fit mx-auto my-3'>
           STUDENT ENROLLMENT REGISTRATION FROM
         </h1>
-        <h3 className='w-fit mx-auto my-0 uppercase'>
-          Fill out the form carefully for registration. All Asterisks (*) fields are mandatory to fill-up.
-        </h3>
         <div className='w-10/12 mx-auto'>
           <div className='w-9/12 mx-auto rounded-full overflow-hidden grid grid-cols-3 bg-gray-200 my-10'>
                 {tabs.map((val,i)=>{
@@ -93,10 +97,13 @@ const Tabs = () =>{
                     )
                 })}
           </div>
-          {/* {Tabs()} */}
-          <PersonalInfo/>
+          <div className=''>
+            {Tabs()}
+          </div>
+          {/* <PersonalInfo/> */}
         </div>
       </div>
+      </Layout>
     </div>
   )
 }

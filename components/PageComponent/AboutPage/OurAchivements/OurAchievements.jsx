@@ -34,7 +34,7 @@ function OurAchivements() {
     <div className="flex flex-col lg:px-20 px-8 pt-24 w-full ">
       <div className="md:flex lg:flex xl:flex xxl:flex  items-center  w-full  justify-center ">
         <div className="  text-main  Poppins font-bold capitalize">
-          <h1 className="text-2xl">our achivements</h1>
+          <h1 className="xxl:text-3xl xl:text-2xl">our achivements</h1>
         </div>
       </div>
       <div

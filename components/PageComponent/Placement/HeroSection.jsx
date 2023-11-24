@@ -11,9 +11,9 @@ const HeroSection = () => {
     }} >
         <div className='w-full h-full flex items-center bg-purple bg-opacity-20 '>
         <div className='w-11/12 mx-auto'>
-            <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Placement
+            <h1 className='xxl:text-4xl xl:text-3xl lg:text-3xl md:text-2xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Placement
             </h1>
-            <h1 className='text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base'>Home/Placement</h1>
+            <h1 className='text-zinc-50 md:text-sm text-xs lg:text-base xxl:text-base capitalize xl:text-base'>Home/Placement</h1>
         </div>
       </div>
     </div>

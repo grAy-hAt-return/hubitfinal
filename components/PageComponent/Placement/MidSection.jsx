@@ -6,7 +6,7 @@ const BottomSection = () => {
   const [isVisible, setIsVisible] = useState (false);
   return (
     <>
-      <div className={`${isVisible ? "h-[880px]  transition-all duration-500 delay-200 ease-in-out":"h-96 transition-all duration-400 delay-200 ease-in-out"} overflow-clip grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-3 gap-3  lg:gap-5 xl:gap-2 xxl:gap-2`}>
+      <div className={`${isVisible ? "h-[880px]  transition-all duration-500 delay-200 ease-in-out":"h-96 transition-all duration-400 delay-200 ease-in-out"} overflow-clip grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  xxl:grid-cols-4 gap-3  lg:gap-5 xl:gap-2 xxl:gap-5 xxl:w-11/12 mx-auto my-10`}>
         {[1, 2, 3, 4].map((item, index) => {
           return (
             <div
@@ -49,13 +49,13 @@ const BottomSection = () => {
           );
         })}
       </div>
-      <div className="w-fit mx-auto">
+      {/* <div className="w-fit mx-auto my-10">
         <button 
         onClick={()=>setIsVisible(!isVisible)}
         className="capitalize">
           show more
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

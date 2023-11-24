@@ -88,7 +88,7 @@ function PersonalInfo() {
         },
     ]
   return (
-    <div className='w-full py-10'>
+    <div className='w-full py-10 bg-gray-100 p-3 relative rounded-lg overflow-hidden'>
         {/* <div>
             <Formik
             initialValues={{
@@ -166,7 +166,13 @@ function PersonalInfo() {
         </div> */}
         <div className=''>
             <div className='w-full grid grid-cols-2'>
+                <div className="flex">
                 <div className='w-52 mx-auto h-52 bg-emerald-300 mb-3'>
+                    </div>
+                    {/* <div className='flex flex-col'>
+                            <label>Photo</label>
+                            <input type="file" name="photo" className='bg-gray-300' />
+                    </div> */}
                 </div>
                 <div className='w-full h-auto flex flex-col justify-center'>
                     <div className='w-full flex flex-col my-2'>
@@ -275,6 +281,9 @@ function PersonalInfo() {
                 </div>
             </div>
         </div>
+        {/* <div className='w-full h-10 absolute top-0 -left-[490px] rotate-[135deg] bg-main'>
+
+        </div> */}
     </div>
   )
 }

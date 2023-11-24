@@ -8,7 +8,7 @@ function OurTeamCard({ image, as, name }) {
     transition-all cursor-pointer duration-300 ease-linear  w-fit  
      capitalize pb-2 rounded-lg"
     >
-      <div className="w-60 h-48 hover: borderRadiusTopHover">
+      <div className="w-60 xxl:w-64 h-48 xxl:h-52 hover: borderRadiusTopHover">
         <Image
           src={image}
           height={45}

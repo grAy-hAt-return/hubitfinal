@@ -59,7 +59,7 @@ function Grid() {
                 </button>
             })}
         </div>
-        <div className={`${isVisible ? 'h-64 sm:h-[350px] md:h-[330px] lg:h-[350px] xl:h-[350px] xxl:h-[360px] transition-all delay-200 ease-in duration-200 ':'md:h-[1000px] lg:h-[700px] xl:h-[700px] xxl:h-[740px] transition-all delay-100 ease-in-out duration-500 '} w-11/12 mx-auto mt-20 mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4 gap-5 px-2 overflow-y-scroll sm:overflow-clip md:overflow-clip lg:overflow-clip xl:overflow-clip xxl:overflow-clip `}>
+        <div className={`${isVisible ? 'h-64 sm:h-[350px] md:h-[330px] lg:h-[350px] xl:h-[350px] xxl:h-[400px] transition-all delay-200 ease-in duration-200 ':'md:h-[1000px] lg:h-[700px] xl:h-[700px] xxl:h-[800px] transition-all delay-100 ease-in-out duration-500 '} w-11/12 mx-auto mt-20 mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xxl:grid-cols-4 gap-5 px-2 overflow-y-scroll sm:overflow-clip md:overflow-clip lg:overflow-clip xl:overflow-clip xxl:overflow-clip `}>
             {data.map((val,i)=>{
                 return <div key={i} className='w-10/12 h-fit mx-auto sm:w-full md:w-full lg:w-full xl:w-full xxl:w-full rounded-md shadow-gray-500 shadow-lg px-5 pt-3 my-5 pb-3'>
                     <div className='flex justify-between'>

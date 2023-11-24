@@ -16,11 +16,11 @@ const TopSection = () => {
               className=" opacity-75  object-cover object-center"
             />
           </div>
-          <div className="absolute top-32 sm:top-28   md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 text-white capitalize">
-            <div className="font-bold text-xl md:text-3xl xl:text-3xl  xxl:text-3xl">
+          <div className="absolute top-32 sm:top-28   md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 xxl:left-28 text-white capitalize">
+            <div className="font-bold text-xl md:text-3xl xl:text-3xl  xxl:text-4xl">
               co-operate training
             </div>
-            <div className="Poppins text-xs md:text-sm xl:text-sm  xxl:text-sm mt-2">
+            <div className="Poppins text-xs md:text-sm xl:text-sm xxl:text-base mt-2">
               home/co-operating training
             </div>
           </div>
@@ -46,16 +46,16 @@ const TopSection = () => {
             </div>
           </div>
         </div> */}
-        <div className="w-11/12 flex mx-auto">
-          <div className="w-[90%] mx-auto md:w-2/4 lg:w-2/4 xl:w-2/4 py-6">
-            <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-main">
+        <div className="w-10/12 flex mx-auto">
+          <div className="w-[90%] mx-auto md:w-2/4 lg:w-2/4 xl:w-2/4 xxl:w-2/4  py-6">
+            <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl xxl:text-3xl font-bold text-main">
               What is Corporate Training?
             </h1>
-            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal">
+            <p className="text-sm md:text-base lg:text-base xl:text-base xxl:text-base font-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at amet aspernatur autem enim reiciendis ipsam fuga odit quidem, doloremque iure cumque, vitae iste? Perferendis, fugiat molestias! Sunt culpa delectus ad ipsa vitae quasi fugiat soluta saepe earum, magni tempore labore eius dicta praesentium autem libero iure molestias perspiciatis qui natus! Tempore aliquid illum consequuntur accusantium impedit doloremque? Quis saepe nostrum
             </p>
           </div>
-          <div className="w-2/4 relative md:block lg:block xl:block hidden">
+          <div className="w-2/4 relative md:block lg:block xl:block xxl:block hidden">
             <div className="w-3/5 h-96 mx-auto relative -top-20 z-20 shadow-xl" 
             style={{
               backgroundImage: `url("https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FydG9vbnxlbnwwfHwwfHx8MA%3D%3D")`,
@@ -69,7 +69,7 @@ const TopSection = () => {
         </div>
         <div
           className="md:flex xl:flex xxl:flex justify-between bg-main 
-        px-4 md:px-14 xl:px-14 xxl:px-14 font-bold  uppercase py-2 items-center"
+        px-4 md:px-14 xl:px-14 xxl:px-24 font-bold  uppercase py-2 items-center"
         >
           <div className="text-white  text-xs md:text-sm xl:text-sm  xxl:text-sm">
            We can help you to train your employee and students to get your dream result

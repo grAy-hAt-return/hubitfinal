@@ -41,18 +41,18 @@ function Contact() {
   return (
     <div className='relative'>
         <div className='w-10/12 mx-auto py-10 relative -top-12 bg-mapbox rounded-xl shadow-lg'>
-            <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 px-6 md:px-10 lg:px-12 xl:px-16 bg'>
+            <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-3 px-6 md:px-10 lg:px-12 xl:px-16 xxl:px-16 bg'>
                 {data.map((val,i)=>{
                     return <div key={i} className='pb-5 flex flex-col justify-start items-center pt-3 bg-white rounded-md shadow-md'>
-                        <div className='text-3xl lg:text-4xl xl:text-4xl flex items-center justify-center text-purple w-10 h-10'>{val.icon}
+                        <div className='text-3xl lg:text-4xl xl:text-4xl xxl:text-4xl flex items-center justify-center text-purple w-10 h-10'>{val.icon}
                         </div>
-                        <h1 className='text-sm md:text-base lg:text-lg xl:text-lg font:semibold my-0 text-center'>
+                        <h1 className='text-sm md:text-base lg:text-lg xl:text-lg xxl:text-xl font:semibold my-0 text-center'>
                             {val.h1}
                         </h1>
-                        <p className='text-xs md:text-sm lg:text-sm xl:text-sm my-0 text-center'>
+                        <p className='text-xs md:text-sm lg:text-sm xl:text-sm xxl:text-sm my-0 text-center'>
                             {val.p}
                         </p>
-                        <p className='text-xs md:text-sm lg:text-sm xl:text-sm my-0 text-center'>{val.time}</p>
+                        <p className='text-xs md:text-sm lg:text-sm xl:text-sm xxl:text-sm my-0 text-center'>{val.time}</p>
                     </div>
                 })}
             </div>
@@ -64,13 +64,13 @@ function Contact() {
             </div>
         </div>
         <div className='w-10/12 mx-auto flex flex-col items-center py-10'>
-            <h1 className=' text-base md:text-lg lg:text-lg xl:text-lg text-purple font-medium'>
+            <h1 className=' text-base md:text-lg lg:text-lg xl:text-lg xxl:text-xl text-purple font-medium'>
                 Message Us
             </h1>
-            <p className=' text-textGray text-sm md:text-base lg:text-base xl:text-base font-light'>
+            <p className=' text-textGray text-sm md:text-base lg:text-base xl:text-base xxl:text-base font-light'>
                 You can also contact us directly by filling out this form.
             </p>
-            <div className='w-full px-5 xl:px-12 my-6  justify-center gap-3 sm:flex md:flex lg:flex xl:flex flex-nowrap sm:flex-wrap md:flex-wrap lg:flex-wrap xl:flex-wrap'>
+            <div className='w-full xxl:w-2/4 px-5 xl:px-12 my-6  justify-center gap-3 sm:flex md:flex lg:flex xl:flex flex-nowrap sm:flex-wrap md:flex-wrap lg:flex-wrap xl:flex-wrap'>
                 {formdata.map((val,i)=>{
                     if (val.identity === "message"){
                         return <div key={i} className='w-[100%] sm:w-[99%] md:w-[87%] lg:w-[87%] xl:w-[87%]'>
@@ -78,7 +78,7 @@ function Contact() {
                             type={val.type} 
                             placeholder={val.placeholder} 
                             id={val.identity} 
-                            className=' w-full h-28 py-2 outline-none text-sm md:text-base lg:text-base xl:text-base border border-textGray px-4 rounded-md'/>    
+                            className=' w-full h-28 py-2 outline-none text-sm md:text-base lg:text-base xl:text-base xxl:text-base border border-textGray px-4 rounded-md'/>    
                         </div>
                     }
                         
@@ -87,7 +87,7 @@ function Contact() {
                           <input type={val.type}
                             id={val.identity}
                             placeholder={val.placeholder}
-                            className={`w-full py-2 outline-none border text-sm md:text-base lg:text-base xl:text-base border-textGray px-4 rounded-md`}
+                            className={`w-full py-2 outline-none border text-sm md:text-base lg:text-base xl:text-base xxl:text-base border-textGray px-4 rounded-md`}
                             />  
                         </div>
                     }

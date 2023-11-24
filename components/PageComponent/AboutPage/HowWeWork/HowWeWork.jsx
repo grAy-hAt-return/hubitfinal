@@ -54,11 +54,11 @@ function HowWeWork() {
   return (
     <div className="px-5 lg:px-20 xl:px-20 xxl:px-20">
       <div>
-        <h1 className="text-2xl text-center  text-main Poppins font-bold capitalize">
+        <h1 className="xxl:text-3xl text-xl text-center  text-main Poppins font-bold capitalize">
           how we work
         </h1>
 
-        <div className="text-xs text-regular Poppins  w-5/6  text-center mx-auto  mt-5 text-gray-400   capitalize">
+        <div className="text-xs xxl:text-base font-normal text-regular Poppins  w-5/6  text-center mx-auto  mt-5 text-gray-400   capitalize">
           <p className="w-9/12 mx-auto">
          HUB IT, we work collaboratively, leveraging diverse talents to deliver cutting-edge IT solutions and training. Our approach is dynamic, ensuring innovation and excellence in every endeavor.
           </p>
@@ -74,10 +74,7 @@ function HowWeWork() {
             })
             
           }
-        
-        
       </div>
-      
         <div>
           <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2 mx-auto w-5/6  place-items-center" >
 

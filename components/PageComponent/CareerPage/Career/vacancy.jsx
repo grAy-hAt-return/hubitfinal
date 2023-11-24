@@ -35,13 +35,13 @@ const type=[
   }
 ]
   return (
-    <div className="flex justify-between mt-10 p-20">
+    <div className="flex justify-between mt-10 py-20 px-36">
       <div className="w-full ">
         <div className="text-2xl font-medium Poppins">Get <span className='text-main'>Hub IT</span> Vacancy Updates</div>
-        <div className="text-xs text-main Poppins mt-3">Courses<span className='text-gray-600 text-[10px]'>(Filter And Give Your Name And Address And We Will Update You About Vacancy)</span></div>
+        <div className="text-base text-main Poppins mt-3">Courses<span className='text-gray-600 text-sm'>(Filter And Give Your Name And Address And We Will Update You About Vacancy)</span></div>
       </div>
     <div className='w-full flex flex-col gap-5 items-end'>
-    <div className="text-[10px] Poppins   text-main">Available Vacancy</div>
+    <div className="text-lg Poppins text-main">Available Vacancy</div>
     {
       vacancyDetails.map((val,i)=>{
         return(
