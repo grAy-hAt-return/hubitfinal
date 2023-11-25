@@ -1,14 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
 import image_1 from "../../../Resources/careerpic.jpg"
-import {BsShieldFillCheck} from "react-icons/bs"
+import {BsShieldFillCheck,} from "react-icons/bs"
+import {RiProfileLine, RiUserSearchFill} from 'react-icons/ri'
+import {TbBuildingSkyscraper} from 'react-icons/tb'
+import {MdOutlinePeopleAlt} from 'react-icons/md'
+
+
 function InfoSection() {
 
   const CareerBox = [
     {
       bottom:"45px",
       width:"400px",
-      height:"300px",
+      height:"280px",
       event:'150 Roles / 75 Location',
       tittle:"What Is Your            Destination ?",
       button:"Explore More"
@@ -29,7 +34,7 @@ function InfoSection() {
     },
     {
       width:"400px",
-      height:"300px",
+      height:"280px",
       event:'150 Roles / 75 Location',
       tittle:"Deploy Your Career",
       button:"Explore More"
@@ -40,19 +45,23 @@ function InfoSection() {
   const InfoStatus = [
     {
       counting:"124+",
-      tittle:"Post"
+      tittle:"Post",
+      icon:<RiProfileLine/>
     },
     {
       counting:"80+",
-      tittle:"Recruited"
+      tittle:"Recruited",
+      icon:<RiUserSearchFill/>
     },
     {
       counting:"132+",
-      tittle:"Company"
+      tittle:"Company",
+      icon:<TbBuildingSkyscraper/>
     },
     {
       counting:"586+",
-      tittle:"Member"
+      tittle:"Member",
+      icon:<MdOutlinePeopleAlt/>
     },
   ]
   const mission =[
@@ -106,7 +115,7 @@ function InfoSection() {
 
   return (
     <>
-    <div className="grid h-full    mx-auto grid-cols-2 gap-y-40 place-items-center place-content-center">
+    <div className="grid h-full mt-10 mx-auto grid-cols-2 gap-y-52 place-items-center place-content-center">
     {
       CareerBox.map((val,i)=>{
         console.log(val)
@@ -132,16 +141,19 @@ function InfoSection() {
       })
     }
     </div>
-    <div className='grid grid-cols-4 place-content-center place-items-center px-20 py-5 relative bottom-[450px]  '>
+    <div className='grid grid-cols-4 place-content-center place-items-center px-20 py-5 relative bottom-[520px]  '>
       {
         InfoStatus.map((val,i)=>{
           return(
-            <div key={i} className=" w-fit h-fit grid flex-col justify-center items-center  text-[#515151] p-2 rounded-md ">
+            <div key={i} className=" w-fit h-fit grid flex-col justify-center items-center text-main p-2 rounded-md ">
+              <div className='w-full h-fit flex justify-center text-8xl'>
+                {val.icon}
+              </div>
               <div className="Poppins h-fit">
-                <p className='text-4xl font-semibold'>{val.counting}</p>
+                <p className='text-3xl text-center font-semibold'>{val.counting}</p>
               </div>
               <div className="h-fit">
-                <p className=' Poppins text-xs '>{val.tittle}</p>
+                <p className='text-[#515151] text-xl Poppins text-center  '>{val.tittle}</p>
               </div>
             </div>
           )
@@ -154,12 +166,12 @@ function InfoSection() {
       mission.map((val,i)=>{
         return(
           <div  className="flex flex-col px-32  " key={i}>
-          <p className='text-sm font-semibold Poppins text-main ' style={{
+          <p className='text-3xl font-semibold Poppins text-main ' style={{
             marginTop:val.top,
           }}>{val.tittle}</p>
-          <p className='text-3xl font-medium Poppins text-black  ' style={{marginTop:val.top_1}}> 
+          <p className='text-2xl font-medium Poppins text-black  ' style={{marginTop:val.top_1}}> 
            {val.mission}</p>
-          <p className='text-[10px] text-gray-600 mt-5 Poppins  leading-5 text-left '>{val.description}</p>
+          <p className='text-base text-gray-600 mt-5 Poppins tracking-wider leading-5 text-left '>{val.description}</p>
          
         </div>
         )
@@ -173,7 +185,7 @@ function InfoSection() {
                     marginLeft:val.left,
                   }}>
                     <div className="mt-2">{val.icon}</div>
-                  <p className=''><span className='text-sm font-medium Poppins'>{val.tittle}</span><span className='text-[10px]  Poppins  text-gray-600'>{val.description}</span></p>
+                  <p className=''><span className='text-base font-medium Poppins'>{val.tittle}</span><span className='text-sm Poppins text-gray-600'>{val.description}</span></p>
                 </div>
                 )
               })

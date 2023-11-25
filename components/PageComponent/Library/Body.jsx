@@ -148,10 +148,10 @@ const Body = () => {
         backgroundSize:'cover'
     }} >
         <div className='w-full h-full flex items-center bg-purple bg-opacity-20 '>
-        <div className='w-11/12 mx-auto'>
-            <h1 className='w-fit mx-auto xl:text-5xl lg:text-3xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Library
+        <div className='w-10/12 mx-auto'>
+            <h1 className='w-fit xxl:text-5xl xl:text-4xl lg:text-3xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Library
             </h1>
-            <h1 className='w-fit mx-auto text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base'>Lorem ipsum dolor sit amet consectetur.</h1>
+            {/* <h1 className='w-fit text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base xxl:text-base'></h1> */}
         </div>
       </div>
     </div>
@@ -166,7 +166,7 @@ const Body = () => {
             ratione, quos suscipit.
           </h3>
         </div>
-    <div className="w-11/12 mx-auto py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div className="w-10/12 my-5 mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols- xxl:grid-cols-4 gap-4">
       {data.map((val,i)=>{
         return <div key={i} className="w-full shadow-xl rounded">
           <div className="w-full h-32" 
@@ -177,10 +177,12 @@ const Body = () => {
             backgroundSize:'cover'
           }}>
           </div>
-          <h1 className="text-base text-center font-medium border-b border-gray-300 w-fit mx-auto pb-1">
-            {val.h1}
-          </h1>
-          <div className="flex pl-9 items-center mb-2">
+          <div className="px-3">
+            <h1 className="text-base font-medium border-b border-gray-300 w-full  pb-1">
+              {val.h1}
+            </h1>
+          </div>
+          <div className="flex px-3 items-center mb-2">
             <div className="w-10 h-10 mr-3 overflow-hidden rounded-full" 
             style={{
               backgroundImage: `url(${val.name2})`,

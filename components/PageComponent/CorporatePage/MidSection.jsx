@@ -24,7 +24,7 @@ const MidSection = () => {
           We design a course for your employee or students according to organization need or as per their syllablus of universities
           </p>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 place-items-center my-5 md:my-16 px-4 md:px-10">
+        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3 gap-10 place-items-center my-5 md:my-16 px-4 md:px-10">
           {dataa.map((val, i) => {
             return (
               <div className="relative md:my-0 w-full rounded-sm overflow-hidden" key={i}>
@@ -38,7 +38,7 @@ const MidSection = () => {
                 >
                   <div className="w-full bg-main bg-opacity-70 absolute bottom-0">
                     <div className="w-full bg-white bg-opacity-25">
-                      <p className="w-full text-center text-white text-xs xl:text-sm py-3">
+                      <p className="w-full text-center text-white text-xs xl:text-sm xxl:text-sm py-3">
                         Lorem ipsum dolordolordolor. 
                       </p>
                     </div>
@@ -63,7 +63,7 @@ const MidSection = () => {
           Take a glancet the status of our classes. Choose your courses, let us
           know your time and we will fit you in therequired schedule.
         </p>
-        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8 px-16 lg:px-4 md:px-10 my-8 place-items-center">
+        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8 px-16 lg:px-4 md:px-10 my-8 place-items-center">
           {status.map((val, i) => {
             return (
               <div
@@ -71,8 +71,8 @@ const MidSection = () => {
                 className="bg-main rounded-xl w-full h-40 flex items-center justify-center text-white
                opacity-70 text-xl capitalize  flex-col  "
               >
-                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl my-2">{val.numbers}</h1>
-                <h1 className="text-base md:text-lg lg:text-xl xl:text-xl font-semibold"> {val.title}</h1>
+                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl xxl:text-4xl my-2">{val.numbers}</h1>
+                <h1 className="text-sm md:text-sm lg:text-base xl:text-base xxl:text-base font-semibold"> {val.title}</h1>
               </div>
             );
           })}

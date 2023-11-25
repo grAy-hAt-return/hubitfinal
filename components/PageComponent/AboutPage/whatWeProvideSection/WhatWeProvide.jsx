@@ -27,13 +27,13 @@ function WhatWeProvide() {
     <div>
       <div className="py-5 text-center">
         <div className=" text-main capitalize Poppins font-bold">
-          <h1 className="text-2xl">What We Provide</h1>
+          <h1 className="xxl:text-3xl text-2xl">What We Provide</h1>
         </div>
-        <p className="w-9/12 mx-auto capitalize Poppins text-center my-3 text-xs  font-light text-gray-700  ">
+        <p className="w-9/12 mx-auto capitalize Poppins text-center my-3 text-sm xxl:text-base font-light text-gray-700  ">
         At HUB IT, we offer a comprehensive suite of services encompassing cutting-edge IT training, innovative solutions, and a collaborative community. Our goal is to empower individuals with the knowledge and tools needed for success in the ever-evolving landscape of technology.
         </p>
       </div>
-      <div className="grid py-0 xl:grid-cols-3 xxl:grid-cols-3">
+      <div className="w-10/12 mx-auto grid py-0 xl:grid-cols-3 xxl:grid-cols-3">
         {data?.map((val, i) => {
           return (
             <CompanyProvide

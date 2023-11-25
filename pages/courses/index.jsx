@@ -45,21 +45,21 @@ function Course() {
               className=" opacity-75 "
             />
           </div>
-          <div className="absolute top-32 sm:top-28   md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 text-white capitalize">
+          <div className="absolute top-32 sm:top-28 md:top-40 lg:top-40 xl:top-32 xxl:top-40 left-8 sm:left-20 text-white capitalize">
             <div className="font-bold  text-3xl">our courses</div>
             <div className="Poppins text-sm mt-2">home / courses</div>
           </div>
         </div> */}
         {/* <FeaturedCourses /> */}
-        {/* <div className="pb-10 w-11/12 mx-auto "> */}
-          {/* <CourseDesign /> */}
+        <div className="pb-10 w-11/12 mx-auto ">
+          <CourseDesign />
           {/* <PopularCourses card={card} value="courses" /> */}
-        {/* </div> */}
+        </div>
         {/* <RecommendedCourse /> */}
-        <OurTopImag/>
+        {/* <OurTopImag/> */}
         {/* <FeaturedCourse/> */}
         {/* <CourseDetails/> */}
-        <CourseContent/>
+        {/* <CourseContent/> */}
       </div>
     </Layout>
   );

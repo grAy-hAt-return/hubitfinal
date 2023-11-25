@@ -90,13 +90,13 @@ const prevPage = () => {
   }
 };
   return (
-    <div className='w-full`'>
+    <div className='w-full'>
         <div className='w-10/12 mx-auto flex'>
             <div className='w-3/4 h-fit'>
                 {
                     currentPosts.map((val,i)=>{
                         return <div key={i} className='flex mb-10'>
-                            <div className='w-2/5 h-64 bg-red-500'
+                            <div className='w-2/5 h-64'
                             style={{
                                 backgroundImage: `url(${val.name})`,
                                 backgroundSize: "cover",
@@ -139,7 +139,6 @@ const prevPage = () => {
                             <GrFormNext/>
                         </button>
                         <p>
-                            {pages.length}
                         </p>  
                     </div>
                 </div>

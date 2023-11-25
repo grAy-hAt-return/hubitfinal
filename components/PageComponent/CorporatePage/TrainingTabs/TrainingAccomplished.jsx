@@ -11,7 +11,7 @@ function TrainingAccomplished() {
   ];
   return (
     <div className="">
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 sm:gap-8  w-full items-center  px-16 sm:px-4 md:px-12 my-4 md:my-8 lg:my-12 xl:my-16 ">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 xxl:grid-cols-4 gap-6 sm:gap-8  w-full items-center  px-16 sm:px-4 md:px-12 my-4 md:my-8 lg:my-12 xl:my-16 ">
         {dataa.map((val, i) => {
           return (
             <div

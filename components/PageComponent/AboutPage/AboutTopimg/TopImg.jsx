@@ -13,10 +13,10 @@ function TopImg () {
         backgroundSize:'cover'
     }} >
         <div className='w-full h-full flex items-center bg-purple bg-opacity-20 '>
-        <div className='w-11/12 mx-auto'>
-            <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>About us
+        <div className='w-10/12 mx-auto'>
+            <h1 className='xxl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>About us
             </h1>
-            <h1 className='text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base'>Home/About us</h1>
+            <h1 className='text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base xxl:text-base'>Home/About us</h1>
         </div>
       </div>
     </div>
