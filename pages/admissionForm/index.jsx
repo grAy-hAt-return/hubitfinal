@@ -300,7 +300,7 @@ function AdmissionForm() {
   ]
   return (
     <Layout>
-      <div className='w-full h-52 md:h-56 lg:h-60 xl:h-64' 
+      <div className='w-full h-52 md:h-56 lg:h-60 xl:h-64 relative' 
         style={{
             backgroundImage:`url("https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHM1fGVufDB8fDB8fHww")`,
             backgroundRepeat: 'no-repeat',
