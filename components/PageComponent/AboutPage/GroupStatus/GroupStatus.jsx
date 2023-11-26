@@ -36,7 +36,7 @@ function GroupStatus() {
                 <p className='text-4xl font-semibold text-center'>{val.counting}</p>
               </div>
               <div className="h-fit">
-                <p className=' Poppins text-xs text-center'>{val.description}</p>
+                <p className=' Poppins text-xs lg:text-sm xl:text-sm xxl:text-sm text-center'>{val.description}</p>
               </div>
             </div>
           )

@@ -166,10 +166,10 @@ function InfoSection() {
       mission.map((val,i)=>{
         return(
           <div  className="flex flex-col px-32  " key={i}>
-          <p className='text-3xl font-semibold Poppins text-main ' style={{
+          <p className='text-3xl font-semibold capitalize Poppins text-main ' style={{
             marginTop:val.top,
           }}>{val.tittle}</p>
-          <p className='text-2xl font-medium Poppins text-black  ' style={{marginTop:val.top_1}}> 
+          <p className='text-[20px] font-bold Poppins text-gray-600  ' style={{marginTop:val.top_1}}> 
            {val.mission}</p>
           <p className='text-base text-gray-600 mt-5 Poppins tracking-wider leading-5 text-left '>{val.description}</p>
          

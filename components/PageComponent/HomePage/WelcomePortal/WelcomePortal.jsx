@@ -6,7 +6,7 @@ import { BsPlayCircleFill } from "react-icons/bs";
 function WelcomePortal({ images }) {
   return (
     <div>
-      <div className="bg-[#f4f4f4] py-14 sm:py-10 xl:py-20 xxl:pt-28 xxl:pb-16 ">
+      <div className="bg-[#f4f4f4] py-14 sm:py-10 xl:py-20 xxl:pt-20 xxl:pb-16 ">
         <div
           className="Poppins text-left xl:text-left xxl:text-left capitalize 
          py-0 xl:py-3 xxl:py-3 text-gray-800 text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-2xl

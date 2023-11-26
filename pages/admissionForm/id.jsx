@@ -30,20 +30,29 @@ function id() {
     {title:"Payment"},
     {title:"Form Review"},
 ]
-const [active,setActive]= useState ("Personal Information");
+const [active,setActive]= useState (0);
 const Tabs = () =>{
-    switch (active) {
-        case "Personal Information":
-            return  <PersonalInfo/>;
-            break;
-        case "Payment":
-            return 
-            break;
-        case "Form Review":
-            return <FormReveiw/> ;
-            break;
+    if (active === 0){
+      return <PersonalInfo />;
+    }
+    else if (active === 1){
+      return <div>Payment section</div>;
+    }
+    else {
+      return <FormReveiw />;
     }
 }
+  
+  const previous = () =>{
+    if (active <= tabs.length-1){
+      return setActive(active-1);
+    }
+  }
+  const next = () =>{
+    if (active < tabs.length-1){
+      return setActive(active+1);
+    }
+  }
   return (
     <div>
       <Layout>
@@ -89,8 +98,8 @@ const Tabs = () =>{
                 {tabs.map((val,i)=>{
                     return (
                         <div key={i}
-                        className={` ${active === val.title ? "text-white bg-purple border-b-2 border-purple":""} my-0 font-medium py-3 text-center cursor-pointer`}
-                        onClick={()=> setActive(val.title)}
+                        className={`${i=== active? "bg-main text-white":""} my-0 font-medium py-3 text-center`}
+                        // onClick={()=> setActive(val.title)}
                         >
                             {val.title}
                         </div>
@@ -98,7 +107,20 @@ const Tabs = () =>{
                 })}
           </div>
           <div className=''>
-            {Tabs()}
+            {Tabs(active)}
+          </div>
+          <div className='w-full flex justify-center gap-5'>
+            <button 
+
+            onClick={()=>previous()}
+            className={`${active=== 0 ? "hidden":"block"} w-32 py-[.8%] my-5 bg-main text-white rounded-lg outline-none cursor-pointer`}>
+              Previous
+            </button>
+            <button 
+            onClick={()=>next()}
+            className='w-32 py-[.8%] my-5 bg-main text-white rounded-lg outline-none cursor-pointer hover:scale-110 transition-all duration-300'>
+              Next
+            </button>
           </div>
           {/* <PersonalInfo/> */}
         </div>

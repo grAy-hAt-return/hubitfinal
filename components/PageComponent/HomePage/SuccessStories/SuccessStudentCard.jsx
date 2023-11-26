@@ -5,13 +5,13 @@ function SuccessStudentCard({ image, placement, as, name, position }) {
   return (
     <div
       className="shadow-xl shadow-gray-400 hover:scale-105 transition-all 
-    cursor-pointer duration-300 ease-linear  w-fit   capitalize pb-5 rounded-md"
+    cursor-pointer duration-300 ease-linear w-full capitalize pb-5 rounded-md"
     >
-      <div className="w-56">
+      <div className="w-full">
         <Image
           src={image}
           height={185}
-          width={250}
+          width={290}
           alt="Loading ..."
           // layout="responsive"
           // objectFit="cover"
@@ -31,8 +31,8 @@ function SuccessStudentCard({ image, placement, as, name, position }) {
         <div className=" w-full h-0.5 bg-gray-100 my-3"></div>
 
         <div className=" Poppins text-[11px] flex justify-between">
-          <div className="text-gray-600">{name}</div>
-          <div className="text-main">{as}</div>
+          <div className="text-gray-600 text-xs">{name}</div>
+          <div className="text-main text-xs">{as}</div>
         </div>
       </div>
     </div>

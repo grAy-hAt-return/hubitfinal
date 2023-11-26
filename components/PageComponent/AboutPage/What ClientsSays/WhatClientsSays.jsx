@@ -6,7 +6,7 @@ function WhatClientsSays() {
   const [Active, setActive] = useState("regular");
   const tabs = [
     { title: "regular" },
-    // { title: "facebook" },
+    { title: "facebook" },
     { title: "google" },
   ];
 
@@ -38,32 +38,32 @@ function WhatClientsSays() {
     },
   ];
 
-  // const Facebook = [
-  //   {
-  //     image: "/images/japan.jpg",
-  //     name: "rajiv das",
-  //     title: "student",
-  //     description: `Lorem Ipsindustry. dummy text ever .`,
-  //   },
-  //   {
-  //     image: "/images/japan.jpg",
-  //     name: "raymant das",
-  //     title: "student",
-  //     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
-  //   },
-  //   {
-  //     image: "/images/japan.jpg",
-  //     name: "kavi vai",
-  //     title: "teacher",
-  //     description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
-  //   },
-  //   {
-  //     image: "/images/japan.jpg",
-  //     name: "sahil sainju",
-  //     title: "student",
-  //     description: `Lorem Ipsum is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever .`,
-  //   },
-  // ];
+  const Facebook = [
+    {
+      image: "/images/japan.jpg",
+      name: "rajiv das",
+      title: "student",
+      description: `Lorem Ipsindustry. dummy text ever .`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "raymant das",
+      title: "student",
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "kavi vai",
+      title: "teacher",
+      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "sahil sainju",
+      title: "student",
+      description: `Lorem Ipsum is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever .`,
+    },
+  ];
   const Google = [
     {
       image: "/images/japan.jpg",
@@ -144,17 +144,17 @@ function WhatClientsSays() {
           />
         );
         break;
-      // case "facebook":
-      //   return (
-      //     <Regular
-      //       clientDetails={Facebook}
-      //       StartValue={StartValue}
-      //       EndValue={EndValue}
-      //       prev={prev}
-      //       next={next}
-      //     />
-      //   );
-      //   break;
+      case "facebook":
+        return (
+          <Regular
+            clientDetails={Facebook}
+            StartValue={StartValue}
+            EndValue={EndValue}
+            prev={prev}
+            next={next}
+          />
+        );
+        break;
       case "google":
         return (
           <Regular
@@ -187,7 +187,7 @@ function WhatClientsSays() {
     <div className=" py-8 my-10">
       <div className=" text-center">
         <div className=" md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl text-main capitalize Poppins font-bold">
-          <h2 className="xxl:text-3xl text-2xl">What our students say about us</h2>
+          <h2 className="xxl:text-[33px] xl:text-3xl lg:text-2xl md:text-xl text-lg">What our students say about us</h2>
         </div>
         <div className="Poppins  font-light my-3 text-sm  text-gray-700  ">
           <p className="xxl:text-base xl:text-sm">

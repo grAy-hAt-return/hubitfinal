@@ -151,25 +151,24 @@ const Body = () => {
         <div className='w-10/12 mx-auto'>
             <h1 className='w-fit xxl:text-5xl xl:text-4xl lg:text-3xl md:text-xl text-xl font-semibold tracking-wide text-zinc-50 lg:mb-8 md:mb-6 sm:mb-4 mb-3 capitalize'>Library
             </h1>
+            <p></p>
             {/* <h1 className='w-fit text-zinc-50 md:text-sm text-xs lg:text-base capitalize xl:text-base xxl:text-base'></h1> */}
         </div>
       </div>
     </div>
-      <section className="">
+      <section className="my-10">
         <div className=" items-center justify-center  xl:mt-16 xxl:mt-16">
           <h1 className="text-center text-main font-bold text-xl md:text-3xl lg:text-3xl xl:text-3xl xxl:text-3xl">
             Our Library
           </h1>
           <h3 className="text-center text-base font-medium text-gray-600 w-7/12 mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            quisquam, officiis eveniet deserunt nemo at repellendus nam delectus
-            ratione, quos suscipit.
+          Explore a wealth of knowledge at HUB IT's Library section, offering a diverse range of IT solutions, notes, PDF files, and tutorials for comprehensive learning and training.
           </h3>
         </div>
-    <div className="w-10/12 my-5 mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols- xxl:grid-cols-4 gap-4">
+    <div className="w-10/12 my-5 mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols- xxl:grid-cols-4 gap-4 xxl:gap-x-8">
       {data.map((val,i)=>{
-        return <div key={i} className="w-full shadow-xl rounded">
-          <div className="w-full h-32" 
+        return <div key={i} className="w-full mb-3 shadow-xl rounded">
+          <div className="w-full h-48" 
           style={{
             backgroundImage:   `url(${val.name})`,
             backgroundRepeat: 'no-repeat',

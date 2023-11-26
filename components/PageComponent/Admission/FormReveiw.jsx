@@ -1,5 +1,6 @@
 import React from 'react'
 import {HiClipboardCheck} from 'react-icons/hi'
+import {TiUser} from 'react-icons/ti'
 
 function FormReveiw() {
     const formdata=[
@@ -48,7 +49,9 @@ function FormReveiw() {
             </h3>
         </div>
         <div className='flex justify-between w-full my-10 py-10 overflow-clip pr-16 bg-gray-100 p-5 rounded-lg shadow-lg shadow-gray-400 border'>
-            <div className='w-[18%] h-auto bg-cyan-200'></div>
+            <div className='w-[18%] h-auto flex justify-center items-center bg-gray-200'>
+                <TiUser className='text-[150px] text-neutral-400'/>
+            </div>
             <div className='w-[78%] grid grid-cols-4 gap-3'>
                 {formdata.map((val,i)=>{
                     return <div key={i} className='flex flex-col justify-center'>

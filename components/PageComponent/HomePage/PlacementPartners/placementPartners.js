@@ -29,7 +29,7 @@ const PlacementPartners = () => {
   return (
     <div className=" px-2 md:px-4 lg:px-20 xxl:px-32 mt-10 flex flex-col items-center ">
       <div className="w-max my-10 ">
-        <h1 className="text-[#a0047d] text-lg xl:text-xl xxl:text-2xl capitalize Poppins font-bold">
+        <h1 className="text-[#a0047d] text-lg md:text-xl lg:text-2xl xl:text-3xl xxl:text-[33px] capitalize Poppins font-bold">
         Placement Partners
         </h1>
       </div>
