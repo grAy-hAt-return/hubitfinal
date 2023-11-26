@@ -2,6 +2,8 @@ import React from 'react'
 import {FaJava, FaPython, FaNodeJs, FaScrewdriver, FaReact,FaAndroid} from 'react-icons/fa'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiAdobephotoshop} from 'react-icons/si'
+import {TbUserSearch} from 'react-icons/tb'
+
 import { Formik,Field,ErrorMessage,Form } from 'formik'
 function Hire() {
     const skillLogo=[
@@ -134,11 +136,16 @@ function Hire() {
     <div>
         <div className='w-10/12 mx-auto pt-10'>
             <div>
-                <h1 className='my-0 font-medium text-3xl'>
-                    Hired your desired skilled individual
-                </h1>
-                <p className='pr-10'>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div className='flex items-end'>
+                    <h1 className='my-0 font-medium text-3xl'>
+                        Hire your desired skilled individual
+                    </h1>
+                    <div className='text-5xl w-fit h-fit relative flex items-center justify-center text-main'>
+                        <TbUserSearch/>
+                    </div>
+                </div>
+                <p className='pr-10 mt-3 mb-5 text-neutral-800'>
+                Discover exceptional talent at HUB IT.Access a curated pool of skilled professionals ready to elevate your projects and initiatives.
                 </p>
             </div>
             <div className='grid grid-cols-2'>

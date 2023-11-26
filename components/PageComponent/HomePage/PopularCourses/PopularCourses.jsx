@@ -187,7 +187,7 @@ function PopularCourses({ card, value }) {
   });
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <div
         className={`flex flex-col justify-between ${
           value === "onlyTag"

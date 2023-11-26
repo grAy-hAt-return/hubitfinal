@@ -1,5 +1,6 @@
 import React from 'react'
 import {Form, Formik, Field,ErrorMessage} from 'formik'
+import {TiUser} from 'react-icons/ti'
 
 function PersonalInfo() {
     const formdata=[
@@ -88,7 +89,7 @@ function PersonalInfo() {
         },
     ]
   return (
-    <div className='w-full py-10 bg-gray-100 p-3 relative rounded-lg overflow-hidden'>
+    <div className='w-full py-5 bg-gray-100 p-3 px-5 relative rounded-lg overflow-hidden'>
         {/* <div>
             <Formik
             initialValues={{
@@ -165,14 +166,17 @@ function PersonalInfo() {
             </Formik>
         </div> */}
         <div className=''>
-            <div className='w-full grid grid-cols-2'>
-                <div className="flex">
-                <div className='w-52 mx-auto h-52 bg-emerald-300 mb-3'>
+            <div className='w-full  grid grid-cols-2'>
+                <div className="flex items-center pb-3 w-full h-52 flex-col">
+                <div className='w-52 mx-auto h-52 bg-gray-200 mb-3 flex items-center justify-center text-[150px] text-neutral-400'>
+                    <TiUser />
                     </div>
-                    {/* <div className='flex flex-col'>
-                            <label>Photo</label>
-                            <input type="file" name="photo" className='bg-gray-300' />
-                    </div> */}
+                    <div className='flex flex-col my-2'>
+                            <label className='relative inline-block cursor-pointer'>
+                                <input type="file" name="photo" className='hidden bg-gray-200 py-2' />
+                                Upload Photo</label>
+                            
+                    </div>
                 </div>
                 <div className='w-full h-auto flex flex-col justify-center'>
                     <div className='w-full flex flex-col my-2'>
@@ -240,15 +244,13 @@ function PersonalInfo() {
                             className='w-full my-2 bg-gray-200 p-3 outline-none rounded-lg'/>
                         </div>
                 </div>
-                <div className='flex gap-2 pr-8'>
-                    <div className='w-full flex flex-col'>
+                <div className='flex w-full  gap-5 pr-6'>
+                    <div className='w-[65%] flex flex-col'>
                         <label>
                             Gurdian Name
                         </label>
                         <input type='text' placeholder='Enter your full name' name='fullName' className='w-full my-2 bg-gray-200 p-3 outline-none rounded-lg'/>
                     </div>
-                </div>
-                <div className='flex gap-5'>
                     <div className='w-[28%] flex flex-col'>
                         <label>
                             Gurdian contact
@@ -256,15 +258,18 @@ function PersonalInfo() {
                         <input type='text' placeholder='Gurdain contact' name='phoneNo' 
                         className='w-full my-2 bg-gray-200 p-3 outline-none rounded-lg'/>
                     </div>
+                </div>
+                <div className='flex justify-between'>
                     <div className='flex flex-col w-fit'>
                             <label>
                                 Course
                             </label>
-                            <select name="select" className='px-3 pr-4 py-3 my-2 rounded-lg outline-none bg-gray-200'>
-                                <option>Mernstack</option>
-                                <option>Web Design</option>
-                                <option>Graphic Design</option>
-                                <option>Hardware repairing</option>
+                            <select name="select" className='w-fit py-3 my-2 rounded-lg outline-none` bg-gray-200'>
+                                <option >Mernstack</option>
+                                <option >Web Design</option>
+                                <option >Graphic Design</option>
+                                <option >Hardware repairing</option>
+                                <option >Advance Chip level desktop and Laptop Repairing Course</option>
                             </select>
                         </div>
                     <div className='flex flex-col w-fit'>

@@ -27,7 +27,7 @@ function CertificateMid() {
             className="bg-white border-2 border-main rounded-3xl w-full px-3 py-2"
           />
         </div>
-        <div className="flex justify-end md:w-6/12 lg:w-6/12 xl:w-6/12 xxl:w-6/12 xxxl:w-6/12">
+        <div className="flex justify-center md:w-6/12 w-full items-center">
           {" "}
           <button
             className="bg-main px-16 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20  py-2 my-12 capitalize rounded-3xl text-white text-sm md:text-base lg:text-base xl:text-lg xxl:text-xl hover:scale-[1.04] transition-all

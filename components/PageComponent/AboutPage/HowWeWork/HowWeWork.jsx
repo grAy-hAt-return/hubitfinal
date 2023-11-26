@@ -60,19 +60,18 @@ function HowWeWork() {
 
         <div className="text-xs xxl:text-base font-normal text-regular Poppins  w-5/6  text-center mx-auto  mt-5 text-gray-400   capitalize">
           <p className="w-9/12 mx-auto">
-         HUB IT, we work collaboratively, leveraging diverse talents to deliver cutting-edge IT solutions and training. Our approach is dynamic, ensuring innovation and excellence in every endeavor.
+         {/* HUB IT, we work collaboratively, leveraging diverse talents to deliver 
+         cutting-edge IT solutions and training. Our approach is dynamic, ensuring innovation and excellence in every endeavor. */}
+         HUB IT: Collaboratively delivering cutting-edge IT solutions and training with dynamic innovation and excellence.
           </p>
         </div>
-        
           {
-            
             working.map((val,i)=>{
               return( <div key={i} className="relative w-48 md:w-52 lg:w-56 h-48 md:h-52 lg:h-56 xl:w-60 xxl:w-64 xl:h-60 xxl:h-64 mx-auto my-6 ">
                        <Image src={val.image} alt='' className='' layout="fill"/>
                        </div>
               )
             })
-            
           }
       </div>
         <div>

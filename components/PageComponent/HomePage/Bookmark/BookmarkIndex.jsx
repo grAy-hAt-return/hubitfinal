@@ -22,7 +22,7 @@ function BookmarkIndex() {
                                 {val.h1}
                             </h1>
                         </div>
-                        <p className='xl:max-w-[35ch] lg:max-w-[35ch] w-full xxl:text-base xl:text-base lg:text-base md:text-base sm:text-sm text-xs xxl:font-normal xl:font-normal lg:font-normal md:font-normal font-medium  text-justify '>
+                        <p className='xl:max-w-[35ch] lg:max-w-[35ch] w-full xxl:text-base xl:text-base lg:text-base md:text-base sm:text-sm text-xs xxl:font-normal xl:font-normal lg:font-normal md:font-normal font-medium  text-justify tracking-tight'>
                             {val.p}
                         </p>
                 </div>

@@ -55,7 +55,7 @@ function Grid() {
         <div className='w-10/12 mx-auto flex gap-5'>
             {heading.map((val,i)=>{
                 return <button key={i}>
-                    <h3 className='text-base md:text-lg lg:text-xl xl:text-xl xxl:text-2xl text-neutral-800 my-0 hover:text-purple font-medium'>{val.h1}</h3>
+                    <h3 className='text-base md:text-lg lg:text-xl xl:text-xl xxl:text-2xl text-neutral-800 my-0 hover:text-purple border-b-2 border-neutral-800 hover:border-main font-medium'>{val.h1}</h3>
                 </button>
             })}
         </div>

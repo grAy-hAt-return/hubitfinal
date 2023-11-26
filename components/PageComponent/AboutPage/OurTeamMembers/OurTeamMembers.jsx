@@ -40,13 +40,17 @@ function OurTeamMembers() {
         </div>
 
         <p className="Poppins xxl:text-base font-normal text-xs leading-6   w-4/6  text-center mx-auto   text-gray-400">
-        Our team at HUB IT comprises dedicated and skilled professionals, pooling their expertise to drive excellence in the IT landscape. Together, we form a dynamic force committed to providing top-notch solutions and training for a tech-savvy future.
+        {/* Our team at HUB IT comprises dedicated and skilled professionals, pooling 
+        their expertise to drive excellence in the IT landscape. Together, we form a dynamic force committed to providing top-notch solutions and training for a tech-savvy future. */}
+        {/* At HUB IT, our skilled team is dedicated to driving IT excellence. We provide 
+        top-notch solutions and training for a tech-savvy future. */}
+          HUB IT's dedicated team drives IT excellence, offering top-notch solutions and training for a tech-savvy future.
         </p>
       </div>
       <div
         className="w-11/12 mx-auto  place-content-center place-items-center grid grid-cols-1 gap-y-8  md:grid-cols-2 md:gap-y-8
        lg:gap-y-8 xl:gap-y-0  xxl:gap-y-0 lg:grid-cols-3 xl:grid-cols-4
-       xxl:grid-cols-4 px-14 pt-16"
+       xxl:grid-cols-4 px-14 pt-11"
       >
         {OurTeamMembersCard.map((val, i) => {
           return (

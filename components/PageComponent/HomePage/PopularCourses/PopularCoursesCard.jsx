@@ -30,7 +30,7 @@ function PopularCoursesCard({
           />
         )}
       </div>
-      <div className=" px-4  flex flex-col items-center justify-center my-6  ">
+      <div className=" px-4 flex flex-col items-center justify-center my-6  ">
         <div className="Poppins capitalize font-semibold  text-gray-800">
           <h1 className="text-2xl">{CourseTittle}</h1>
         </div>

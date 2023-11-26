@@ -50,18 +50,18 @@ const WhyHub = () => {
   ];
 
   return (
-    <div className="px-4 md:px-8 lg:px-20 xl:px-24 xxl:px-32 w-full h-max my-16 Poppins">
+    <div className="px-4 md:px-8 lg:px-20 xl:px-24 xxl:w-10/12 mx-auto w-full h-max my-16 Poppins">
       <div className="flex flex-col lg:flex-col xl:flex-col xxl:flex-col w-full h-max gap-7 items-center justify-center">
         <div className="flex justify-center  w-full lg:w-2/6 xl:w-2/6 xxl:w-2/6 ">
-          <div className="w-max text-lg xl:text-xl xxl:text-2xl capitalize Poppins font-bold">
+          <div className="w-max text-lg md:text-xl lg:text-xl xl:text-3xl xxl:text-[33px]  capitalize Poppins font-bold">
             Why Choose
-            <span className="w-max p-1 text-[#a0047d] text-lg xl:text-xl xxl:text-2xl capitalize Poppins font-bold text-justify ">
+            <span className="w-max p-1 text-[#a0047d] text-lg md:text-xl lg:text-xl xl:text-3xl xxl:text-[33px] capitalize Poppins font-bold text-justify ">
              HUBIT
           </span>
           </div>
           
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-2 xs:grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 xxl:grid-cols-3 gap-x-20 gap-y-12 w-full lg:w-[100%] xl:w-5/6 xxl:w-5/6">
+        <div className="grid grid-cols-2 md:grid-cols-2 xs:grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 xxl:grid-cols-3 gap-x-10 gap-y-12 w-full lg:w-[100%] xl:w-5/6 xxl:w-full">
           {data.map((item,i) => {
             return (
               <div key={i}>
@@ -72,10 +72,10 @@ const WhyHub = () => {
                     {item.icon}
                   </div>
                   <div className="h-full w-full flex flex-col ">
-                  <div className=" xl:text-sm xxl:text-base w-full h-fit">
+                  <div className=" xxl:text-base w-full h-fit">
                     <h1 className=" text-xl font-medium">{item.title}</h1>
                   </div>
-                  <div className="w-full h-full text-justify text-xs xl:text-xs  xxl:text-sm text-gray-500">
+                  <div className="w-full h-full text-justify text-sm lg:text-base xl:text-base xxl:text-base text-gray-500">
                     {item.description}
                   </div>
                   </div>

@@ -30,7 +30,9 @@ function WhatWeProvide() {
           <h1 className="xxl:text-3xl text-2xl">What We Provide</h1>
         </div>
         <p className="w-9/12 mx-auto capitalize Poppins text-center my-3 text-sm xxl:text-base font-light text-gray-700  ">
-        At HUB IT, we offer a comprehensive suite of services encompassing cutting-edge IT training, innovative solutions, and a collaborative community. Our goal is to empower individuals with the knowledge and tools needed for success in the ever-evolving landscape of technology.
+        {/* At HUB IT, we offer a comprehensive suite of services encompassing 
+        cutting-edge IT training, innovative solutions, and a collaborative community. Our goal is to empower individuals with the knowledge and tools needed for success in the ever-evolving landscape of technology. */}
+        At HUB IT, we provide top-tier IT training, innovative solutions, and foster a collaborative community. Our mission is to empower individuals with the knowledge and tools for success in the dynamic tech landscape.
         </p>
       </div>
       <div className="w-10/12 mx-auto grid py-0 xl:grid-cols-3 xxl:grid-cols-3">
