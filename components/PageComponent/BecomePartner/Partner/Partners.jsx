@@ -1,5 +1,8 @@
 import React from 'react'
 import Shape from './Shape'
+import PartnerLog from '../../BecomePartner/Singn & Login/PartnerLog'
+import Link from 'next/link'
+
 
 function Partners() {
     const data=[
@@ -28,8 +31,9 @@ function Partners() {
                                     {val.p}
                                 </p>
                                 <div className=''>
-                                    <button className='w-20 sm:w-28 md:w-32 lg:w-40 xl:w-44 xxl:w-44 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 my-2 md:my-3 lg:my-4 xl:my-5 xxl:my-5 text-sm md:text-base lg:text-base xl:text-base xxl:text-base capitalize text-center border-2 rounded-3xl mx-2 border-purple hover:bg-white hover:scale-110 hover:text-purple bg-purple text-white transition-all duration-400 ease-in-out'>
-                                        join now 
+                                    <button className='w-20 sm:w-28 md:w-32 lg:w-40 xl:w-44 xxl:w-44 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 my-2 md:my-3 lg:my-4 xl:my-5 xxl:my-5 text-sm md:text-base lg:text-base xl:text-base xxl:text-base capitalize text-center border-2 rounded-3xl mx-2 border-purple hover:bg-white hover:scale-110 hover:text-purple bg-purple text-white transition-all duration-400 ease-in-out '>
+                                        <Link href={{
+                    pathname: `/signup`}}>Join now</Link>
                                     </button>
                                     <button className='w-28 sm:w-28 md:w-32 lg:w-40 xl:w-44 xxl:w-44 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 my-2 md:my-3 lg:my-4 xl:my-5 xxl:my-5 text-sm md:text-base lg:text-base xl:text-base xxl:text-base capitalize text-center  border-2 rounded-3xl mx-2 border-purple bg-white text-purple hover:bg-purple hover:scale-110 hover:text-white
                                     transition-all duration-400 ease-in-out'>
@@ -45,7 +49,9 @@ function Partners() {
                     Already Have A Partner Account ?
                     </h1>
                     <button className='w-20 md:w-24 lg:w-28 xl:w-40 xxl:w-40 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 text-sm md:text-base lg:text-base xl:text-base xxl:text-base mt-5 capitalize text-center border-2 rounded-3xl mx-2 border-purple hover:bg-white hover:scale-110 hover:text-purple bg-purple text-white transition-all duration-400 ease-in-out'>
-                    Log in
+                        <Link href={{pathname:`/login`}}>
+                            Login
+                        </Link>
                     </button>
                     <div className='hidden md:block lg:block xl:block xxl:block w-full md:h-[300px] lg:h-[380px] xl:h-[400px] xxl:h-[450px] absolute md:top-32 lg:bottom-10 xxl:bottom-4 right-0'>
                         <Shape/>

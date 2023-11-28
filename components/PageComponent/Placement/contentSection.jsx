@@ -22,7 +22,7 @@ const ContentSection = () => {
             </p>
           </div>
           <div className="w-2/4 relative md:block lg:block xl:block xxl:block hidden">
-            <div className="w-3/5 h-96 mx-auto relative -top-20 z-20 shadow-xl" 
+            <div className="w-4/5 h-84 mx-auto relative -top-20 z-20 shadow-xl" 
             style={{
               backgroundImage: `url("https://images.unsplash.com/photo-1584697964190-7383cbee8277?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU4fHxlZHVjYXRpb258ZW58MHx8MHx8fDA%3D")`,
               backgroundSize: "cover",

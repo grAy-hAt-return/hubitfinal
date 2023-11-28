@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 // import /japan.jpg from "";
 import Regular from "./TabComponents/Regular";
 import axios from "axios";
-function WhatClientsSays() {
+import Video from "../../HomePage/Testimonials/Video";
+function WhatClientsSays({status}) {
   const [Active, setActive] = useState("regular");
   const tabs = [
     { title: "regular" },
     { title: "facebook" },
     { title: "google" },
+    { title: "video" },
   ];
 
   const Regulars = [
@@ -43,25 +45,49 @@ function WhatClientsSays() {
       image: "/images/japan.jpg",
       name: "rajiv das",
       title: "student",
-      description: `Lorem Ipsindustry. dummy text ever .`,
+      description: `Lorem Ipsindustry. dummy text ever I've been studying here for last 2 and a half months it's been a very fruitfull journey I've been studying here for last 2 and a half months it's been a very fruitfull journeyI've been studying here for last 2 and a half months.`,
     },
     {
       image: "/images/japan.jpg",
       name: "raymant das",
       title: "student",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever . God told me,DIVNE, you see that Water , walk on it.Learnt Everything on the road, I was so so in the board.`,
     },
     {
       image: "/images/japan.jpg",
       name: "kavi vai",
       title: "teacher",
-      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Now every kids rapping on the corner of the every street. When every dreams comes true , that's when it's fun to sleep. yaeah yeadh you know it. so let's check it out hommy.`,
     },
     {
       image: "/images/japan.jpg",
       name: "sahil sainju",
       title: "student",
-      description: `Lorem Ipsum is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `Keep your fame, you and I ain't the same. This is a Captain's innings, it's that kholi's type shot. This that come right outside your house, rangoli type shot. Since 16 I've been a killer, since 16 I've been a hot. The most dangerous coats, like the tailers like my pop.`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "kavi vai",
+      title: "teacher",
+      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Now every kids rapping on the corner of the every street. When every dreams comes true , that's when it's fun to sleep. yaeah yeadh you know it. so let's check it out hommy.`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "sahil sainju",
+      title: "student",
+      description: `Keep your fame, you and I ain't the same. This is a Captain's innings, it's that kholi's type shot. This that come right outside your house, rangoli type shot. Since 16 I've been a killer, since 16 I've been a hot. The most dangerous coats, like the tailers like my pop.`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "kavi vai",
+      title: "teacher",
+      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. Now every kids rapping on the corner of the every street. When every dreams comes true , that's when it's fun to sleep. yaeah yeadh you know it. so let's check it out hommy.`,
+    },
+    {
+      image: "/images/japan.jpg",
+      name: "sahil sainju",
+      title: "student",
+      description: `Keep your fame, you and I ain't the same. This is a Captain's innings, it's that kholi's type shot. This that come right outside your house, rangoli type shot. Since 16 I've been a killer, since 16 I've been a hot. The most dangerous coats, like the tailers like my pop.`,
     },
   ];
   const Google = [
@@ -69,25 +95,28 @@ function WhatClientsSays() {
       image: "/images/japan.jpg",
       name: "rohit karki",
       title: "student",
-      description: `Lorem Ipsindustry. dummy text ever .`,
+      description: `edited my image and made a meme out of it. Your Man put in the work, filled  his dreams out of it.You man put in the work, fullfilled his dream out of it.Movies and the  streets, I made them the scene. Took my own time, dropped the biggest  track ever seen. `,
     },
     {
       image: "/images/japan.jpg",
       name: "nischal karki",
       title: "student",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `I saw teachers after thugs.I saw tiffin box after drugs. I am only 29 but it seems like I've seen it all. In relationship i've seen less love,more distrust.For these riches there was more hard work, little luck. Yeah we get high, that's why i dont. No no life a circus Even 69 gets veiws.'`,
     },
     {
       image: "/images/japan.jpg",
       name: "pratik karki",
       title: "teacher",
-      description: `ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `I saw teachers after thugs.I saw tiffin box after drugs. I am only 29 but it seems like I've seen it all. In relationship i've seen less love,more distrust.For these riches there was more hard work, little luck. Yeah we get high, that's why i dont. No no life a circus Even 69 gets veiws.`,
     },
     {
       image: "/images/japan.jpg",
       name: "goma  karki",
       title: "student",
-      description: `Lorem Ipsum is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever .`,
+      description: `Woven from hundreds of flowers, we are one garland
+      National unity has become our pride
+      Sing the song of the Motherland, saying, "May it be so, O sweet Motherland!"
+      in the bloom of our age`,
     },
     {
       image: "/images/japan.jpg",
@@ -102,10 +131,13 @@ function WhatClientsSays() {
       description: `Lorem Ipsum is simply dummy  Lorem Ipsum has been the industry's standard dummy text ever .`,
     },
   ];
+  const video = ()=>{
+    return <Video/>
+  }
   const [counter, setCounter] = useState(1);
   const [pagination, setPagination] = useState({
     start: 0,
-    end: 2,
+    end: 4,
   });
   // logic starts for slicing card for dynamic numbers
   let EndValue = counter * pagination.end;
@@ -166,6 +198,9 @@ function WhatClientsSays() {
           />
         );
         break;
+      case "video":
+        return <Video/>
+        break;
       default:
         break;
     }
@@ -185,25 +220,25 @@ function WhatClientsSays() {
   // }, [])
   return (
     <div className=" py-8 my-10">
-      <div className=" text-center">
+      <div className={`${status === "hidden" ? "hidden":"block text-center"}`}>
         <div className=" md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl text-main capitalize Poppins font-bold">
           <h2 className="xxl:text-[33px] xl:text-3xl lg:text-2xl md:text-xl text-lg">What our students say about us</h2>
         </div>
-        <div className="Poppins  font-light my-3 text-sm  text-gray-700  ">
+        <div className="Poppins font-light my-3 text-sm  text-gray-700  ">
           <p className="xxl:text-base xl:text-sm">
             Here are some testimonials about the experience of our students in
             <span className="text-main font-medium">HUB IT TRAINING</span>
           </p>
         </div>
       </div>
-      <div className="flex gap-3 px-[6rem] capitalize Popppins font-semibold">
+      <div className="flex gap-3 px-[6rem] capitalize Popppins font-semibold mb-5">
         {tabs.map((val, i) => {
           return (
             <div
               key={i}
               className={`cursor-pointer ${
                 Active === val.title ? "text-main" : ""
-              }`}
+              } `}
               onClick={() => setActive(val.title)}
             >
               {val.title}

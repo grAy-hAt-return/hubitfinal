@@ -6,9 +6,6 @@ import PersonalInfo from '../../components/PageComponent/Admission/PersonalInfo'
 import Layout from "../../HOC/Layout/Layout";
 import FormReveiw from '../../components/PageComponent/Admission/FormReveiw'
 
-
-
-
 function id() {
   const headings=[
     {h1:"become a professional",

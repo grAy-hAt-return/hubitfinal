@@ -51,10 +51,10 @@ function Course() {
           </div>
         </div> */}
         {/* <FeaturedCourses /> */}
-        <div className="pb-10 w-11/12 mx-auto ">
+        {/* <div className="pb-10 w-11/12 mx-auto "> */}
           <CourseDesign />
           {/* <PopularCourses card={card} value="courses" /> */}
-        </div>
+        {/* </div> */}
         {/* <RecommendedCourse /> */}
         {/* <OurTopImag/> */}
         {/* <FeaturedCourse/> */}

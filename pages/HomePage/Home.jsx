@@ -4,6 +4,8 @@ import Icons from "../../components/Navigation/Navitem/iconitem";
 import teacher from "../../public/teacher.png";
 import Image from "next/image";
 import Link from "next/link";
+import {FaCrown, FaUserTie} from "react-icons/fa"
+import {GiNetworkBars} from "react-icons/gi"
 
 function Home() {
   const heading=[
@@ -29,6 +31,20 @@ function Home() {
     {h1:"Cyber security"},
     {h1:"Cyber security"},
   ]
+  const iconsArray=[
+    {h1:"become a professional",
+     icon:<FaUserTie/> ,
+     color:"text-professional" 
+    },
+    {h1:"master your skills",
+     icon:<FaCrown/>  ,
+     color:"text-crown" 
+    },
+    {h1:"Learn from developers",
+     icon:<GiNetworkBars/> ,
+     color:"text-level"  
+    },
+  ]
   return (
     <>
       <div className="w-full h-fit py-20 flex items-center justify-center bg-[#fafafa]">
@@ -37,21 +53,35 @@ function Home() {
           w-fit h-fit justify-center md:px-8 lg:px-20 xl:px-24 xxl:px-32 px-4 bg-[#fafafa]"
       >
         <div className="h-max md:w-5/6 mt-8 lg:w-3/6 xl:w-3/6 xxl:w-3/5 w-full ">
-          <div className="flex mb-3">
-            {Icons.map((icon, index) => {
-              return (
-                <div
-                  key={index}
-                  className="p-1 rounded-full bg-transparent flex justify-center items-center border border-[#A0047D] hover:border-none mr-2"
-                >
-                  <span className="text-[#A0047D] cursor-pointer hover:scale-90 duration-300 delay-200 transition-all text-base xl:text-lg xxl:text-xl">
-                    <Link href={icon.path} passHref>
-                      <a target={"_blank"}>{icon.icon}</a>
-                    </Link>
-                  </span>
-                </div>
-              );
-            })}
+          <div className="flex mb-3 justify-between items-baseline">
+            <div className="flex">
+              {Icons.map((icon, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="p-1 rounded-full bg-transparent flex justify-center items-center border border-[#A0047D] hover:border-none mr-2"
+                  >
+                    <span className="text-[#A0047D] cursor-pointer hover:scale-90 duration-300 delay-200 transition-all text-base xl:text-lg xxl:text-xl">
+                      <Link href={icon.path} passHref>
+                        <a target={"_blank"}>{icon.icon}</a>
+                      </Link>
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            {/* <div className="flex w-fit h-fit">
+              {iconsArray.map((val,i)=>{
+                  return <div key={i} className="flex items-baseline mx-2">
+                    <div className={`${val.color} h-fit mx-1 text-lg md:text-xl lg:text-xl xl:text-2xl mb-0 pb-0`}>
+                      {val.icon}
+                    </div>
+                    <h1 className={`${val.color} md:text-sm text-xs capitalize my-0 font-light`}>
+                      {val.h1}
+                    </h1>
+                  </div>
+                })}
+            </div> */}
           </div>
           <div className="w-full flex flex-col font-bold xl:text-xl xxl:text-2xl text-[#A0047D] ">
             <h2>IT Training Institute in Nepal</h2>
@@ -87,10 +117,22 @@ function Home() {
           <div className="w-ful my-5 flex flex-wrap">
               {heading.map((val,i)=>{
                 return <div key={i} className="mr-2 w-fit mb-2 rounded-3xl border-main border">
-                  <p className="text-xs font-light px-2 py-2 capitalize w-fit  ">{val.h1}</p>
+                  <p className="text-xs font-light px-2 py-[6px] capitalize w-fit  ">{val.h1}</p>
                 </div>
               })}
           </div>
+          <div className="flex w-full place-content-end  h-fit">
+              {iconsArray.map((val,i)=>{
+                  return <div key={i} className="flex items-baseline mx-2">
+                    <div className={`${val.color} h-fit mx-1 text-lg md:text-xl lg:text-xl xl:text-2xl mb-0 pb-0`}>
+                      {val.icon}
+                    </div>
+                    <h1 className={`${val.color} md:text-sm text-xs capitalize my-0 font-light`}>
+                      {val.h1}
+                    </h1>
+                  </div>
+                })}
+            </div>
         </div>
 
         <div className="h-full w-full mt-8  md:mt-4 lg:mt-0 xl:mt-0 mx-auto lg:w-3/6 xl:w-3/6 xxl:w-2/5">

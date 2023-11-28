@@ -33,7 +33,7 @@ function AboutUs() {
           <TouchButton/>
           <WhatWeProvide />
           <OurAchievements />
-          <WhatClientsSays />
+          <WhatClientsSays status="show"/>
           <OurTeamMembers />
           <HowWeWork />
           <FindUsOn />

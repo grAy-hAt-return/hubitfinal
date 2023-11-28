@@ -247,8 +247,8 @@ function PopularCourses({ card, value }) {
               }
             }}
             ref={currentPageRef}
-            className={` pb-5 grid grid-cols-1 mt-8 md:mb-8   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
-         xl:grid-cols-4 xxl:grid-cols-4 gap-5 w-[70%] sm:w-[80%] md:w-full lg:w-full xl:w-full mx-auto`}
+            className={`pb-5 grid grid-cols-1 mt-8 md:mb-8   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+         xl:grid-cols-4 xxl:grid-cols-4 gap-5 xxl:gap-8 w-[70%] sm:w-[80%] md:w-full lg:w-full xl:w-full xxl:w-11/12 mx-auto`}
           >
             {card?.slice(StartValue, EndValue)?.map((val, i) => {
               return (
@@ -410,7 +410,7 @@ function PopularCourses({ card, value }) {
             className=" px-4 py-2  flex items-center justify-center  bg-gray-300  hover:cursor-pointer"
             onClick={() => prev()}
           >
-            <FaChevronLeft className="w-5 h-5  text-white" />
+            <FaChevronLeft className="w-5 h-5 text-xl text-white" />
           </div>
           <div className="flex gap-3">
             {pagination.pageCount.map((val, i) => {

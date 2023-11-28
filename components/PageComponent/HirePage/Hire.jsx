@@ -43,72 +43,72 @@ function Hire() {
     
     const courses=[
         {lable:"Graphic Designing",
-        type:"radio",
+        type:"checkbox",
         identity:"graphicDesign"
         },
         {lable:"web Designing",
-        type:"radio",
+        type:"checkbox",
         identity:"webDesigning"
         },
         {lable:"BackEnd Development",
-        type:"radio",
+        type:"checkbox",
         subdata: [
             {label:"PHP, Lavarel",
-            type:"radio",
+            type:"checkbox",
             identity:"PHPLavarel"},
             {label:"Python With Django",
-            type:"radio",
+            type:"checkbox",
             identity:"PythonWithDjango"},
             {label:"Node JS",
-            type:"radio",
+            type:"checkbox",
             identity:"NodeJS"},
         ]
         },
         {lable:"Data Base",
-        type:"radio",
+        type:"checkbox",
         subdata: [
-            {label:"SQL",type:"radio",
+            {label:"SQL",type:"checkbox",
             identity:"SQL"},
-            {label:"Oracle",type:"radio",
+            {label:"Oracle",type:"checkbox",
             identity:"Oracle"},
         ]
         },
         {lable:"Hardware Expert",
-        type:"radio",
+        type:"checkbox",
         subdata: [
-            {label:"Basic Hardware and Networkinig",type:"radio",
+            {label:"Basic Hardware and Networkinig",type:"checkbox",
             identity:"BasicHardwareandNetworkinig"},
-            {label:"Printer Repairing",type:"radio",
+            {label:"Printer Repairing",type:"checkbox",
             identity:"PrinterRepairing"},
-            {label:"chip Level Repairing",type:"radio",
+            {label:"chip Level Repairing",type:"checkbox",
             identity:"chipLevelRepairing"},
         ]
         },
         {lable:"Engineering Drawing",
-        type:"radio",
+        type:"checkbox",
         identity:"EngineeringDrawing"
         },
         {lable:"Software Development",
-        type:"radio",
+        type:"checkbox",
         subdata: [
-            {label:"Python",type:"radio",
+            {label:"Python",type:"checkbox",
             identity:"Python"},
-            {label:"Java",type:"radio",
+            {label:"Java",type:"checkbox",
             identity:"Java"},
-            {label:"Java",type:"radio",
+            {label:"Java",type:"checkbox",
             identity:"Java"},
-            {label:"NET",type:"radio",
+            {label:"NET",type:"checkbox",
             identity:"NET"},
         ]
         },
         {lable:"Job Types",
-        type:"radio",
+        type:"checkbox",
         subdata: [
-            {label:"chip Level Repairing",type:"radio",
+            {label:"chip Level Repairing",type:"checkbox",
             identity:"chipLevelRepairing"},
-            {label:"chip Level Repairing",type:"radio",
+            {label:"chip Level Repairing",type:"checkbox",
             identity:"chipLevelRepairing"},
-            {label:"chip Level Repairing",type:"radio",
+            {label:"chip Level Repairing",type:"checkbox",
             identity:"chipLevelRepairing"},
         ]
         },
@@ -239,7 +239,7 @@ function Hire() {
                     </div>
                 </div>
             </div> 
-            <div className='flex my-10'>
+            <div className='flex my-10 '>
                 <div className='w-2/4  border-r-8 pl-5 pr-2 relative border-boxyellwo'>
                         <div className='w-full h-full  bg-[url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1vbml0b3J8ZW58MHx8MHx8fDA%3D")] bg-no-repeat bg-center bg-cover blur-[2px]'
                         >
@@ -272,6 +272,10 @@ function Hire() {
                         }}
                     </Formik>
                 </div>         
+            </div>
+            <div className='w-fit mx-auto my-10'>
+                <button type='submit'
+                className='border-2 border-main text-main hover:bg-main hover:text-white w-28 h-10 rounded-md transition-all duration-300'>Submit</button>
             </div>
         </div>
     </div>

@@ -73,7 +73,7 @@ const totalPost = data.length;
 };
 
 const nextPage = () => {
-  if (currentPage < pages.length) {
+  if (currentPage < pages.length+1) {
     setCurrentPage(currentPage + 1);
   }
   else {
@@ -86,7 +86,7 @@ const prevPage = () => {
     setCurrentPage(currentPage - 1);
   }
   else {
-    setCurrentPage(pages.length);
+    setCurrentPage(pages.length+1);
   }
 };
   return (
