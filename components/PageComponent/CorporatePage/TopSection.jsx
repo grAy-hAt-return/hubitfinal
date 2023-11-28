@@ -56,7 +56,7 @@ const TopSection = () => {
             </p>
           </div>
           <div className="w-2/4 relative md:block lg:block xl:block xxl:block hidden">
-            <div className="w-3/5 h-96 mx-auto relative -top-20 z-20 shadow-xl" 
+            <div className="w-4/5 h-84 mx-auto relative -top-20 z-20 shadow-xl" 
             style={{
               backgroundImage: `url("https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FydG9vbnxlbnwwfHwwfHx8MA%3D%3D")`,
               backgroundSize: "cover",

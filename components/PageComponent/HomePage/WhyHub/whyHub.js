@@ -75,7 +75,7 @@ const WhyHub = () => {
                   <div className=" xxl:text-base w-full h-fit">
                     <h1 className=" text-xl font-medium">{item.title}</h1>
                   </div>
-                  <div className="w-full h-full text-justify text-sm lg:text-base xl:text-base xxl:text-base text-gray-500">
+                  <div className="w-full h-full text-left pr-4 text-sm lg:text-base xl:text-base xxl:text-base text-gray-500">
                     {item.description}
                   </div>
                   </div>

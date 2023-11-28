@@ -46,7 +46,6 @@ function Regular({ clientDetails, StartValue, EndValue, prev, next }) {
                       {val.description}
                     </div>
                   </div> */}
-
                         <div className="flex w-full justify-between">
                         <div className='flex items-end'>
                             <ImQuotesLeft className='text-3xl xxl:text-4xl text-[#767676]'/>
@@ -71,7 +70,7 @@ function Regular({ clientDetails, StartValue, EndValue, prev, next }) {
                         </div>
                         </div>
                     
-                        <p className='text-sm xxl:text-base pt-2 w-full text-justify xl:max-w-[30ch]'>
+                        <p className='text-sm xxl:text-base h-[210px] overflow-y-clip pt-2 w-full text-left xl:max-w-[30ch] '>
                             {val.description}
                         </p>
                         <div className='flex flex-row items-center sm:items-start md:items-start lg:items-start xl:items-start xxl:items-start justify-between sm:flex-col md:flex-col lg:flex-col xl:flex-col xxl:flex-col'>

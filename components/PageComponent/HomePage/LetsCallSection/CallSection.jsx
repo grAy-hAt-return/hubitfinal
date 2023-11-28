@@ -40,10 +40,10 @@ function CallSection() {
 
   return (
     <>
-      <div className="w-full bg-[#EEEAEA] mt-7 lg:mt-14 xl:mt-14 xxl:mt-14 py-8 px-10  lg:py-24 xl:py-24 xxl:py-24 ">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2">
-          <div className="text-center items-center capitalize    ">
-            <h2 className="h-fit  text-xl  xl:text-2xl xxl:text-2xl font-bold Poppins">
+      <div className="w-full bg-[#EEEAEA] mt-7 lg:mt-14 xl:mt-14 xxl:mt-14 py-8 px-10  lg:py-24 xl:py-24 xxl:py-5 ">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2 place-items-center">
+          <div className="text-center capitalize">
+            <h2 className="h-fit text-left my-3  text-xl  xl:text-2xl xxl:text-2xl font-bold Poppins">
               {" "}
               let us give you a <span className="text-main">quick call</span>!
             </h2>
@@ -66,9 +66,9 @@ function CallSection() {
           >
             {({ handleSubmit }) => (
               <Form onSubmit={handleSubmit}>
-                <div className="w-full   flex flex-col items-center ">
+                <div className="w-full flex flex-col items-center ">
                   <div className="w-full  grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 xxl:grid-cols-2 mx-10 ">
-                    <div className="w-full  flex flex-col  relative ">
+                    <div className="w-full flex items-start flex-col relative ">
                       <div>
                         <IoPerson className="text-xl absolute top-2 left-4 text-gray-400" />
                       </div>
@@ -84,27 +84,35 @@ function CallSection() {
                         className="text-xs text-red-500"
                       />
                     </div>
-                    <div className=" flex flex-col relative">
-                      <IoIosCall className="text-xl absolute top-2 left-4 text-gray-400" />
-                      <Field
-                        type="text"
-                        name="phone"
-                        placeholder="Phone Number"
-                        className="w-full border-none py-2 pl-10 pr-3 rounded-2xl text-center placeholder:text-[14px] md:placeholder:text-base lg:placeholder:text-base xl:placeholder:text-base text-[14px] md:text-base lg:text-base xl:text-base"
-                      />
-                      <ErrorMessage
-                        name="phone"
-                        component={"div"}
-                        className="text-xs text-red-500"
-                      />
+                    <div className=" flex place-items-start  ">
+                      <div className="relative">
+                        <IoIosCall className="text-xl absolute top-2 left-2 text-gray-400" />
+                        <Field
+                          type="text"
+                          name="phone"
+                          placeholder="Phone Number"
+                          className="w-full border-none py-2 pl-8 pr-3 rounded-2xl text-center placeholder:text-[14px] md:placeholder:text-base lg:placeholder:text-base xl:placeholder:text-base text-[14px] md:text-base lg:text-base xl:text-base"
+                        />
+                        <ErrorMessage
+                          name="phone"
+                          component={"div"}
+                          className="text-xs text-red-500"
+                        />
+                      </div>
+                      <div className=" md:mx-[14rem] lg:mx-[14rem] xl:mx-[14rem] xxl:ml-3 flex items-center">
+                        <ToastContainer />
+                        <button type="submit" className="bg-main text-white font-bold text-[14px] md:text-base lg:text-base xl:text-base rounded-3xl px-10 py-2 w-fit ">
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div className=" md:mx-[14rem] lg:mx-[14rem] xl:mx-[14rem] xxl:mx-[14rem]    ">
+                  {/* <div className=" md:mx-[14rem] lg:mx-[14rem] xl:mx-[14rem] xxl:mx-[14rem]    ">
                     <ToastContainer />
                     <button type="submit" className="bg-main text-white font-bold text-[14px] md:text-base lg:text-base xl:text-base rounded-3xl px-10 py-2  mt-5 w-fit ">
                       Submit
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </Form>
             )}
