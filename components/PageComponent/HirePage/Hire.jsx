@@ -225,7 +225,7 @@ function Hire() {
                     <h4 className='text-purple'>
                         Skill Generated
                     </h4>
-                    <div className='grid grid-cols-2 gap-8'>
+                    <div className='grid grid-cols-3 gap-4'>
                         {skillLogo.map((val,i)=>{
                             return <div key={i} className='w-full h-48 flex flex-col items-center justify-center shadow-xl shadow-gray-300 rounded-md'>
                                 <div className={`w-32 h-28 flex items-center justify-center text-8xl ${val.color}`}>
@@ -237,18 +237,42 @@ function Hire() {
                             </div>
                         })}
                     </div>
+                    <div className='w-full h-fit mx-auto '>
+                    <Formik 
+                    initialValues={{
+                        fullName:"",
+                        companyName:"",
+                        email:"",
+                        contactNumber:"",
+                    }}
+                    >
+                        {({handleSubmit})=>{
+                            return <Form className='w-full flex flex-wrap'>
+                                {formdata.map((val,i)=>{
+                                    return <div key={i} className={`${val.type === 'email' ? 'w-2/4':'w-full'} ${val.identity === 'contactNumber' ? 'w-' :'w-full'} my-5`}>
+                                        <Field 
+                                        type={val.type}
+                                        name={val.identity}
+                                        placeholder={val.placeholder}
+                                        className="w-full px-3 py-2 rounded-md border-2 border-purple"/>
+                                    </div>
+                                })}
+                            </Form>
+                        }}
+                    </Formik>
+                </div>         
                 </div>
             </div> 
             <div className='flex my-10 '>
-                <div className='w-2/4  border-r-8 pl-5 pr-2 relative border-boxyellwo'>
+                {/* <div className='w-2/4  border-r-8 pl-5 pr-2 relative border-boxyellwo'>
                         <div className='w-full h-full  bg-[url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1vbml0b3J8ZW58MHx8MHx8fDA%3D")] bg-no-repeat bg-center bg-cover blur-[2px]'
                         >
                         </div>
                         <div className='w-full h-full flex items-center absolute top-0 right-3'>
                             <h1 className='text-[36px] w-full text-right my-0 px-3 text-shadow text-shadow-lg text-white capitalize '>Secure top-tier <br/> talent swiftly! <br/> Complete the form <br/> for a rapid response!</h1>
                         </div>
-                </div>
-                <div className='w-2/4 h-fit px-10 mx-auto'>
+                </div> */}
+                {/* <div className='w-2/4 h-fit px-10 mx-auto'>
                     <Formik 
                     initialValues={{
                         fullName:"",
@@ -271,13 +295,14 @@ function Hire() {
                             </Form>
                         }}
                     </Formik>
-                </div>         
+                </div>          */}
             </div>
             <div className='w-fit mx-auto my-10'>
                 <button type='submit'
                 className='border-2 border-main text-main hover:bg-main hover:text-white w-28 h-10 rounded-md transition-all duration-300'>Submit</button>
             </div>
         </div>
+        
     </div>
   )
 }

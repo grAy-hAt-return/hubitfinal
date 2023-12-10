@@ -53,7 +53,63 @@ module.exports = {
       top: {
         104: "28rem",
       },
+      animation:{
+        'spin-slow': 'spin 19s linear infinite',
+        'spinopp': 'spin 19s linear infinite',
+        // 'spin-slowest': 'spin 1s linear infinite',
+        'swing': 'swing 10s ease-in-out infinite',
+        'motion': 'motion 10s ease-in infinite',
+        'scale': 'scale 5s ease-in infinite',
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        scale: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        spinopp : {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-180deg)' },
+        },
+        swing: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(40deg)' },
+          // '50%': { transform: 'rotate(0deg)' },
+          '75%': { transform: 'rotate(-45deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+      },
+      motion: {
+          '0%': { top: '0%', left: '50%' },
+          '25%': { top: '50%', right: '10%' },
+          '50%': { bottom: '0%', right: '50%' },
+          '75%': { bottom: '50%', left: '0%' },
+          '100%': { top: '0%', left: '50%' },
+
+      }
+      },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    
+    // require('tailwind-scrollbar-hide'),
+
+    function({addUtilities}){
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar":{
+          display: "none",
+        },
+        '.no-scrollbar':{
+          '-ms-overflow-style':'none',
+          'scrollbar-width':'none',
+        }
+      }
+      addUtilities(newUtilities)
+    }
+
+  ],
 };

@@ -55,7 +55,7 @@ function TrainingTabs() {
             );
           })}
         </div>
-        <div className={`${isVisible ? 'lg:h-fit xl:h-fit ':'h-94 md:h-[385px] lg:h-[410px] xl:h-[430px] overflow-y-scroll md:overflow-hidden lg:overflow-hidden xl:overflow-hidden'} py-2`}>{mod}</div>{" "}
+        <div className={`${isVisible ? 'lg:h-fit xl:h-fit ':'h-94 md:h-[385px] lg:h-[410px] xl:h-[430px] overflow-y-scroll md:overflow-hidden lg:overflow-hidden xl:overflow-hidden'} no-scrollbar py-2`}>{mod}</div>{" "}
         <button 
         onClick={()=>setIsVisible(!isVisible)}
         className="hidden md:visible lg:visible xl:visible md:flex lg:flex xl:flex w-fit mx-auto items-center justify-center cursor-pointer capitalize">

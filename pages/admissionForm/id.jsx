@@ -87,15 +87,15 @@ const Tabs = () =>{
           </div>
       </div>
       <div className='w-full my-10'>
-        <h1 className='w-fit mx-auto my-3'>
+        <h3 className='w-fit mx-auto my-0'>
           STUDENT ENROLLMENT REGISTRATION FROM
-        </h1>
+        </h3>
         <div className='w-10/12 mx-auto'>
-          <div className='w-9/12 mx-auto rounded-full overflow-hidden grid grid-cols-3 bg-gray-200 my-10'>
+          <div className='w-9/12 mx-auto rounded-full overflow-hidden grid grid-cols-3 bg-gray-200 my-5'>
                 {tabs.map((val,i)=>{
                     return (
                         <div key={i}
-                        className={`${i=== active? "bg-main text-white":""} my-0 font-medium py-3 text-center`}
+                        className={`${i=== active? "bg-main text-white":""} my-0 font-medium py-2 text-center`}
                         // onClick={()=> setActive(val.title)}
                         >
                             {val.title}
@@ -108,14 +108,13 @@ const Tabs = () =>{
           </div>
           <div className='w-full flex justify-center gap-5'>
             <button 
-
             onClick={()=>previous()}
-            className={`${active=== 0 ? "hidden":"block"} w-32 py-[.8%] my-5 bg-main text-white rounded-lg outline-none cursor-pointer`}>
+            className={`${active=== 0 ? "hidden":"block"} w-32 py-[.8%] bg-main text-white rounded-lg outline-none cursor-pointer`}>
               Previous
             </button>
             <button 
             onClick={()=>next()}
-            className='w-32 py-[.8%] my-5 bg-main text-white rounded-lg outline-none cursor-pointer hover:scale-110 transition-all duration-300'>
+            className='w-32 py-[.8%] bg-main text-white rounded-lg outline-none cursor-pointer hover:scale-110 transition-all duration-300'>
               Next
             </button>
           </div>

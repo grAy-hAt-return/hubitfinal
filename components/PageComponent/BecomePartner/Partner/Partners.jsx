@@ -48,7 +48,7 @@ function Partners() {
                     <h1 className='w-fit border-b-4 pb-2 border-purple text-xl md:text-2xl lg:text-2xl xl:text-3xl xxl:text-3xl my-0'>
                     Already Have A Partner Account ?
                     </h1>
-                    <button className='w-20 md:w-24 lg:w-28 xl:w-40 xxl:w-40 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 text-sm md:text-base lg:text-base xl:text-base xxl:text-base mt-5 capitalize text-center border-2 rounded-3xl mx-2 border-purple hover:bg-white hover:scale-110 hover:text-purple bg-purple text-white transition-all duration-400 ease-in-out'>
+                    <button className='w-20 md:w-24 lg:w-24 xl:w-32 xxl:w-32 h-8 md:h-9 lg:h-9 xl:h-10 xxl:h-11 text-sm md:text-base lg:text-base xl:text-base xxl:text-base mt-5 capitalize text-center border-2 rounded-3xl mx-2 border-purple hover:bg-white hover:scale-110 hover:text-purple bg-purple text-white transition-all duration-400 ease-in-out'>
                         <Link href={{pathname:`/login`}}>
                             Login
                         </Link>
