@@ -12,6 +12,7 @@ import Layout from "../../HOC/Layout/Layout";
 import GroupStatus from "../../components/PageComponent/AboutPage/GroupStatus/GroupStatus";
 import TouchButton from "../../components/PageComponent/AboutPage/GetIntouchButton/TouchButton";
 import TopImg from "../../components/PageComponent/AboutPage/AboutTopimg/TopImg";
+import PlacementPartners from "../../components/PageComponent/HomePage/PlacementPartners/placementPartners";
 
 function AboutUs() {
   return (
@@ -34,6 +35,7 @@ function AboutUs() {
           <WhatWeProvide />
           <OurAchievements />
           <WhatClientsSays status="show"/>
+          <PlacementPartners/>
           <OurTeamMembers />
           <HowWeWork />
           <FindUsOn />

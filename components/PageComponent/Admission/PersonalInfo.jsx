@@ -89,7 +89,7 @@ function PersonalInfo() {
         },
     ]
   return (
-    <div className='w-full py-5 bg-gray-100 p-3 px-5 relative rounded-lg overflow-hidden'>
+    <div className='w-full py-2  px-5 relative rounded-lg overflow-hidden'>
         {/* <div>
             <Formik
             initialValues={{
@@ -167,34 +167,34 @@ function PersonalInfo() {
         </div> */}
         <div className=''>
             <div className='w-full  grid grid-cols-2'>
-                <div className="flex items-center pb-3 w-full h-52 flex-col">
-                <div className='w-52 mx-auto h-52 bg-gray-200 mb-3 flex items-center justify-center text-[150px] text-neutral-400'>
+                <div className="flex items-center w-full h-fit flex-col ">
+                <div className='w-32 mx-auto h-32 bg-gray-200 mb-3 flex items-center justify-center text-[150px] text-neutral-400'>
                     <TiUser />
                     </div>
-                    <div className='flex flex-col my-2'>
+                    <div className='flex flex-col'>
                             <label className='relative inline-block cursor-pointer'>
                                 <input type="file" name="photo" className='hidden bg-gray-200 py-2' />
                                 Upload Photo</label>
                             
                     </div>
                 </div>
-                <div className='w-full h-auto flex flex-col justify-center'>
-                    <div className='w-full flex flex-col my-2'>
+                <div className='w-full h-auto flex flex-col justify-center '>
+                    <div className='w-full flex flex-col mb-2 '>
                         <label>
                             Full Name
                         </label>
-                        <input type='text' placeholder='Enter your full name' name='fullName' className='w-full my-2 bg-gray-200 p-3 outline-none rounded-lg'/>
+                        <input type='text' placeholder='Enter your full name' name='fullName' className='w-full mt-2 bg-gray-200 p-3 outline-none rounded-lg'/>
                     </div>
-                    <div className='w-full flex flex-col my-2'>
+                    <div className='w-full flex flex-col mt-1'>
                         <label>
                             Address
                         </label>
                         <input type='text' placeholder='Enter your address' name='Address' 
-                        className='w-full my-2 bg-gray-200 p-3 outline-none rounded-lg'/>
+                        className='w-full mt-2 bg-gray-200 p-3 outline-none rounded-lg'/>
                     </div>
                 </div>
             </div>
-            <div className='w-full grid grid-cols-2 gap-y-5 my-2'>
+            <div className='w-full grid grid-cols-2 gap-y-5 my-3'>
                 <div className='pr-5'>
                     <div className='flex gap-5'> 
                         <div className='flex flex-col w-fit'>

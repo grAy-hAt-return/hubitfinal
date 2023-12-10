@@ -5,6 +5,7 @@ import Image2 from '../../../public/images/kangaroo education.png';
 import Image3 from '../../../public/images/kba-global.png';
 import Image4 from '../../../public/images/ng market1.png';
 import Image5 from '../../../public/images/printhub.png';
+import Image6 from '../../../public/images/printhub.png';
 
 const imgLink= [
     {image: ImageFirst, path:"https://www.srdb.com.np/"},
@@ -13,5 +14,6 @@ const imgLink= [
     {image: Image3, path:"https://kbaglobal.com/"},
     {image: Image4, path:"http://www.ngshopping.com.np/"},
     {image: Image5, path:"https://www.facebook.com/profile.php?id=100070016861916"},
+    {image: Image6, path:"https://www.apple.com/newsroom/images/default/apple-logo-og.jpg?202311301736"},
 ];
 export default imgLink;

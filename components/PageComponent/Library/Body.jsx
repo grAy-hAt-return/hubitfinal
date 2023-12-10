@@ -2,7 +2,8 @@
 // import Image from "next/image";
 import React from "react";
 
-import { IoMdCopy } from "react-icons/io";
+
+import { TbAlertTriangle } from "react-icons/tb";
 const Body = () => {
   const data=[
     {h1:"Learn AI for beginner",
@@ -140,6 +141,7 @@ const Body = () => {
   // ];
   return (
     <>
+    <div className="w-full h-auto relative">
     <div className='w-full h-64' 
     style={{
         backgroundImage:  `url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
@@ -165,6 +167,7 @@ const Body = () => {
           Explore a wealth of knowledge at HUB IT's Library section, offering a diverse range of IT solutions, notes, PDF files, and tutorials for comprehensive learning and training.
           </h3>
         </div>
+    <div className="w-full h-auto relative">
     <div className="w-10/12 my-5 mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols- xxl:grid-cols-4 gap-4 xxl:gap-x-8">
       {data.map((val,i)=>{
         return <div key={i} className="w-full mb-3 shadow-xl rounded">
@@ -194,6 +197,17 @@ const Body = () => {
           </div>
         </div>
       })}
+    </div>
+    <div className="absolute top-0 left-0 right-0 w-full h-screen backdrop-blur-md  bg-black bg-opacity-25 flex justify-center items-center">
+      <div className="w-2/6 py-5 px-3 flex flex-col items-center justify-center rounded-md bg-gradient-to-tr from-yellow-200 to-yellow-300 shadow-lg shadow-yellow-300 text-black relative text-lg font-medium">
+        <div className="w-fit h-fit  text-purple text-6xl"><TbAlertTriangle/></div>
+        <span>
+        You need to login to get access into the Library.
+        </span>
+        
+      </div>
+
+    </div>
     </div>
         {/* <div>
           <div className="p-10  md:flex xl:flex xxl:flex  flex-wrap gap-x-5 gap-y-10 w-full items-center my-16 ">
@@ -245,6 +259,8 @@ const Body = () => {
           </div>
         </div> */}
       </section>
+      
+    </div>
     </>
   );
 };

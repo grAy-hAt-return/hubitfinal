@@ -27,10 +27,10 @@ function CertificateMid() {
             className="bg-white border-2 border-main rounded-3xl w-full px-3 py-2"
           />
         </div>
-        <div className="flex justify-center md:w-6/12 w-full items-center">
+        <div className="flex justify-start md:w-6/12 w-full items-center">
           {" "}
           <button
-            className="bg-main px-16 md:px-20 xl:px-20 xxl:px-20 xxxl:px-20  py-2 my-12 capitalize rounded-3xl text-white text-sm md:text-base lg:text-base xl:text-lg xxl:text-xl hover:scale-[1.04] transition-all
+            className="bg-main px-5 md:px-8 xl:px-8 xxl:px-8 xxxl:px-10  py-2 my-12 capitalize rounded-3xl text-white text-sm md:text-base lg:text-base xl:text-lg xxl:text-xl hover:scale-[1.04] transition-all
            ease-in-out delay-75 duration-300 hover:shadow-xl hover:shadow-gray-400  text-center"
           >
             check
